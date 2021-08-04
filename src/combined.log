@@ -1,0 +1,19 @@
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed data_encoder role migrated...","level":"info"}
+{"message":"completed farmer role migrated...","level":"info"}
+{"message":"completed tool_trader role migrated...","level":"info"}
+{"message":"completed accessory_trader role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed product_trader role migrated...","level":"info"}
