@@ -39,6 +39,11 @@ exports.connect = () => {
 
       await migration.migratePermissions()
       await migration.migrateRoles()
+      await migration.migrateMachineries()
+      await migration.migrateCategories()
+      await migration.migrateUsers()
+      await migration.migrateIngridients()
+      await migration.migrateProducts()
     });
   return mongoose.connection;
 };

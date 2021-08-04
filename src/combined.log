@@ -25,3 +25,1926 @@
 {"message":"Noting to migrate fro permission ...","level":"info"}
 {"message":"Checking role migrations...","level":"info"}
 {"message":"completed roles migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Found new machineries...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Found new machineries...","level":"info"}
+{"message":"migrate machinery completed ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Found new categories...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Found new categories...","level":"info"}
+{"message":"migrate category completed ...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new machineries...","level":"info"}
+{"message":"migrate machinery completed ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed data_encoder role migrated...","level":"info"}
+{"message":"completed accessory_trader role migrated...","level":"info"}
+{"message":"completed farmer role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed product_trader role migrated...","level":"info"}
+{"message":"Found new categories...","level":"info"}
+{"message":"completed tool_trader role migrated...","level":"info"}
+{"message":"migrate category completed ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Found new machineries...","level":"info"}
+{"message":"migrate machinery completed ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Found new categories...","level":"info"}
+{"message":"migrate category completed ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed data_encoder role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed farmer role migrated...","level":"info"}
+{"message":"completed tool_trader role migrated...","level":"info"}
+{"message":"completed product_trader role migrated...","level":"info"}
+{"message":"completed accessory_trader role migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"completed tool_trader role migrated...","level":"info"}
+{"message":"completed data_encoder role migrated...","level":"info"}
+{"message":"completed accessory_trader role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed product_trader role migrated...","level":"info"}
+{"message":"completed farmer role migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"level":"info","message":"Found new ingredient..."}
+{"level":"info","message":"Found new ingredient..."}
+{"level":"info","message":"Found new ingredient..."}
+{"level":"info","message":"Found new ingredient..."}
+{"level":"info","message":"Found new ingredient..."}
+{"level":"info","message":"Found new ingredient..."}
+{"level":"info","message":"Found new ingredient..."}
+{"level":"info","message":"Found new ingredient..."}
+{"level":"info","message":"Found new ingredient..."}
+{"level":"info","message":"Found new ingredient..."}
+{"level":"info","message":"Found new ingredient..."}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...0","level":"info"}
+{"message":"Found new ingredient...3","level":"info"}
+{"message":"Found new ingredient...6","level":"info"}
+{"message":"Found new ingredient...5","level":"info"}
+{"message":"Found new ingredient...4","level":"info"}
+{"message":"Found new ingredient...1","level":"info"}
+{"message":"Found new ingredient...2","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":[],"level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":[],"level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...[object Object]","level":"info"}
+{"message":"Found new ingredient...[object Object]","level":"info"}
+{"message":"Found new ingredient...[object Object]","level":"info"}
+{"message":"Found new ingredient...[object Object]","level":"info"}
+{"message":"Found new ingredient...[object Object]","level":"info"}
+{"message":"Found new ingredient...[object Object]","level":"info"}
+{"message":"Found new ingredient...[object Object]","level":"info"}
+{"message":"Found new ingredient...[object Object]","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...ferilizer","level":"info"}
+{"message":"Found new ingredient...ferilizer","level":"info"}
+{"message":"Found new ingredient...ferilizer","level":"info"}
+{"message":"Found new ingredient...ferilizer","level":"info"}
+{"message":"Found new ingredient...mirt zer","level":"info"}
+{"message":"Found new ingredient...ferilizer","level":"info"}
+{"message":"Found new ingredient...ferilizer","level":"info"}
+{"message":"Found new ingredient...mirt zer","level":"info"}
+{"message":"Found new ingredient...mirt zer","level":"info"}
+{"message":"Found new ingredient...meno","level":"info"}
+{"message":"Found new ingredient...qefo","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...ferilizer","level":"info"}
+{"message":"Found new ingredient...ferilizer","level":"info"}
+{"message":"Found new ingredient...ferilizer","level":"info"}
+{"message":"Found new ingredient...ferilizer","level":"info"}
+{"message":"Found new ingredient...ferilizer","level":"info"}
+{"message":"Found new ingredient...ferilizer","level":"info"}
+{"message":"Found new ingredient...qefo","level":"info"}
+{"message":"Found new ingredient...mirt zer","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Found new ingredient...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"completed [object Object] ingridient migrated...","level":"info"}
+{"message":"completed [object Object] ingridient migrated...","level":"info"}
+{"message":"completed [object Object] ingridient migrated...","level":"info"}
+{"message":"completed [object Object] ingridient migrated...","level":"info"}
+{"message":"completed [object Object] ingridient migrated...","level":"info"}
+{"message":"completed [object Object] ingridient migrated...","level":"info"}
+{"message":"completed [object Object] ingridient migrated...","level":"info"}
+{"message":"completed [object Object] ingridient migrated...","level":"info"}
+{"message":"completed [object Object] ingridient migrated...","level":"info"}
+{"message":"completed [object Object] ingridient migrated...","level":"info"}
+{"message":"completed [object Object] ingridient migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"completed Phosphic ingridient migrated...","level":"info"}
+{"message":"completed Nitrogen ingridient migrated...","level":"info"}
+{"message":"completed Yuriya ingridient migrated...","level":"info"}
+{"message":"completed Potassium ingridient migrated...","level":"info"}
+{"message":"completed Dap ingridient migrated...","level":"info"}
+{"message":"completed Natural ingridient migrated...","level":"info"}
+{"message":"completed zemenawi qefo ingridient migrated...","level":"info"}
+{"message":"completed ye ensisat meno ingridient migrated...","level":"info"}
+{"message":"completed ye atkilt ingridient migrated...","level":"info"}
+{"message":"completed ye beqolo ingridient migrated...","level":"info"}
+{"message":"completed ye qimema qimem ingridient migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data ","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data ","level":"info"}
+{"message":"completed Natural ingridient migrated...","level":"info"}
+{"message":"here's the data ","level":"info"}
+{"message":"completed Potassium ingridient migrated...","level":"info"}
+{"message":"here's the data ","level":"info"}
+{"message":"completed Nitrogen ingridient migrated...","level":"info"}
+{"message":"here's the data ","level":"info"}
+{"message":"completed Dap ingridient migrated...","level":"info"}
+{"message":"here's the data ","level":"info"}
+{"message":"completed ye atkilt ingridient migrated...","level":"info"}
+{"message":"here's the data ","level":"info"}
+{"message":"completed Phosphic ingridient migrated...","level":"info"}
+{"message":"here's the data ","level":"info"}
+{"message":"completed Yuriya ingridient migrated...","level":"info"}
+{"message":"here's the data ","level":"info"}
+{"message":"completed ye beqolo ingridient migrated...","level":"info"}
+{"message":"here's the data ","level":"info"}
+{"message":"completed ye qimema qimem ingridient migrated...","level":"info"}
+{"message":"here's the data ","level":"info"}
+{"message":"completed ye ensisat meno ingridient migrated...","level":"info"}
+{"message":"here's the data ","level":"info"}
+{"message":"completed zemenawi qefo ingridient migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Phosphic ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Yuriya ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Dap ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Potassium ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Nitrogen ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Natural ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye beqolo ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye atkilt ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed zemenawi qefo ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye ensisat meno ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye qimema qimem ingridient migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Natural ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Nitrogen ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Yuriya ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Dap ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Phosphic ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Potassium ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed zemenawi qefo ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye beqolo ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye atkilt ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye qimema qimem ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye ensisat meno ingridient migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Yuriya ingridient migrated...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Nitrogen ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Dap ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Phosphic ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Potassium ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Natural ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye beqolo ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye qimema qimem ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye atkilt ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed zemenawi qefo ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye ensisat meno ingridient migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Dap ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Nitrogen ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Phosphic ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Natural ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Yuriya ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye beqolo ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Potassium ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye atkilt ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye qimema qimem ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed zemenawi qefo ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye ensisat meno ingridient migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Yuriya ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Dap ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Potassium ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Phosphic ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Natural ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Nitrogen ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye atkilt ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye beqolo ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye qimema qimem ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye ensisat meno ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed zemenawi qefo ingridient migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"here's the role data undefined","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Nitrogen ingridient migrated...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Yuriya ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Phosphic ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Dap ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye beqolo ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Natural ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Potassium ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye atkilt ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye qimema qimem ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed zemenawi qefo ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye ensisat meno ingridient migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"here's the role data undefined","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Nitrogen ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Phosphic ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Natural ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Yuriya ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye atkilt ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Dap ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Potassium ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye beqolo ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye qimema qimem ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye ensisat meno ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed zemenawi qefo ingridient migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"here's the role data undefined","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Nitrogen ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Yuriya ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Dap ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Phosphic ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye beqolo ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Natural ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye atkilt ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Potassium ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye ensisat meno ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye qimema qimem ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed zemenawi qefo ingridient migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"here's the role data undefined","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Dap ingridient migrated...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Phosphic ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Yuriya ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Nitrogen ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Potassium ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye atkilt ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye qimema qimem ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Natural ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye beqolo ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed ye ensisat meno ingridient migrated...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed zemenawi qefo ingridient migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"Found new ingridient...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Dap ingridient migrated...","level":"info"}
+{"message":"completed Yuriya ingridient migrated...","level":"info"}
+{"message":"completed Nitrogen ingridient migrated...","level":"info"}
+{"message":"completed ye atkilt ingridient migrated...","level":"info"}
+{"message":"completed Natural ingridient migrated...","level":"info"}
+{"message":"completed Phosphic ingridient migrated...","level":"info"}
+{"message":"completed ye qimema qimem ingridient migrated...","level":"info"}
+{"message":"completed ye ensisat meno ingridient migrated...","level":"info"}
+{"message":"completed ye beqolo ingridient migrated...","level":"info"}
+{"message":"completed Potassium ingridient migrated...","level":"info"}
+{"message":"completed zemenawi qefo ingridient migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Checking product migrations...","level":"info"}
+{"message":"completed products migrations...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Checking product migrations...","level":"info"}
+{"message":"completed products migrations...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Orange product migrated...","level":"info"}
+{"message":"completed Papaya product migrated...","level":"info"}
+{"message":"completed Avocado product migrated...","level":"info"}
+{"message":"completed Banana product migrated...","level":"info"}
+{"message":"completed Jack fruit product migrated...","level":"info"}
+{"message":"completed Watermelon product migrated...","level":"info"}
+{"message":"completed Lemon product migrated...","level":"info"}
+{"message":"completed Apple product migrated...","level":"info"}
+{"message":"completed Mango product migrated...","level":"info"}
+{"message":"completed Cock product migrated...","level":"info"}
+{"message":"completed Wine product migrated...","level":"info"}
+{"message":"completed Zotin product migrated...","level":"info"}
+{"message":"completed Prim product migrated...","level":"info"}
+{"message":"completed Roman product migrated...","level":"info"}
+{"message":"completed Strawberry product migrated...","level":"info"}
+{"message":"completed Baqela product migrated...","level":"info"}
+{"message":"completed Tiringo product migrated...","level":"info"}
+{"message":"completed Misir product migrated...","level":"info"}
+{"message":"completed Akuri ater product migrated...","level":"info"}
+{"message":"completed Ater product migrated...","level":"info"}
+{"message":"completed Guaya product migrated...","level":"info"}
+{"message":"completed Shimbira product migrated...","level":"info"}
+{"message":"completed Pijon bean product migrated...","level":"info"}
+{"message":"completed Boloqe product migrated...","level":"info"}
+{"message":"completed Gibto product migrated...","level":"info"}
+{"message":"completed Telba product migrated...","level":"info"}
+{"message":"completed Masho product migrated...","level":"info"}
+{"message":"completed Selit product migrated...","level":"info"}
+{"message":"completed Lewz product migrated...","level":"info"}
+{"message":"completed Pinto bean product migrated...","level":"info"}
+{"message":"completed Suf product migrated...","level":"info"}
+{"message":"completed Gomenzer product migrated...","level":"info"}
+{"message":"completed Nug product migrated...","level":"info"}
+{"message":"completed Ye duba fre product migrated...","level":"info"}
+{"message":"completed Tomato product migrated...","level":"info"}
+{"message":"completed Ye gulo fre product migrated...","level":"info"}
+{"message":"completed Potato product migrated...","level":"info"}
+{"message":"completed Garlic product migrated...","level":"info"}
+{"message":"completed Cabbage product migrated...","level":"info"}
+{"message":"completed Carrot product migrated...","level":"info"}
+{"message":"completed Berbere product migrated...","level":"info"}
+{"message":"completed Onion product migrated...","level":"info"}
+{"message":"completed Qey sir product migrated...","level":"info"}
+{"message":"completed Gishta product migrated...","level":"info"}
+{"message":"completed Zinjibil product migrated...","level":"info"}
+{"message":"completed Tikur azmud product migrated...","level":"info"}
+{"message":"completed Qosta product migrated...","level":"info"}
+{"message":"completed Mushroom product migrated...","level":"info"}
+{"message":"completed Salad product migrated...","level":"info"}
+{"message":"completed Erid product migrated...","level":"info"}
+{"message":"completed Dimbilal product migrated...","level":"info"}
+{"message":"completed Korerima product migrated...","level":"info"}
+{"message":"completed Abish product migrated...","level":"info"}
+{"message":"completed Beqolo product migrated...","level":"info"}
+{"message":"completed Aja product migrated...","level":"info"}
+{"message":"completed Teff product migrated...","level":"info"}
+{"message":"completed Pepper product migrated...","level":"info"}
+{"message":"completed Rice product migrated...","level":"info"}
+{"message":"completed Gebs product migrated...","level":"info"}
+{"message":"completed Sinde product migrated...","level":"info"}
+{"message":"completed Chat product migrated...","level":"info"}
+{"message":"completed Ox product migrated...","level":"info"}
+{"message":"completed Sheep product migrated...","level":"info"}
+{"message":"completed Goat product migrated...","level":"info"}
+{"message":"completed Cow product migrated...","level":"info"}
+{"message":"completed Camel product migrated...","level":"info"}
+{"message":"completed Horse product migrated...","level":"info"}
+{"message":"completed Pig product migrated...","level":"info"}
+{"message":"completed Dagusa product migrated...","level":"info"}
+{"message":"completed Donkey product migrated...","level":"info"}
+{"message":"completed Mule product migrated...","level":"info"}
+{"message":"completed Qacha product migrated...","level":"info"}
+{"message":"completed Tea product migrated...","level":"info"}
+{"message":"completed Cotton product migrated...","level":"info"}
+{"message":"completed Coffee product migrated...","level":"info"}
+{"message":"completed Tobacco product migrated...","level":"info"}
+{"message":"completed Awra doro product migrated...","level":"info"}
+{"message":"completed Set doro product migrated...","level":"info"}
+{"message":"completed Milk product migrated...","level":"info"}
+{"message":"completed Butter product migrated...","level":"info"}
+{"message":"completed Asa product migrated...","level":"info"}
+{"message":"completed Yoghurt product migrated...","level":"info"}
+{"message":"completed Aguat product migrated...","level":"info"}
+{"message":"completed Cheese product migrated...","level":"info"}
+{"message":"completed Quami product migrated...","level":"info"}
+{"message":"completed Weraj product migrated...","level":"info"}
+{"message":"completed Mager product migrated...","level":"info"}
+{"message":"completed Qerkeha product migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking machineries migrations...","level":"info"}
+{"message":"Noting to migrate from machinery ...","level":"info"}
+{"message":"Checking categories migrations...","level":"info"}
+{"message":"Noting to migrate from category ...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking ingridient migrations...","level":"info"}
+{"message":"completed ingridients migrations...","level":"info"}
+{"message":"Checking product migrations...","level":"info"}
+{"message":"completed products migrations...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"Found new product...","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"here's the data undefined","level":"info"}
+{"message":"completed Orange product migrated...","level":"info"}
+{"message":"completed Banana product migrated...","level":"info"}
+{"message":"completed Avocado product migrated...","level":"info"}
+{"message":"completed Papaya product migrated...","level":"info"}
+{"message":"completed Jack fruit product migrated...","level":"info"}
+{"message":"completed Watermelon product migrated...","level":"info"}
+{"message":"completed Lemon product migrated...","level":"info"}
+{"message":"completed Mango product migrated...","level":"info"}
+{"message":"completed Apple product migrated...","level":"info"}
+{"message":"completed Wine product migrated...","level":"info"}
+{"message":"completed Cock product migrated...","level":"info"}
+{"message":"completed Tiringo product migrated...","level":"info"}
+{"message":"completed Prim product migrated...","level":"info"}
+{"message":"completed Roman product migrated...","level":"info"}
+{"message":"completed Zotin product migrated...","level":"info"}
+{"message":"completed Strawberry product migrated...","level":"info"}
+{"message":"completed Baqela product migrated...","level":"info"}
+{"message":"completed Ater product migrated...","level":"info"}
+{"message":"completed Gishta product migrated...","level":"info"}
+{"message":"completed Akuri ater product migrated...","level":"info"}
+{"message":"completed Misir product migrated...","level":"info"}
+{"message":"completed Pijon bean product migrated...","level":"info"}
+{"message":"completed Pinto bean product migrated...","level":"info"}
+{"message":"completed Shimbira product migrated...","level":"info"}
+{"message":"completed Guaya product migrated...","level":"info"}
+{"message":"completed Nug product migrated...","level":"info"}
+{"message":"completed Boloqe product migrated...","level":"info"}
+{"message":"completed Masho product migrated...","level":"info"}
+{"message":"completed Gibto product migrated...","level":"info"}
+{"message":"completed Selit product migrated...","level":"info"}
+{"message":"completed Suf product migrated...","level":"info"}
+{"message":"completed Telba product migrated...","level":"info"}
+{"message":"completed Lewz product migrated...","level":"info"}
+{"message":"completed Gomenzer product migrated...","level":"info"}
+{"message":"completed Ye gulo fre product migrated...","level":"info"}
+{"message":"completed Potato product migrated...","level":"info"}
+{"message":"completed Tomato product migrated...","level":"info"}
+{"message":"completed Garlic product migrated...","level":"info"}
+{"message":"completed Ye duba fre product migrated...","level":"info"}
+{"message":"completed Onion product migrated...","level":"info"}
+{"message":"completed Carrot product migrated...","level":"info"}
+{"message":"completed Cabbage product migrated...","level":"info"}
+{"message":"completed Korerima product migrated...","level":"info"}
+{"message":"completed Qey sir product migrated...","level":"info"}
+{"message":"completed Abish product migrated...","level":"info"}
+{"message":"completed Salad product migrated...","level":"info"}
+{"message":"completed Erid product migrated...","level":"info"}
+{"message":"completed Qosta product migrated...","level":"info"}
+{"message":"completed Mushroom product migrated...","level":"info"}
+{"message":"completed Tikur azmud product migrated...","level":"info"}
+{"message":"completed Zinjibil product migrated...","level":"info"}
+{"message":"completed Aja product migrated...","level":"info"}
+{"message":"completed Dimbilal product migrated...","level":"info"}
+{"message":"completed Teff product migrated...","level":"info"}
+{"message":"completed Beqolo product migrated...","level":"info"}
+{"message":"completed Gebs product migrated...","level":"info"}
+{"message":"completed Sinde product migrated...","level":"info"}
+{"message":"completed Rice product migrated...","level":"info"}
+{"message":"completed Dagusa product migrated...","level":"info"}
+{"message":"completed Cotton product migrated...","level":"info"}
+{"message":"completed Tobacco product migrated...","level":"info"}
+{"message":"completed Pepper product migrated...","level":"info"}
+{"message":"completed Berbere product migrated...","level":"info"}
+{"message":"completed Chat product migrated...","level":"info"}
+{"message":"completed Coffee product migrated...","level":"info"}
+{"message":"completed Goat product migrated...","level":"info"}
+{"message":"completed Ox product migrated...","level":"info"}
+{"message":"completed Tea product migrated...","level":"info"}
+{"message":"completed Qacha product migrated...","level":"info"}
+{"message":"completed Sheep product migrated...","level":"info"}
+{"message":"completed Cow product migrated...","level":"info"}
+{"message":"completed Pig product migrated...","level":"info"}
+{"message":"completed Camel product migrated...","level":"info"}
+{"message":"completed Horse product migrated...","level":"info"}
+{"message":"completed Donkey product migrated...","level":"info"}
+{"message":"completed Mule product migrated...","level":"info"}
+{"message":"completed Awra doro product migrated...","level":"info"}
+{"message":"completed Asa product migrated...","level":"info"}
+{"message":"completed Milk product migrated...","level":"info"}
+{"message":"completed Set doro product migrated...","level":"info"}
+{"message":"completed Butter product migrated...","level":"info"}
+{"message":"completed Yoghurt product migrated...","level":"info"}
+{"message":"completed Cheese product migrated...","level":"info"}
+{"message":"completed Aguat product migrated...","level":"info"}
+{"message":"completed Quami product migrated...","level":"info"}
+{"message":"completed Mager product migrated...","level":"info"}
+{"message":"completed Weraj product migrated...","level":"info"}
+{"message":"completed Qerkeha product migrated...","level":"info"}
+{"message":"completed Hareg product migrated...","level":"info"}
+{"message":"completed Rose product migrated...","level":"info"}
+{"message":"completed Tulips product migrated...","level":"info"}
+{"message":"completed Sem product migrated...","level":"info"}
+{"message":"completed Amrilix product migrated...","level":"info"}
+{"message":"completed Kosame product migrated...","level":"info"}
+{"message":"completed Welela product migrated...","level":"info"}
+{"message":"completed Sefef product migrated...","level":"info"}
