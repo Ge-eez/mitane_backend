@@ -19,7 +19,7 @@ const StoreSchema = new mongoose.Schema({
         quantity: { type: Number, required: true },
         price_per_kg: { type: Number, required: true },
     }],
-    user : { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+    user : { type: mongoose.Schema.Types.ObjectId, ref: 'User', unique: true, required: true },
 },{timestamps: {createdAt: 'created_at', modifiedAt: 'modified_at'}
 });
 
