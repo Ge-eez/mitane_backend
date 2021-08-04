@@ -24,7 +24,7 @@ router.post('/login', authFormRequest('loginUser'), authController.login);
  * @returns {object} 200 - User object
  * @returns {Error}  default - Unexpected error
  */
-router.post('/signup', authFormRequest('createUser'), authController.signup);
+router.post('/signup', authFormRequest('createUser'), authController.signupUser);
 
 
 module.exports = router;

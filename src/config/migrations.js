@@ -51,7 +51,15 @@ const users = [
         roles: ['admin'],
         phone_no : +251900000000
 
-    }
+    },
+    {
+        name: 'encoder',
+        password: 'encoderuser',
+        roles: ['data_encoder'],
+        phone_no : +251911111111
+
+    },
+
 ]
 const machineries = [
     {
