@@ -59,6 +59,41 @@ const users = [
         phone_no : +251911111111
 
     },
+    {
+        name: 'farmer',
+        password: 'farmeruser',
+        roles: ['farmer'],
+        phone_no : +251922222222
+
+    },
+    {
+        name: 'accessorytrader',
+        password: 'accessorytraderuser',
+        roles: ['accessory_trader'],
+        phone_no : +251933333333
+
+    },
+    {
+        name: 'producttrader',
+        password: 'producttraderuser',
+        roles: ['product_trader'],
+        phone_no : +251944444444
+
+    },
+    {
+        name: 'tooltrader',
+        password: 'tooltraderuser',
+        roles: ['tool_trader'],
+        phone_no : +251955555555
+
+    },
+    {
+        name: 'user',
+        password: 'justuser',
+        roles: ['user'],
+        phone_no : +251966666666
+
+    },
 
 ]
 const machineries = [
