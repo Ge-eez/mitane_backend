@@ -9,12 +9,11 @@ const Products = require('../models/product-model');
 //@access   Public
 exports.getProducts = asyncHandler(async (req,res,next)=>{
     let products;
-    const {name,category} = req.query;
+    const {name} = req.query;
     
     if(req.params.categoryId){
         products = await Products.find({category: req.params.categoryId});
-    }
-    else if(req.query){
+    }else if(name){
         products = await Products.find({name:name});
     }else{
         products = await Products.find();
