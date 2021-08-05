@@ -1,4 +1,4 @@
-
+const mongoosePaginate = require('mongoose-paginate-v2');
 const mongoose = require('mongoose');
 
 
@@ -9,5 +9,6 @@ const IngridientSchema = new mongoose.Schema({
 },{timestamps: {createdAt: 'created_at', modifiedAt: 'modified_at'}
 });
 
-
+// plugins
+IngridientSchema.plugin(mongoosePaginate);
 module.exports = mongoose.model('Ingridients', IngridientSchema);
