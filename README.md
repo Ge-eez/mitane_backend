@@ -7,4 +7,4 @@ This is a farming digitization api. It serves as pricehub and markethub for user
         
 # starting the server: 
         
-        npm start
+        nodemon start
