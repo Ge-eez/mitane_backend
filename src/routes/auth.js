@@ -35,7 +35,7 @@ router.post('/u/signup', authFormRequest('createUser'), authController.signupUse
  * @returns {object} 200 - User object
  * @returns {Error}  default - Unexpected error
  */
- router.post('/u/signup', authFormRequest('createUser'), authController.signupFarmer);
+ router.post('/f/signup', authFormRequest('createUser'), authController.signupFarmer);
 
 /**
  * Create a new accessory trader 
