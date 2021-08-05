@@ -2,11 +2,24 @@ const asyncHandler = require('../middlewares/async');
 const ErrorResponse = require('../utility/errorResponse');
 const Products = require('../models/product-model');
 
-//@desc Get all the products by category
-//@route    api/v1/agri-products/:category
+//@desc Get all products
+//@route    products/
+//@filter   products?name
+//@filter   category/:categoryId/products
 //@access   Public
 exports.getProducts = asyncHandler(async (req,res,next)=>{
-    const products = await Products.findById(req.params.category);
+    let products;
+    const {name,category} = req.query;
+    
+    if(req.params.categoryId){
+        products = await Products.find({category: req.params.categoryId});
+    }
+    else if(req.query){
+        products = await Products.find({name:name});
+    }else{
+        products = await Products.find();
+    }
+    
     if(!products){
         res.status(200).json({
             count: products.length,
@@ -23,53 +36,69 @@ exports.getProducts = asyncHandler(async (req,res,next)=>{
 });
 
 //@desc Get a products by Id 
-//@route    api/v1/agri-products/:category
+//@route    products/:id
 //@access   Public
 exports.getProductById = asyncHandler(async (req,res,next)=>{
 
-    const products = await Products.findById(req.params.category);
+    const products = await Products.findById(req.params.id);
     if(!products){
-        return next(new ErrorResponse("Bad request",400));
+        return next(new ErrorResponse(`Resource not found with id ${req.params.id}`,400));
     }
-    
+
 
     res.status(200).json({
         success:true,
-        data:"Get agriculture products by Id"
+        data:products
     });
   
 });
 
 
-//@desc Create product in specific category
-//@desc api/v1/agri-products/:category
+//@desc Create product 
+//@desc products/
 //@access   Private
 exports.createProduct = asyncHandler(async (req,res,next)=>{
+    const product = await Products.create(req.body);
     res.status(200).json({
         success:true,
-        data:"Create agriculture product in specific category"
+        data: product
     });
   
 });
 
 //@desc Update product in specific category
-//@desc api/v1/agri-products/:category/:id
+//@desc products/:id
 //@access   Private
 exports.updateProduct = asyncHandler(async (req,res,next)=>{
+
+    const product = await Products.findByIdAndUpdate(req.params.id,req.body,{
+        new:true,
+        runValidators:true
+    });
+    if(!product){
+    return next(new ErrorResponse(`Resource not found with id ${req.params.id}`,400));
+    }
+
     res.status(200).json({
         success:true,
-        data:"Updated agriculture product in specific category"
+        data:product
     });
     
 });
 
 //@desc Delete product in specific category
-//@desc api/v1/agri-products/:category/:id
+//@desc products/:id
 //@access   Private
 exports.deleteProduct = asyncHandler(async (req,res,next)=>{
+    const product = await Products.findByIdAndDelete(req.params.id);
+    
+    if(!product){
+        return next(new ErrorResponse(`Resource not found with id ${req.params.id}`,400));
+    }
+
     res.status(200).json({
         success:true,
-        data:"Create agriculture product in specific category"
+        data:product
     });
    
 });
