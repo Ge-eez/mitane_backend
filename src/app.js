@@ -10,6 +10,8 @@ const { routes } = require('./config/routes');
 
 var indexRouter = require('./routes/index');
 var authRouter = require('./routes/auth');
+var categoryRouter = require('./routes/agri_product_category');
+var productRouter = require('./routes/agri_products');
 
 
 var app = express();
@@ -67,5 +69,7 @@ app.use(jwt({ secret: jwt_key, algorithms: ['HS256']})
 // login information state
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
+app.use('/category', categoryRouter);
+app.use('/products', productRouter);
 
 module.exports = app;
