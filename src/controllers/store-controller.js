@@ -45,12 +45,15 @@ exports.getByUserId = async (req, res) => {
 
 exports.createStore = async (req, res) => {
     const { user } = req
-    console.log(user)
     try {
-        console.log(user.role)
-        const store = await storeModel.create({user: user._id});
-
-        res.json(store)
+        if(user){
+            const store = await storeModel.create({user: user._id});
+            res.json(store)
+        }
+        else{
+            throw new Error('You have to login first')
+        }
+        
     } catch (error) {
         res.status(404).json({
             error: true,
