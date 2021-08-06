@@ -3,11 +3,18 @@ const ErrorResponse = require('../utility/errorResponse');
 const asyncHandler = require('../middlewares/async');
 
 //@desc Get All Category
-//@route    api/v1/category
+//@route    category/
+//@filter   category?name
 //@access   public
 exports.getCategory = asyncHandler(async (req,res,next)=>{
-
-    const category = await Categories.find();
+    let category;
+    
+    if(req.query){
+        category = await Categories.find(req.query);
+    }else{
+        category = await Categories.find();
+    }
+    
     if(!category){
         res.status(200).json({
             success:true,
@@ -23,14 +30,14 @@ exports.getCategory = asyncHandler(async (req,res,next)=>{
 
 });
 
-//@desc Get Category by Id
-//@route    api/v1/category/:id
+//@desc Get Category by Id 
+//@route    category/:id
 //@access   public
 exports.getCategoryById = asyncHandler(async (req,res,next)=>{
 
-    const category = await Categories.find(req.params.id);
+    const category = await Categories.findById(req.params.id);
     if(!category){
-        return next(new ErrorResponse("Bad request",400));
+        return next(new ErrorResponse(`Resource not found with id ${req.params.id}`,400));
     }
     res.status(200).json({
         success:true,
@@ -39,8 +46,12 @@ exports.getCategoryById = asyncHandler(async (req,res,next)=>{
 
 });
 
+
+
+
+
 //@desc Create Category
-//@route    api/v1/category/
+//@route    category/
 //@access   private
 exports.createCategory = asyncHandler(async (req,res,next)=>{
 
@@ -54,23 +65,38 @@ exports.createCategory = asyncHandler(async (req,res,next)=>{
 
 
 //@desc Update category
-//@desc api/v1/agri-products/category/:id
+//@desc category/:id
 //@access   Private
 exports.updateCategory = asyncHandler(async (req,res,next)=>{
+
+    const category = await Categories.findByIdAndUpdate(req.params.id,req.body,{
+        new:true,
+        runValidators:true
+    });
+    console.log(req.body);
+    if(!category){
+        return next(new ErrorResponse(`Resource not found with id ${req.params.id}`,400))
+    }
     res.status(200).json({
         success:true,
-        data:"Updated category"
+        data:category
     });
     
 });
+
 
 //@desc Delete Category 
 //@desc api/v1/agri-products/category/:id
 //@access   Private
 exports.deleteCategory = asyncHandler(async (req,res,next)=>{
+    
+    const category = await Categories.findByIdAndDelete(req.params.id);
+    if(!category){
+        return next(new ErrorResponse(`Resource not found with id ${req.params.id}`,400))
+    }
     res.status(200).json({
         success:true,
-        data:"Delete category"
+        data: category
     });
    
 });

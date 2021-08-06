@@ -1,5 +1,3 @@
-const express = require('express');
-const router = express.Router();
 const {
     getProducts,
     getProductById,
@@ -7,6 +5,9 @@ const {
     updateProduct,
     deleteProduct
 } = require('../controllers/agri_products');
+
+const express = require('express');
+const router = express.Router({mergeParams: true});
 
 router.route('/')
     .get(getProducts)
