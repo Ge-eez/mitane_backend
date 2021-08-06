@@ -4,7 +4,7 @@ const mongoosePaginate = require('mongoose-paginate-v2');
 const StoreSchema = new mongoose.Schema({
     
     product_items : [{
-        product: { type: mongoose.Schema.Types.ObjectId, ref: 'Products' },
+        product: { type: mongoose.Schema.Types.ObjectId, ref: 'Products', unique: true},
         quantity: { type: Number, required: true },
         price_per_kg: { type: Number, required: true },
     }],
