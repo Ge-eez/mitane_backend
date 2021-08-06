@@ -7,10 +7,11 @@ const asyncHandler = require('../middlewares/async');
 //@filter   category?name
 //@access   public
 exports.getCategory = asyncHandler(async (req,res,next)=>{
+    let {keyword} = req.query;
     let category;
-    
-    if(req.query){
-        category = await Categories.find(req.query);
+    if(keyword){
+        await Categories.createIndexes({name:'text'});
+        category = await Categories.find({$text:{$search:keyword}})
     }else{
         category = await Categories.find();
     }
