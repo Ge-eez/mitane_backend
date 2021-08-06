@@ -8,6 +8,7 @@ exports.routes = {
         '/auth/at/signup',
         '/auth/pt/signup',
         '/category',
-        '/products'
+        '/products',
+        '/store'
     ]
 }
