@@ -9,12 +9,13 @@ const Products = require('../models/product-model');
 //@access   Public
 exports.getProducts = asyncHandler(async (req,res,next)=>{
     let products;
-    const {name} = req.query;
+    const {keyword} = req.query;
     
     if(req.params.categoryId){
         products = await Products.find({category: req.params.categoryId});
-    }else if(name){
-        products = await Products.find({name:name});
+    }else if(keyword){
+        await Products.createIndexes({name:'text'});
+        products = await Products.find({$text: {$search:keyword}})
     }else{
         products = await Products.find();
     }
