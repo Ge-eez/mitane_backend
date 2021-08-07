@@ -25,10 +25,54 @@ exports.getAll = async (req, res, next) => {
         })
     }
 }
+
 exports.getByID = async (req, res) => {
 
     try {
         const machinery = await machineryModel.findById(req.params.id)
+        res.json(machinery)
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error
+        })
+    }
+
+}
+exports.createMachinery = asyncHandler(async (req, res) => {
+    try {
+        const machine = req
+        const machinery = await machineryModel.create({ name: req.body.name });
+        res.json(machinery)
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error
+        })
+    }
+});
+
+exports.updateMachinery = asyncHandler(async (req, res) => {
+    try {
+        const machinery = await Products.findByIdAndUpdate(req.params.id,
+                {
+                    name: req.body.name
+                }
+            );
+        res.json(machinery)
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error
+        })
+    }
+});
+
+
+exports.deleteMachinery = async (req, res) => {
+
+    try {
+        const machinery = await machineryModel.findByIdAndDelete(req.params.id);
         res.json(machinery)
     } catch (error) {
         res.status(404).json({
