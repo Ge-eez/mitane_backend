@@ -54,10 +54,7 @@ exports.createMachinery = asyncHandler(async (req, res) => {
 
 exports.updateMachinery = asyncHandler(async (req, res) => {
     try {
-        const machinery = await Products.findByIdAndUpdate(req.params.id,
-                {
-                    name: req.body.name
-                }
+        const machinery = await machineryModel.findByIdAndUpdate(req.params.id,req.body,{new: true}
             );
         res.json(machinery)
     } catch (error) {

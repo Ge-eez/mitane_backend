@@ -3,7 +3,7 @@ const machineryController = require('../controllers/machinery_controller');
 
 
 /**
- * Login user
+ * fetch all machinery
  * 
  * @route GET machinery/
  * @group /machinery/ 
@@ -14,7 +14,7 @@ const machineryController = require('../controllers/machinery_controller');
 router.get('/', machineryController.getAll);
 
 /**
- * Login user
+ * fetch machinery by id
  * 
  * @route GET /machinery/:id
  * @group machinery 
@@ -24,10 +24,37 @@ router.get('/', machineryController.getAll);
  */
 router.get('/:id', machineryController.getByID);
 
+/**
+ * create machinery
+ * 
+ * @route POST /
+ * @group machinery 
+ * @param {name} - name of machinery 
+ * @returns {object} 200 - new Machinery object created
+ * @returns {Error}  default - Unexpected error
+ */
 router.post('/', machineryController.createMachinery);
 
+/**
+ * Update Machinery
+ * 
+ * @route POST /
+ * @group machinery 
+ * @param {name} - name of machinery 
+ * @returns {object} 200 - new Machinery object created
+ * @returns {Error}  default - Unexpected error
+ */
 router.put('/:id', machineryController.updateMachinery);
 
+/**
+ * DELETE Machinery
+ * 
+ * @route DELETE /:id
+ * @group machinery 
+ * @param {id} - id of machinery to be deleted
+ * @returns {object} 200 - Machinery object deleted
+ * @returns {Error}  default - Unexpected error
+ */
 router.delete('/:id',machineryController.deleteMachinery)
 
 
