@@ -16,9 +16,32 @@ exports.getUsers = async (req, res, next) => {
         res.status(404).json({
             error: true,
             message: error
+        });
+    }
+}
+
+/*
+@Description: Get a user by ID
+@Route: users/:id
+@Access: Public
+*/
+exports.getUserById = async (req, res) => {
+    try {
+        const user = await userModel.findById(req.params.id)
+        res.json(user)
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error
         })
     }
 }
+
+/*
+@Description: Get users by role
+@Route: users/:role
+@Access: Public
+*/
 
 
 
