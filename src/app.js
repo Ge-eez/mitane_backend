@@ -15,6 +15,7 @@ var productRouter = require('./routes/agri_products');
 var storeRouter = require('./routes/store');
 var machineryRouter = require('./routes/machinery');
 
+var errorHandler = require('./middlewares/error');
 
 var app = express();
 
@@ -72,7 +73,9 @@ app.use(jwt({ secret: jwt_key, algorithms: ['HS256']})
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
 app.use('/category', categoryRouter);
+app.use(errorHandler);
 app.use('/products', productRouter);
+app.use(errorHandler);
 app.use('/store', storeRouter);
 app.use('/machinery', machineryRouter);
 
