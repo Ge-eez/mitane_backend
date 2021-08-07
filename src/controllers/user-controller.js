@@ -27,21 +27,31 @@ exports.getUsers = async (req, res, next) => {
 */
 exports.getUserById = async (req, res) => {
     try {
-        const user = await userModel.findById(req.params.id)
-        res.json(user)
+        const user = await userModel.findById(req.params.id).populate('roles', 'name').populate('permissions', 'name');
+        res.json(user);
     } catch (error) {
         res.status(404).json({
             error: true,
             message: error
-        })
+        });
     }
 }
 
 /*
 @Description: Get users by role
-@Route: users/:role
+@Route: users/roles
 @Access: Public
 */
-
+exports.getUserByRole = async (req, res) => {
+    try {
+        const user = await userModel.find({roles: ["admin"]});
+        res.json(user);
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error
+        });
+    }
+}
 
 
