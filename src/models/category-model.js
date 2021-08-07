@@ -10,4 +10,6 @@ const CategorySchema = new mongoose.Schema({
 
 // plugins
 CategorySchema.plugin(mongoosePaginate);
+//index 
+CategorySchema.index({name:'text'});
 module.exports = mongoose.model('Categories', CategorySchema);
