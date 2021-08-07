@@ -6,6 +6,7 @@ const {
     deleteProduct
 } = require('../controllers/agri_products');
 
+const {productPermission} = require('../middlewares/product_permission');
 const express = require('express');
 const router = express.Router({mergeParams: true});
 
@@ -15,8 +16,8 @@ router.route('/')
 
 router.route('/:id')
     .get(getProductById)
-    .put(updateProduct)
-    .delete(deleteProduct);
+    .put(productPermission(),updateProduct)
+    .delete(productPermission(),deleteProduct);
 
 
 module.exports = router;
