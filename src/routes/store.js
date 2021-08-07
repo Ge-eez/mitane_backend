@@ -10,10 +10,11 @@ router.post('/', storeController.createStore);
 // router.get('/:machinery_id', storeController.getByMachineryId);
 // router.get('/:product_id', storeController.getByProductId);
 // router.get('/:ingridient_id', storeController.getByIngridientId);
-// router.get('/:user_id', storeControlelr.getByUserId);
+router.get('/user/:id', storeController.getByUserId);
 // router.get('/:keyword', storeController.getByKeyword);
 
-// router.post('/add_item', storeController.addItem);
+router.post('/add_product', storeController.addProduct);
+router.post('/add_machinery', storeController.addMachinery);
 // router.post('/delete_item', storeController.deleteItem);
 
 // router.put('/adjust_item', storeController.adjustItem);
