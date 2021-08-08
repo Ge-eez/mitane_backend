@@ -14,6 +14,7 @@ var categoryRouter = require('./routes/agri_product_category');
 var productRouter = require('./routes/agri_products');
 var storeRouter = require('./routes/store');
 var machineryRouter = require('./routes/machinery');
+var price = require('./routes/price');
 
 var errorHandler = require('./middlewares/error');
 
@@ -78,5 +79,7 @@ app.use('/products', productRouter);
 app.use(errorHandler);
 app.use('/store', storeRouter);
 app.use('/machinery', machineryRouter);
+app.use('/price',price);
+app.use(errorHandler);
 
 module.exports = app;
