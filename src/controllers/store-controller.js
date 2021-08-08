@@ -1,4 +1,5 @@
-const storeModel = require('../models/store-model')
+const storeModel = require('../models/store-model');
+const storeService = require('../services/store-services');
 
 exports.getAll = async (req, res, next) => {
 
@@ -39,25 +40,11 @@ exports.getByUserId = async (req, res) => {
         })
         if(!store )
         { 
-            if(
-                (roles).includes('farmer') || 
-                (roles).includes('accessory_trader') || 
-                (roles).includes('product_trader')  || 
-                (roles).includes('tool_trader')
-            )
-            {
-                const store = await storeModel.create({user: user.data._id});
-                res.json(store)
-                
-            }
-            else{
-                throw new Error("No stores found ")
-            }
-        }
-        else{
-
+            const store = storeService.createStore(user_id, roles);
             res.json(store)
         }
+        
+        res.json(store)
     } catch (error) {
         res.status(404).json({
             error: true,
@@ -71,7 +58,8 @@ exports.createStore = async (req, res) => {
     const { user } = req
     try {
         if(user){
-            const store = await storeModel.create({user: user.data._id});
+            
+            const store = storeService.createStore(user_id, roles);
             res.json(store)
         }
         else{
@@ -101,17 +89,8 @@ exports.addProduct = async (req, res) => {
             }
         })
         if(!store){ 
-            if(
-                (roles).includes('farmer') || 
-                (roles).includes('product_trader') 
-            )
-            {
-                store = await storeModel.create({user: user.data._id});
-                
-            }
-            else{
-                throw new Error("No stores found ")
-            }
+            const store = storeService.createStore(user_id, roles);
+            
         }
         let data = store.product_items
         let item_found = false
@@ -167,17 +146,8 @@ exports.addMachinery = async (req, res) => {
             }
         })
         if(!store){ 
-            if(
-                (roles).includes('farmer') || 
-                (roles).includes('tool_trader') 
-            )
-            {
-                const store = await storeModel.create({user: user.data._id});
-                
-            }
-            else{
-                throw new Error("No stores found ")
-            }
+            const store = storeService.createStore(user_id, roles);
+            
         }
         let data = store.machinery_items
         let item_found = false
