@@ -2,7 +2,6 @@ const userModel = require('../models/user-model');
 const errorResponse = require('../utility/errorResponse');
 
 
-
 /*
 @Description: Get all users
 @Route: users/
@@ -43,9 +42,11 @@ exports.getUserById = async (req, res) => {
 @Access: Public
 */
 exports.getUserByRole = async (req, res) => {
+    console.log(req.params.role);
     try {
-        const user = await userModel.find({roles: ["admin"]});
+        const user = await userModel.find({}).populate( 'roles', null , { name: req.params.role } );
         res.json(user);
+
     } catch (error) {
         res.status(404).json({
             error: true,

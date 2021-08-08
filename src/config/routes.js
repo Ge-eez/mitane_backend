@@ -10,6 +10,5 @@ exports.routes = {
         '/category',
         '/products',
         '/users',
-        '/users/roles'
     ]
 }
