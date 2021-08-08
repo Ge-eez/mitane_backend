@@ -12,6 +12,7 @@ var indexRouter = require('./routes/index');
 var authRouter = require('./routes/auth');
 var categoryRouter = require('./routes/agri_product_category');
 var productRouter = require('./routes/agri_products');
+var ingredientsRouter = require('./routes/ingredients'); 
 var storeRouter = require('./routes/store');
 var machineryRouter = require('./routes/machinery');
 
@@ -75,5 +76,5 @@ app.use('/category', categoryRouter);
 app.use('/products', productRouter);
 app.use('/store', storeRouter);
 app.use('/machinery', machineryRouter);
-
+app.use('/ingredients',ingredientsRouter);
 module.exports = app;
