@@ -7,16 +7,34 @@ const Product = require('../models/product-model');
 
 //@desc Get daily price
 //@route    Get price/
+//@route    Get price?product="product"
+//@route    Get price?day="yyyy-mm-dd"
 //@access   Public
 exports.getDailyPrice = asyncHanler(async (req,res,next)=>{
+    let {product,day} = req.query;
+    let dailyPrice;
 
-    const dailyPrice = await 
-        Price.find().populate({path:'product',select:'name'});
+    if(product){
+        product = await getProductObjectId(product);
+        if(!product){
+            return next(new ErrorResponse('object id not found',400));
+        }
+        dailyPrice = await Price.find({product:product._id}).populate({path:'product',select:'name'});
+    }else if(day){
+        day = 
+        dailyPrice = await Price.find({price_of_the_day:{$elemMatch:{day :
+            {
+                "$gte" : new Date(day), 
+                "$lt" : nextDay(day)
+            } 
+        }}}).populate({path:'product',select:'name'});
+    }else{
+        dailyPrice = await Price.find({}).populate({path:'product',select:'name'});
+    }
 
     if(!dailyPrice){
         return next(new ErrorResponse("Resource not found",400));
     }
-
     res.status(200).json({
         count:dailyPrice.length,
         success:true,
@@ -103,4 +121,10 @@ const getProductObjectId = async (name)=>{
     const product = await Product.findOne({name:name});
 
     return product;
+}
+
+const nextDay = (dateString)=>{
+    let day = new Date(dateString);
+    const nDay = day.setDate(day.getDate()+1);
+    return nDay;
 }
