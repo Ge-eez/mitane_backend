@@ -11,4 +11,6 @@ const ProductSchema = new mongoose.Schema({
 
 // plugins
 ProductSchema.plugin(mongoosePaginate);
+//index
+ProductSchema.index({name:'text'});
 module.exports = mongoose.model('Products', ProductSchema);

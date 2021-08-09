@@ -14,7 +14,10 @@ var categoryRouter = require('./routes/agri_product_category');
 var productRouter = require('./routes/agri_products');
 var storeRouter = require('./routes/store');
 var userRouter = require('./routes/users');
+var machineryRouter = require('./routes/machinery');
+var price = require('./routes/price');
 
+var errorHandler = require('./middlewares/error');
 
 var app = express();
 
@@ -72,8 +75,11 @@ app.use(jwt({ secret: jwt_key, algorithms: ['HS256']})
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
 app.use('/category', categoryRouter);
-app.use('/products', productRouter);
-app.use('/store', storeRouter);
+app.use('/products', productRouter)
 app.use('/users', userRouter);
+app.use('/store', storeRouter);
+app.use('/machinery', machineryRouter);
+app.use('/price',price);
+app.use(errorHandler);
 
 module.exports = app;
