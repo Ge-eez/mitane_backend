@@ -21,12 +21,15 @@ exports.getUsers = async (req, res, next) => {
 
 /*
 @Description: Get a user by ID
-@Route: users/:id
+@Route: users/id/:id
 @Access: Public
 */
-exports.getUserById = async (req, res) => {
+exports.getUserById = async (req, res, next) => {
     try {
         const user = await userModel.findById(req.params.id).populate('roles', 'name').populate('permissions', 'name');
+        if(!user){
+            return next(new errorResponse(`Resource not found with id ${req.params.id}`,400));
+        }
         res.json(user);
     } catch (error) {
         res.status(404).json({
@@ -38,7 +41,7 @@ exports.getUserById = async (req, res) => {
 
 /*
 @Description: Get users by role
-@Route: users/roles
+@Route: users/role/:role
 @Access: Public
 */
 exports.getUserByRole = async (req, res) => {
@@ -54,5 +57,69 @@ exports.getUserByRole = async (req, res) => {
         });
     }
 }
+
+
+/*
+@Description: Create a user
+@Route: users/create
+@Access: Private
+*/
+exports.createUser = async (req, res) => {
+    try {
+        const user = await userModel.create(req.body);
+        res.json(user);
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error
+        });
+    }  
+  
+}
+
+/*
+@Description: Update a user using a specific Id
+@Route: users/update/:id
+@Access: Private
+*/
+exports.updateUser = async (req, res, next) => {
+    try {
+        const user = await userModel.findByIdAndUpdate(req.params.id, req.body,{
+            new:true,
+            runValidators:true
+        });
+        if(!user){
+            return next(new errorResponse(`Resource not found with id ${req.params.id}`,400));
+        }
+        res.json(user);
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error
+        });
+    }    
+}
+
+/*
+@Description: Delete a user using a specific Id
+@Route: users/delete/:id
+@Access: Private
+*/
+exports.deleteUser = async (req, res, next) => {
+    try {
+        const user = await userModel.findByIdAndDelete(req.params.id);    
+        if(!user){
+            return next(new errorResponse(`Resource not found with id ${req.params.id}`,400));
+        }
+        res.json(user);
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error
+        });
+    }   
+}
+
+
 
 
