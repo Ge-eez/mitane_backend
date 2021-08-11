@@ -18,24 +18,24 @@ exports.createStore = async (user_id, roles) => {
         }
         
     } catch (error) {
-        res.status(404).json({
+        return {
             error: true,
             message: error.message
-        })
+        }
     }
 }
 
 exports.addItem = async (item_type, item, quantity, price, store) => {
     try {
         let data;
-        if(item_type == "products") data = store.product_items
+        if(item_type == "product") data = store.product_items
         else if(item_type == "machinery") data = store.machinery_items
         else if(item_type == "ingridient") data = store.ingridient_items
         
         let item_found = false
         let at_index = 0;
         for(i in data){
-            if(data[i].item_type == item){
+            if(data[i][item_type] == item){
                 item_found = true
                 at_index = i
                 break
@@ -52,7 +52,7 @@ exports.addItem = async (item_type, item, quantity, price, store) => {
         }else{
             let new_item = {}
             new_item.quantity = quantity
-            if(item_type == "products") {
+            if(item_type == "product") {
                 new_item.product = item
                 new_item.price_per_kg = price
             }
@@ -71,7 +71,7 @@ exports.addItem = async (item_type, item, quantity, price, store) => {
         
         let updatedStore;
 
-        if(item_type == "products") {
+        if(item_type == "product") {
             updatedStore = await storeModel.findByIdAndUpdate(store._id, 
                 {'$set': 
                     {
@@ -105,13 +105,9 @@ exports.addItem = async (item_type, item, quantity, price, store) => {
                 )
             }
         }
-        
         return updatedStore
     } catch (error) {
-        res.status(404).json({
-            error: true,
-            message: error.message
-        })
+        return error
     }
 
 }

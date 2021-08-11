@@ -163,7 +163,6 @@ exports.addItemToStore = async (req, res) => {
     let user_id = user.data._id;
     try {
         if(user){
-            console.log(req)
             let item_type;
             let item = req.body.product ? req.body.product : ( (req.body.machinery) ? req.body.machinery : req.body.ingridient)
             let quantity = req.body.quantity
@@ -180,7 +179,7 @@ exports.addItemToStore = async (req, res) => {
                     if(req.body.machinery) item_type = 'machinery';
                     else item_type = 'ingridient'
                 }
-                const store = storeService.addItem(item_type, item, quantity, price, store);
+                store = await storeService.addItem(item_type, item, quantity, price, store);
                 res.json(store);            
             }
             else{
