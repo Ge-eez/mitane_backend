@@ -133,7 +133,7 @@ exports.removeItem = async (item_type, item, store) => {
         }else{
             throw new Error("Item not found")
         }
-        
+        console.log(data)
         let updatedStore;
 
         if(item_type == "product") {
@@ -173,10 +173,7 @@ exports.removeItem = async (item_type, item, store) => {
         
         return updatedStore
     } catch (error) {
-        res.status(404).json({
-            error: true,
-            message: error.message
-        })
+        return error
     }
 
 }

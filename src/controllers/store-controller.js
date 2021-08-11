@@ -232,10 +232,6 @@ exports.updateStore = async (req, res) => {
         })
     }
 }
-exports.deleteStore = async (req, res) => {}
-exports.getByMachineryId = async (req, res) => {}
-exports.getByProductId = async (req, res) => {}
-exports.getByKeyword = async (req, res) => {}
 exports.deleteItem = async (req, res) => {
     const { user } = req
     const user_id = user.data._id
@@ -274,5 +270,9 @@ exports.deleteItem = async (req, res) => {
         })
     }
 }
-exports.adjustItem = async (req, res) => {}
+exports.getByMachineryId = async (req, res) => {}
+exports.getByProductId = async (req, res) => {}
+exports.getByKeyword = async (req, res) => {}
+
 exports.clearStore = async (req, res) => {}
+exports.deleteStore = async (req, res) => {}
