@@ -8,24 +8,22 @@ router.get('/', storeController.getAll);
 router.get('/:id', storeController.getByID);
 router.get('/user/:id', storeController.getByUserId);
 router.post('/', storeController.createStore);
+router.post('/add_product', storeController.addItemToStore);
+router.post('/add_machinery', storeController.addItemToStore);
+router.put('/:id', storeController.updateStore);
+router.post('/delete_item', storeController.deleteItem);
 
-// router.delete('/:id', storeController.deleteStore);
 
+// Todo
 // router.get('/:machinery_id', storeController.getByMachineryId);
 // router.get('/:product_id', storeController.getByProductId);
 // router.get('/:ingridient_id', storeController.getByIngridientId);
 // router.get('/:keyword', storeController.getByKeyword);
 
-// router.post('/delete_item', storeController.deleteItem);
-
-// router.put('/adjust_item', storeController.adjustItem);
-
-// router.delete('/clear_store', storeController.clearStore);
 
 // Testing remains
-router.put('/:id', storeController.updateStore);
-router.post('/add_product', storeController.addItemToStore);
-router.post('/add_machinery', storeController.addItemToStore);
 router.post('/add_ingridient', storeController.addItemToStore);
+// router.delete('/clear_store', storeController.clearStore);
+// router.delete('/:id', storeController.deleteStore);
 
 module.exports = router;

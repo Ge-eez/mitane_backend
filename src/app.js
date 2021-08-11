@@ -75,7 +75,7 @@ app.use(jwt({ secret: jwt_key, algorithms: ['HS256']})
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
 app.use('/category', categoryRouter);
-app.use('/products', productRouter)
+app.use('/products', productRouter);
 app.use('/users', userRouter);
 app.use('/store', storeRouter);
 app.use('/machinery', machineryRouter);
