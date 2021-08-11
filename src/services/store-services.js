@@ -122,7 +122,7 @@ exports.removeItem = async (item_type, item, store) => {
         let item_found = false
         let at_index = 0;
         for(i in data){
-            if(data[i].item_type == item){
+            if(data[i][item_type] == item){
                 item_found = true
                 at_index = i
                 break

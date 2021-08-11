@@ -10,6 +10,7 @@ router.get('/user/:id', storeController.getByUserId);
 router.post('/', storeController.createStore);
 router.post('/add_product', storeController.addItemToStore);
 router.post('/add_machinery', storeController.addItemToStore);
+router.put('/:id', storeController.updateStore);
 
 // router.delete('/:id', storeController.deleteStore);
 
@@ -18,13 +19,12 @@ router.post('/add_machinery', storeController.addItemToStore);
 // router.get('/:ingridient_id', storeController.getByIngridientId);
 // router.get('/:keyword', storeController.getByKeyword);
 
-// router.post('/delete_item', storeController.deleteItem);
 
 
 // router.delete('/clear_store', storeController.clearStore);
 
 // Testing remains
-router.put('/:id', storeController.updateStore);
 router.post('/add_ingridient', storeController.addItemToStore);
+router.post('/delete_item', storeController.deleteItem);
 
 module.exports = router;

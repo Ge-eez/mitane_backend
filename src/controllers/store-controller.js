@@ -236,6 +236,43 @@ exports.deleteStore = async (req, res) => {}
 exports.getByMachineryId = async (req, res) => {}
 exports.getByProductId = async (req, res) => {}
 exports.getByKeyword = async (req, res) => {}
-exports.deleteItem = async (req, res) => {}
+exports.deleteItem = async (req, res) => {
+    const { user } = req
+    const user_id = user.data._id
+    try {
+        if(user){
+            let item_type;
+            let item = req.body.product ? req.body.product : ( (req.body.machinery) ? req.body.machinery : req.body.ingridient)
+            let store;
+            store = await storeModel.findOne({
+                user: {
+                    $in: user_id
+                }
+            })
+
+            if(store){
+                if(req.body.product) item_type = 'product';
+                else{
+                    if(req.body.machinery) item_type = 'machinery';
+                    else item_type = 'ingridient'
+                }
+                store = await storeService.removeItem(item_type, item, store);
+                res.json(store);            
+            }
+            else{
+                throw new Error("store not found")
+            }
+        }
+        else{
+            throw new Error('You have to login first')
+        }
+        
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error.message
+        })
+    }
+}
 exports.adjustItem = async (req, res) => {}
 exports.clearStore = async (req, res) => {}
