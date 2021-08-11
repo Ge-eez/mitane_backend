@@ -43,7 +43,7 @@ exports.addItem = async (item_type, item, quantity, price, store) => {
         }
         if(item_found){
             data[at_index].quantity += Number(quantity)
-            if(item_type == "products" || item_type == "ingridient") {
+            if(item_type == "product" || item_type == "ingridient") {
                 data[at_index].price_per_kg = price;
             }
             else{
@@ -115,7 +115,7 @@ exports.addItem = async (item_type, item, quantity, price, store) => {
 exports.removeItem = async (item_type, item, store) => {
     try {
         let data;
-        if(item_type == "products") data = store.product_items
+        if(item_type == "product") data = store.product_items
         else if(item_type == "machinery") data = store.machinery_items
         else if(item_type == "ingridient") data = store.ingridient_items
         
@@ -136,7 +136,7 @@ exports.removeItem = async (item_type, item, store) => {
         
         let updatedStore;
 
-        if(item_type == "products") {
+        if(item_type == "product") {
             updatedStore = await storeModel.findByIdAndUpdate(store._id, 
                 {'$set': 
                     {
@@ -209,14 +209,14 @@ exports.clearStore = async (store) => {
 exports.updateStore = async (item_type, item, quantity, price, store) => {
     try {
         let data;
-        if(item_type == "products") data = store.product_items
+        if(item_type == "product") data = store.product_items
         else if(item_type == "machinery") data = store.machinery_items
         else if(item_type == "ingridient") data = store.ingridient_items
         
         let item_found = false
         let at_index = 0;
         for(i in data){
-            if(data[i].item_type == item){
+            if(data[i][item_type] == item){
                 item_found = true
                 at_index = i
                 break
@@ -224,7 +224,7 @@ exports.updateStore = async (item_type, item, quantity, price, store) => {
         }
         if(item_found){
             data[at_index].quantity = Number(quantity)
-            if(item_type == "products" || item_type == "ingridient") {
+            if(item_type == "product" || item_type == "ingridient") {
                 data[at_index].price_per_kg = price;
             }
             else{
@@ -237,7 +237,7 @@ exports.updateStore = async (item_type, item, quantity, price, store) => {
         
         let updatedStore;
 
-        if(item_type == "products") {
+        if(item_type == "product") {
             updatedStore = await storeModel.findByIdAndUpdate(store._id, 
                 {'$set': 
                     {
@@ -271,13 +271,9 @@ exports.updateStore = async (item_type, item, quantity, price, store) => {
                 )
             }
         }
-        
         return updatedStore
     } catch (error) {
-        res.status(404).json({
-            error: true,
-            message: error.message
-        })
+        return error
     }
 
 }

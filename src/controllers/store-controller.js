@@ -214,7 +214,7 @@ exports.updateStore = async (req, res) => {
                     if(req.body.machinery) item_type = 'machinery';
                     else item_type = 'ingridient'
                 }
-                const store = storeService.updateStore(item_type, item, quantity, price, store);
+                store = await storeService.updateStore(item_type, item, quantity, price, store);
                 res.json(store);            
             }
             else{
