@@ -13,11 +13,18 @@ router.get('/', userController.getUsers);
 
 router.get('/id/:id', userController.getUserById);
 
-//to be worked on
+router.get('/filter/:name', userController.filterUsers);
+
+router.get('/filter/:phone_no', userController.filterUsers);
+
+//to be worked on; returns with empty roles
 router.get('/role/:role', userController.getUserByRole);
-router.get('/create', userController.createUser);
-router.get('/update/:id', userController.updateUser);
-router.get('/delete/:id', userController.deleteUser);
+
+router.post('/create', userController.createUser);
+
+router.put('/update/:id', userController.updateUser);
+
+router.delete('/delete/:id', userController.deleteUser);
 
 module.exports = router;
 

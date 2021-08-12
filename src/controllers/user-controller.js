@@ -40,6 +40,26 @@ exports.getUserById = async (req, res, next) => {
 }
 
 /*
+@Description: Filter users by name or phone_no
+@Route: users/filter/:name, users/filter/:phone_no
+@Access: Public
+*/
+exports.filterUsers = async (req, res, next) => {
+    try {
+        const user = await userModel.find({$or:[{ name: req.params.name },{ phone_no: req.params.phone_no }]});
+        if (!user) {
+            return next(new errorResponse(`Resource not found`,400));
+        }
+        res.json(user);
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error
+        });
+    }
+}
+
+/*
 @Description: Get users by role
 @Route: users/role/:role
 @Access: Public
