@@ -9,6 +9,7 @@ exports.routes = {
         '/auth/pt/signup',
         '/category',
         '/products',
+        '/ingredients',
         '/users',
     ]
 }

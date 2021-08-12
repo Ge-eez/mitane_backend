@@ -12,9 +12,41 @@ const permissions = [
     'update user',
     'remove user',
 
-    'create farmer',
-    'post product',
-    'find nearby'
+    'create ingridient',
+    'view any ingridient',
+    'view ingridient',
+    'update ingridient',
+    'remove ingridient',
+
+    'create machinery',
+    'view any machinery',
+    'view machinery',
+    'update machinery',
+    'remove machinery',
+
+    'create product',
+    'view any product',
+    'view product',
+    'update product',
+    'remove product',
+
+    'create category',
+    'view any category',
+    'view category',
+    'update category',
+    'remove category',
+
+    'create store',
+    'view any store',
+    'view store',
+    'update store',
+    'remove store',
+
+    'create price',
+    'view any price',
+    'view price',
+    'update price',
+    'remove price',
 ]
 
 const roles = {
