@@ -18,10 +18,7 @@ exports.createStore = async (user_id, roles) => {
         }
         
     } catch (error) {
-        return {
-            error: true,
-            message: error.message
-        }
+        throw error
     }
 }
 

@@ -10,6 +10,17 @@ const storeController = require('../controllers/store-controller');
  */
 
 /**
+ * Get a store 
+ * 
+ * @route GET /store/self
+ * @group Store 
+ * @security JWT
+ * @returns {object} 200 - Store object of that user
+ * @returns {Error}  default - Unexpected error
+ */
+ router.get('/self', storeController.getSelfStore);
+
+/**
  * Returns ALL stores
  * 
  * @route GET /store
@@ -22,17 +33,6 @@ const storeController = require('../controllers/store-controller');
  * @returns {Error}  default - Unexpected error
  */
 router.get('/', storeController.getAll);
-
-/**
- * Get a store 
- * 
- * @route GET /store/self
- * @group Store 
- * @security JWT
- * @returns {object} 200 - Store object of that user
- * @returns {Error}  default - Unexpected error
- */
-router.get('/self', storeController.getSelfStore);
 
 /**
  * Get a store 
