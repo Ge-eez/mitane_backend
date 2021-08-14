@@ -6,7 +6,7 @@ var router = express.Router();
  * Returns API status
  * 
  * @route GET /
- * @group index - Validates and gives back API service status
+ * @group Index - Validates and gives back API service status
  * @returns {object} 200 - {
  *  title: 'Mitane api',
  *  version: '1.0.0',

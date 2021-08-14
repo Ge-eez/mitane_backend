@@ -7,7 +7,7 @@
 // });
 
 /**
- * @typedef USER
+ * @typedef User
  * @property {string} name.required - User's full name
  * @property {string} password.required - A strong password length of 3-30 consisting lowercase, uppercase, and numbers
  * @property {number} phone_no.required - User's phone number
@@ -31,20 +31,83 @@ const userController = require('../controllers/user-controller');
  */
 router.get('/', userController.getUsers);
 
-router.get('/id/:id', userController.getUserById);
+/**
+ * Get a user by id 
+ * 
+ * @route GET /users/{id}
+ * @group User 
+ * @param {string} id.path.required - user id
+ * @security JWT
+ * @returns {object} 200 - User object
+ * @returns {Error}  default - Unexpected error
+ */
+router.get('/:id', userController.getUserById);
 
+/**
+ * Returns filetered Users by name
+ * 
+ * @route GET /users/filter/:name
+ * @group User
+ * @param {string} name.query - name as a filter query 
+ * @security JWT
+ * @returns {object} 200 - Array of users
+ * @returns {Error}  default - Unexpected error
+ */
 router.get('/filter/:name', userController.filterUsers);
 
+/**
+ * Returns filetered Users by phone no
+ * 
+ * @route GET /users/filter/:phone_no
+ * @group User
+ * @param {number} phone_no.query - phone no as a filter query 
+ * @security JWT
+ * @returns {object} 200 - Array of users
+ * @returns {Error}  default - Unexpected error
+ */
 router.get('/filter/:phone_no', userController.filterUsers);
+
+/**
+ * Create a new user 
+ * 
+ * @route Post /users
+ * @group User
+ * @param {string} id.path.required - user id
+ * @param {USER.model} user.body - the new user object
+ * @security JWT
+ * @returns {USER.model} 200 - User object
+ * @returns {Error}  default - Unexpected error
+ */
+router.post('/', userController.createUser);
+
+/**
+ * Update an existing user by id 
+ * 
+ * @route Put /users/:id
+ * @group User
+ * @param {string} id.path.required - user id
+ * @param {USER.model} user.body - the new user object
+ * @security JWT
+ * @returns {USER.model} 200 - User object
+ * @returns {Error}  default - Unexpected error
+ */
+router.put('/update/:id', userController.updateUser);
+
+/**
+ * Remove a user  with id
+ * 
+ * @route DELETE /users/{id}
+ * @group User 
+ * @param {string} id.path.required - user id
+ * @security JWT
+ * @returns {object} 200 - User object
+ * @returns {Error}  default - Unexpected error
+ */
+router.delete('/delete/:id', userController.deleteUser);
+
 
 //to be worked on; returns with empty roles
 router.get('/role/:role', userController.getUserByRole);
-
-router.post('/create', userController.createUser);
-
-router.put('/update/:id', userController.updateUser);
-
-router.delete('/delete/:id', userController.deleteUser);
 
 module.exports = router;
 

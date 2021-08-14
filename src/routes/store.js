@@ -2,7 +2,7 @@ var router = require("express-promise-router")();
 const storeController = require('../controllers/store-controller');
 
 /**
- * @typedef STORE
+ * @typedef Store
  * @property {string} user.required - A trader or a farmer's id
  * @property {array} product_items.required - {product_id, price, quatity}
  * @property {array} machinery_items.required - {machinery_id, price, quatity}
@@ -12,7 +12,7 @@ const storeController = require('../controllers/store-controller');
 /**
  * Returns ALL stores
  * 
- * @route GET /stores
+ * @route GET /store
  * @group Store - Deals with all CRUD operations with store model
  * @param {string} sort.query - sort parament
  * @param {string} page.query - set the page number
@@ -49,7 +49,7 @@ router.get('/:id', storeController.getByID);
 /**
  * Create a new store 
  * 
- * @route POST /stores
+ * @route POST /store
  * @group Store 
  * @security JWT
  * @returns {object} 200 - Store object
