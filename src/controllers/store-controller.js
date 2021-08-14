@@ -111,7 +111,7 @@ exports.createStore = async (req, res) => {
     try {
         if(user){
             
-            const store = storeService.createStore(user_id, roles);
+            const store = await storeService.createStore(user_id, roles);
             res.json(store)
         }
         else{

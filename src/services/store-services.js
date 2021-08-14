@@ -18,10 +18,7 @@ exports.createStore = async (user_id, roles) => {
         }
         
     } catch (error) {
-        return {
-            error: true,
-            message: error.message
-        }
+        throw error
     }
 }
 
@@ -278,3 +275,24 @@ exports.updateStore = async (item_type, item, quantity, price, store) => {
 exports.searchItem = async (item_type, item) => {
     
 }
+
+exports.getStoresNearby = async function (param){
+    const {
+      latitude, longitude
+    } = param
+    
+      let theNearest = await storeModel.find(
+        {
+          location : {
+            $near: {
+              $geometry: {
+                type: "Point",
+                coordinates : [longitude, latitude]
+              },
+            }
+          }
+        }
+      )
+      return theNearest 
+
+    }
