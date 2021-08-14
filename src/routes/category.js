@@ -4,10 +4,10 @@ const {
     createCategory,
     updateCategory,
     deleteCategory
-} = require('../controllers/agri_product_category');
+} = require('../controllers/category-controller');
 
 //Include other resource routes
-const productRouter = require('./agri_products');
+const productRouter = require('./product');
 
 const express = require('express');
 const router = express.Router();

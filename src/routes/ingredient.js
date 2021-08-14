@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var IngredientsController = require('../controllers/ingredients_controller')
+var IngredientsController = require('../controllers/ingredients-controller')
 
 router.get('/', IngredientsController.getAll)
 router.get('/:id', IngredientsController.getIngredientById)

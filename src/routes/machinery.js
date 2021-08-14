@@ -1,5 +1,5 @@
 var router = require("express-promise-router")();
-const machineryController = require('../controllers/machinery_controller');
+const machineryController = require('../controllers/machinery-controller');
 
 
 /**

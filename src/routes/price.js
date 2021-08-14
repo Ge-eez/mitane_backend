@@ -9,7 +9,7 @@ const {
     deleteDailyPrice,
     getDailyPriceById,
     addDailyPrice,
-} = require('../controllers/price');
+} = require('../controllers/price-controller');
 
 
 /**

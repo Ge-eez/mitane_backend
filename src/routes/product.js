@@ -4,7 +4,7 @@ const {
     createProduct,
     updateProduct,
     deleteProduct
-} = require('../controllers/agri_products');
+} = require('../controllers/products-controller');
 
 const {productPermission} = require('../middlewares/product_permission');
 const express = require('express');
