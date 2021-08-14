@@ -1,7 +1,7 @@
 const Categories = require('../models/category-model');
 const ErrorResponse = require('../utility/errorResponse');
 const asyncHandler = require('../middlewares/async');
-
+const {getCategoryObjectId} = require('../utility/getObjectId');
 //@desc Get All Category
 //@route    category/
 //@filter   category?name
@@ -10,7 +10,6 @@ exports.getCategory = asyncHandler(async (req,res,next)=>{
     let {keyword} = req.query;
     let category;
     if(keyword){
-        await Categories.createIndexes({name:'text'});
         category = await Categories.find({$text:{$search:keyword}})
     }else{
         category = await Categories.find();
@@ -48,15 +47,12 @@ exports.getCategoryById = asyncHandler(async (req,res,next)=>{
 });
 
 
-
-
-
 //@desc Create Category
 //@route    category/
 //@access   private
 exports.createCategory = asyncHandler(async (req,res,next)=>{
-
-    const category = await Categories.create(req.body);
+    const {name} = req.body;
+    const category = await Categories.create(name);
     res.status(200).json({
         success:true,
         data:category
@@ -69,14 +65,12 @@ exports.createCategory = asyncHandler(async (req,res,next)=>{
 //@desc category/:id
 //@access   Private
 exports.updateCategory = asyncHandler(async (req,res,next)=>{
-
-    const category = await Categories.findByIdAndUpdate(req.params.id,req.body,{
+    const category = await Categories.findOneAndUpdate({name:req.params.name},req.body,{
         new:true,
         runValidators:true
     });
-    console.log(req.body);
     if(!category){
-        return next(new ErrorResponse(`Resource not found with id ${req.params.id}`,400))
+        return next(new ErrorResponse(`Resource not found with name ${req.params.name}`,400))
     }
     res.status(200).json({
         success:true,
@@ -90,10 +84,9 @@ exports.updateCategory = asyncHandler(async (req,res,next)=>{
 //@desc api/v1/agri-products/category/:id
 //@access   Private
 exports.deleteCategory = asyncHandler(async (req,res,next)=>{
-    
-    const category = await Categories.findByIdAndDelete(req.params.id);
+    const category = await Categories.findOneAndDelete({name:req.params.name});
     if(!category){
-        return next(new ErrorResponse(`Resource not found with id ${req.params.id}`,400))
+        return next(new ErrorResponse(`Category not found with name ${req.params.id}`,400))
     }
     res.status(200).json({
         success:true,
