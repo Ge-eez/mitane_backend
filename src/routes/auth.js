@@ -8,7 +8,7 @@ const authController = require('../controllers/auth-controller');
  * 
  * @route POST /auth/login/
  * @group Auth 
- * @param {email} phone_no.body.required - phone number of the user
+ * @param {number} phone_no.body.required - phone number of the user
  * @param {string} password.body.required - password of the user
  * @returns {object} 200 - User object
  * @returns {Error}  default - Unexpected error
@@ -34,7 +34,7 @@ router.post('/u/signup', authFormRequest('createUser'), authController.signupUse
  * 
  * @route POST /auth/f/signup/
  * @group Auth 
- * @param {email} phone_no.body.required - phone number of the farmer
+ * @param {number} phone_no.body.required - phone number of the farmer
  * @param {string} password.body.required - password of the farmer
  * @param {number} latitude.body.required - latitude of the farmer
  * @param {number} longitude.body.required - longitude of the farmer
@@ -48,7 +48,7 @@ router.post('/u/signup', authFormRequest('createUser'), authController.signupUse
  * 
  * @route POST /auth/at/signup/
  * @group Auth 
- * @param {email} phone_no.body.required - phone number of the accessory trader
+ * @param {number} phone_no.body.required - phone number of the accessory trader
  * @param {string} password.body.required - password of the accessory trader
  * @param {number} latitude.body.required - latitude of the accessory trader
  * @param {number} longitude.body.required - longitude of the accessory trader
@@ -62,7 +62,7 @@ router.post('/u/signup', authFormRequest('createUser'), authController.signupUse
  * 
  * @route POST /auth/pt/signup/
  * @group Auth 
- * @param {email} phone_no.body.required - phone number of the product trader
+ * @param {number} phone_no.body.required - phone number of the product trader
  * @param {string} password.body.required - password of the product trader
  * @param {number} latitude.body.required - latitude of the product trader
  * @param {number} longitude.body.required - longitude of the product trader
@@ -76,7 +76,7 @@ router.post('/u/signup', authFormRequest('createUser'), authController.signupUse
  * 
  * @route POST /auth/tt/signup/
  * @group Auth 
- * @param {email} phone_no.body.required - phone number of the tool trader
+ * @param {number} phone_no.body.required - phone number of the tool trader
  * @param {string} password.body.required - password of the tool trader
  * @param {number} latitude.body.required - latitude of the tool trader
  * @param {number} longitude.body.required - longitude of the tool trader

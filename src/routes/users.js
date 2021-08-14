@@ -6,9 +6,29 @@
 //   res.send('respond with a resource');
 // });
 
+/**
+ * @typedef USER
+ * @property {string} name.required - User's full name
+ * @property {string} password.required - A strong password length of 3-30 consisting lowercase, uppercase, and numbers
+ * @property {number} phone_no.required - User's phone number
+ * @property {array} location.required - latitude, longitude
+ */
+
 var router = require("express-promise-router")();
 const userController = require('../controllers/user-controller');
 
+/**
+ * Returns ALL Users
+ * 
+ * @route GET /users
+ * @group User - Deals with all CRUD operations with user model
+ * @param {string} sort.query - sort parament
+ * @param {string} page.query - set the page number
+ * @param {string} filter.query - set filter query 
+ * @security JWT
+ * @returns {object} 200 - Array of users
+ * @returns {Error}  default - Unexpected error
+ */
 router.get('/', userController.getUsers);
 
 router.get('/id/:id', userController.getUserById);
