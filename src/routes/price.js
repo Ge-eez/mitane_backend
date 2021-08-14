@@ -3,13 +3,13 @@ const router = express.Router();
 
 const {
     getDailyPrice,
-    getDailyPriceByProduct,
+    getPrice,
     createDailyPrice,
     deleteProductPrice,
     deleteDailyPrice,
-    getDailyPriceById,
     addDailyPrice,
 } = require('../controllers/price-controller');
+const {pricePermission} = require('../middlewares/permission');
 
 /**
  * @typedef Price
@@ -18,69 +18,69 @@ const {
  */
 
 /**
- * Get Price
+ * Get daily price
+ * @route Get /price/{date}
+ * @group Price
+ * @security JWT
+ * @param {string} date.path.required - price date
+ * @returns {object} 200 - Price object
+ * @returns {Error}  default - Unexpected error
+ */
+router.route('/:date').get(getDailyPrice);
+
+/**
+ * Get price
  * @route Get /price
  * @group Price
  * @security JWT
- * @param {string} - Product name
- * @param {string} - Date in string format YYYY-MM-DD
- * @returns {object} 200 - An array of resource info
+ * @param {string} product.query product name
+ * @returns {object} 200 - Price object
  * @returns {Error}  default - Unexpected error
  */
-router.route('/').get(getDailyPrice);
-
-/**
- * Get Price
- * @route Put /price/:productName?date=YYYY-MM-DD
- * @group Price
- * @security JWT
- * @param {string} - product name
- * @returns {object} 200 - An array of resource info
- * @returns {Error}  default - Unexpected error
- */
- router.route('/:productName').get(getDailyPriceByProduct);
+ router.route('/').get(getPrice);
 
 /**
  * Create daily price
- * @route Put /price
+ * @route Post /price
  * @group Price
  * @security JWT
- * @param {string} - product name
- * @returns {object} 200 - An array of resource info
+ * @param {string} product.body.required - product name 
+ * @returns {object} 200 - A Price object
  * @returns {Error}  default - Unexpected error
  */
-router.route('/').post(createDailyPrice);
+router.route('/').post(pricePermission(),createDailyPrice);
 
     
 /**
- * Get Price
+ * Insert daily price of a product
  * @route Put /product/:productName
  * @group Price
  * @security JWT
- * @param {string} - product Id
- * @param {string} - daily price of product
+ * @param {string} productName.path.required - product name
+ * @param {number} price.body.required - daily price of product
  * @returns {object} 200 - An array of resource info
  * @returns {Error}  default - Unexpected error
  */
-router.route('/:productName').put(addDailyPrice);
+router.route('/:productName').put(pricePermission(),addDailyPrice);
 
 /**
- * Get Price
- * @route Put /price/:productName
+ * Delete prices of a product
+ * @route Delete /price/:productName
  * @group Price
  * @security JWT
- * @param {string} - product name
+ * @param {string} productName.path.required - product name
  * @returns {object} 200 - An array of resource info
  * @returns {Error}  default - Unexpected error
  */
-router.route('/:productName').delete(deleteProductPrice);
+router.route('/:productName').delete(pricePermission(),deleteProductPrice);
 
 /**
- * Get Price
- * @route Put /price/:productName?date=YYYY-MM-DD
+ * Delete daily price of product by date
+ * @route Put /price
  * @group Price
  * @security JWT
- * @param {string} - product name
+ * @param {string} product.body.required- product name
+ * @param {string} date.body.required- date name
  * @returns {object} 200 - An array of resource info
  * @returns {Error}  default - Unexpected error
  */

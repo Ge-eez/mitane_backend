@@ -2,34 +2,43 @@ const asyncHanler = require('../middlewares/async');
 const ErrorResponse = require('../utility/errorResponse');
 const Price = require('../models/price-model');
 
-const {getProductObjectId,nextDay} = require('../middlewares/price_helper');
+const {nextDay} = require('../middlewares/price_helper');
+const {getProductObjectId} = require('../utility/getObjectId');
 
 
-//@desc Get daily price
+//@desc Get price
 //@route    Get price/
-//@route    Get price?product="product"
-//@route    Get price?day="yyyy-mm-dd"
 //@access   Public
-exports.getDailyPrice = asyncHanler(async (req,res,next)=>{
-    let {product,day} = req.query;
-    let dailyPrice;
-
+exports.getPrice = asyncHanler(async (req,res,next)=>{
+    const {product} = req.query;
+    let prices = null;
     if(product){
         let objId = await getProductObjectId(product);
-        if(!product){
-            return next(new ErrorResponse('product not found',400));
+        if(objId){
+            prices = await Price.find({product:objId}).populate({path:"product",select:"name"});
+        }else{
+            next(new ErrorResponse('Product not found',400));
         }
-        dailyPrice = await Price.find({product:objId}).populate({path:'product',select:'name'});
-    }else if(day){
-        dailyPrice = await Price.find({price_of_the_day:{$elemMatch:{day :
-                        {
-                            '$gte' : new Date(day), 
-                            '$lt' : nextDay(day)
-                        }}}},{'price_of_the_day.$':1}).populate({path:'product',select:'name'});
     }else{
-        dailyPrice = await Price.find({}).populate({path:'product',select:'name'});
+        prices = await Price.find();    
     }
+    res.status(200).json({
+        status:true,
+        count:prices.length,
+        data: prices
+    });
+});
 
+//@desc Get daily price
+//@route    Get price/:date
+//@access   Public
+exports.getDailyPrice = asyncHanler(async (req,res,next)=>{
+    let day = req.params.date;
+    const dailyPrice = await Price.find({price_of_the_day:{$elemMatch:{day :
+                    {
+                        '$gte' : new Date(day), 
+                        '$lt' : nextDay(day)
+                    }}}},{'price_of_the_day.$':1}).populate({path:'product',select:'name'});
     if(!dailyPrice){
         return next(new ErrorResponse("Resource not found",400));
     }
@@ -40,30 +49,7 @@ exports.getDailyPrice = asyncHanler(async (req,res,next)=>{
     });
 });
 
-//@desc Get daily price of specific product
-//@route    Get price/:productName?date=date
-//@access   Private
-exports.getDailyPriceByProduct = asyncHanler(async (req,res,next)=>{
-    const {date} = req.query;
-    let objId = await getProductObjectId(req.params.productName);
-    if(!objId){
-        next(new ErrorResponse('Product not found',400));
-    }
-    const dailyPrice = await Price.find({product:objId},
-        {price_of_the_day:{$elemMatch:{day :
-                            {
-                                '$gte' : new Date(date), 
-                                '$lt' : nextDay(date)
-                            }}}},{'price_of_the_day.$':1}).populate({path:'product',select:'name'});
 
-    if(!dailyPrice){
-        next(new ErrorResponse(`Resource not found`,400));
-    }
-    res.status(200).json({
-        success:true,
-        data:dailyPrice
-    });
-});
 
 
 //@desc Create daily price
@@ -131,11 +117,10 @@ exports.deleteProductPrice = asyncHanler(async (req,res,next)=>{
 });
 
 //@desc Delete daily price
-//@route    delet price?productName?date=date
+//@route    delet price
 //@access   Private
 exports.deleteDailyPrice = asyncHanler(async (req,res,next)=>{
-    console.log("delete");
-    const {product,date} = req.query;
+    const {product,date} = req.body;
     let objId = await getProductObjectId(product);
     if(!objId){
         next(new ErrorResponse('Product not found',400));

@@ -1,19 +1,26 @@
 const asyncHandler = require('../middlewares/async');
 const ErrorResponse = require('../utility/errorResponse');
 const Products = require('../models/product-model');
+const {getCategoryObjectId} = require('../utility/getObjectId');
 
 //@desc Get all products
 //@route    products/
 //@filter   products?name
-//@filter   category/:categoryId/products
+//@filter   category/:categoryName/products
 //@access   Public
 exports.getProducts = asyncHandler(async (req,res,next)=>{
     let query;
     const {keyword} = req.query;
-    
-    if(req.params.categoryId){
-        query = Products.find({category: req.params.categoryId}).populate({path:'category',select:'name'});
-    }else if(keyword){
+    if(req.params.categoryName){
+        const objId = await getCategoryObjectId(req.params.categoryName);
+        if(objId){
+
+            query = Products.find({category: objId}).populate({path:'category',select:'name'});
+        }else{
+            next(new ErrorResponse('Category not found',400));
+        }
+    }
+    else if(keyword){
         query = Products.find({$text: {$search:keyword}}).populate({path:'category',select:'name'});
     }else{
         query = Products.find().populate({path:'category',select:'name'});
@@ -57,25 +64,34 @@ exports.getProductById = asyncHandler(async (req,res,next)=>{
 //@desc products/
 //@access   Private
 exports.createProduct = asyncHandler(async (req,res,next)=>{
-    const product = await Products.create(req.body);
-    res.status(200).json({
-        success:true,
-        data: product
-    });
+    const {name,category} = req.body;
+
+    let product = null;
+    const objId = await getCategoryObjectId(category);
+    if(objId){
+        product = await Products.create({name,category:objId}).populate({path:'category',select:'name'});
+        res.status(200).json({
+            success:true,
+            data: product
+        });
+    }else{
+        next(new ErrorResponse('Category not found',400));
+    }
+    
   
 });
 
-//@desc Update product in specific category
-//@desc products/:id
+//@desc Update product
+//@desc products/:name
 //@access   Private
 exports.updateProduct = asyncHandler(async (req,res,next)=>{
-
-    const product = await Products.findByIdAndUpdate(req.params.id,req.body,{
+    const product = await Products.findOneAndUpdate({name:req.params.name},req.body,{
         new:true,
         runValidators:true
     }).populate({path:'category',select:'name'});
+
     if(!product){
-    return next(new ErrorResponse(`Resource not found with id ${req.params.id}`,400));
+        return next(new ErrorResponse(`Resource not found with id ${req.params.id}`,400));
     }
 
     res.status(200).json({
@@ -85,12 +101,12 @@ exports.updateProduct = asyncHandler(async (req,res,next)=>{
     
 });
 
-//@desc Delete product in specific category
-//@desc products/:id
+//@desc Delete product 
+//@desc products/:name
 //@access   Private
 exports.deleteProduct = asyncHandler(async (req,res,next)=>{
-    const product = await Products.findByIdAndDelete(req.params.id).populate({path:'category',select:'name'});
-    
+    const product = await Products.findOneAndDelete({name:req.params.name}).populate({path:'category',select:'name'});
+
     if(!product){
         return next(new ErrorResponse(`Resource not found with id ${req.params.id}`,400));
     }
