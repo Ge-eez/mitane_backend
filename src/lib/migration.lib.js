@@ -8,7 +8,7 @@ const permissionModel = require('../models/permission-model')
 const roleModel = require('../models/role-model')
 const machineryModel = require('../models/machinery-model')
 const categoryModel = require('../models/category-model')
-const ingridientModel = require('../models/ingridient-model')
+const ingredientsModel = require('../models/ingredient-model')
 const productModel = require('../models/product-model')
 const userModel = require('../models/user-model')
 
@@ -103,32 +103,32 @@ module.exports = {
             logger.info(`Noting to migrate from category ...`);
     },
 
-    migrateIngridients: async () => {
-        logger.info(`Checking ingridient migrations...`);
+    migrateingredientss: async () => {
+        logger.info(`Checking ingredients migrations...`);
 
-        await farming_ingredient.forEach( async ingridient => {
-            // count if ingridient exists
-            let ingridientDocumentCount = await ingridientModel.countDocuments({ 
-                name: ingridient.name
+        await farming_ingredient.forEach( async ingredients => {
+            // count if ingredients exists
+            let ingredientsDocumentCount = await ingredientsModel.countDocuments({ 
+                name: ingredients.name
             })
-            if(ingridientDocumentCount === 0) {
-                logger.info(`Found new ingridient...`);
+            if(ingredientsDocumentCount === 0) {
+                logger.info(`Found new ingredients...`);
                  let data =  await categoryModel.find({
                       name: {
-                          $in: ingridient.category
+                          $in: ingredients.category
                       }
                   })
                   logger.info(`here's the data ${data._id}`)
                   
-                  await ingridientModel.create({
-                        name: ingridient.name,
+                  await ingredientsModel.create({
+                        name: ingredients.name,
                         category: data.map(val => val._id)
                     })
-                    logger.info(`completed ${ingridient.name} ingridient migrated...`);
+                    logger.info(`completed ${ingredients.name} ingredients migrated...`);
                    
             }
             })
-            logger.info(`completed ingridients migrations...`);
+            logger.info(`completed ingredientss migrations...`);
         
     },
 

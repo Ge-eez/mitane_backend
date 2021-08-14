@@ -1,6 +1,5 @@
 var jwt = require('jsonwebtoken');
-const Joi = require('joi');
-
+const authServices = require('../services/auth-services');
 const { jwt_key } = require('../config/vars')
 const userModel = require('../models/user-model')
 const roleModel = require('../models/role-model')
@@ -45,10 +44,11 @@ exports.signupUser = async (req, res) => {
     try {
         let data = await roleModel.find({
             name: {
-                $in: 'user' // [1,2,3]
+                $in: 'user' 
             }
         })
-        const user = await userModel.create({...req.body, roles: data})
+        const user = await authServices.signupUser(req, data);
+
         res.json(user)
     } catch (error) {
         
@@ -64,10 +64,10 @@ exports.signupFarmer = async (req, res) => {
     try {
         let data = await roleModel.find({
             name: {
-                $in: 'farmer' // [1,2,3]
+                $in: 'farmer' 
             }
         })
-        const user = await userModel.create({...req.body, roles: data})
+        const user = await authServices.signupUser(req, data);
         res.json(user)
     } catch (error) {
         
@@ -83,10 +83,10 @@ exports.signupToolTrader = async (req, res) => {
     try {
         let data = await roleModel.find({
             name: {
-                $in: 'tool_trader' // [1,2,3]
+                $in: 'tool_trader' 
             }
         })
-        const user = await userModel.create({...req.body, roles: data})
+        const user = await authServices.signupUser(req, data);
         res.json(user)
     } catch (error) {
         
@@ -102,10 +102,10 @@ exports.signupProductTrader = async (req, res) => {
     try {
         let data = await roleModel.find({
             name: {
-                $in: 'product_trader' // [1,2,3]
+                $in: 'product_trader' 
             }
         })
-        const user = await userModel.create({...req.body, roles: data})
+        const user = await authServices.signupUser(req, data);
         res.json(user)
     } catch (error) {
         
@@ -121,10 +121,10 @@ exports.signupAccessoryTrader = async (req, res) => {
     try {
         let data = await roleModel.find({
             name: {
-                $in: 'accessory_trader' // [1,2,3]
+                $in: 'accessory_trader' 
             }
         })
-        const user = await userModel.create({...req.body, roles: data})
+        const user = await authServices.signupUser(req, data);
         res.json(user)
     } catch (error) {
         
@@ -153,5 +153,7 @@ exports.logout = async (req, res) => {
     }
 
 }
+
+
 
 

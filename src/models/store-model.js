@@ -13,8 +13,8 @@ const StoreSchema = new mongoose.Schema({
         quantity: { type: Number, required: true },
         price_per_piece: { type: Number, required: true },
     }],
-    ingridient_items : [{
-        ingridient: { type: mongoose.Schema.Types.ObjectId, ref: 'Ingridients' },
+    ingredient_items : [{
+        ingredients: { type: mongoose.Schema.Types.ObjectId, ref: 'Ingredients' },
         quantity: { type: Number, required: true },
         price_per_kg: { type: Number, required: true },
     }],

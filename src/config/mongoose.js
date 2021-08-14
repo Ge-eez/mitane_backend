@@ -42,7 +42,7 @@ exports.connect = () => {
       await migration.migrateMachineries()
       await migration.migrateCategories()
       await migration.migrateUsers()
-      await migration.migrateIngridients()
+      await migration.migrateingredientss()
       await migration.migrateProducts()
     });
   return mongoose.connection;

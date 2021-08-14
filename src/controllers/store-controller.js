@@ -24,10 +24,10 @@ exports.getAll = async (req, res, next) => {
             },
             page: req.query.page || 1,
             limit: req.query.limit || 10,
-            populate: { path: 'roles', populate: {path: 'permissions'}}
+            populate: { path: 'product_items.product', populate: {path: 'permissions'}}
         }
         // TODO
-        const stores = await storeModel.paginate(query,options).populate('user', 'name').populate('product_items.product', 'name')
+        const stores = await storeModel.paginate(query,options)
         
         res.json(stores)
 
@@ -55,8 +55,31 @@ exports.getByID = async (req, res) => {
 }
 
 exports.getByUserId = async (req, res) => {
+    const user_id = req.params.id
+    try {
+        const store = await storeModel.findOne({
+            user: {
+                $in: user_id
+            }
+        })
+        if(!store )
+        { 
+            throw new Error('User not found')
+        }
+        
+        res.json(store)
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error.message
+        })
+    }
+
+}
+
+exports.getSelfStore = async (req, res) => {
     const { user } = req
-    const user_id = (req.params.id)? req.params.id : user.data._id
+    const user_id = user.data._id
     const roles = user.data.roles
     try {
         const store = await storeModel.findOne({
@@ -82,6 +105,9 @@ exports.getByUserId = async (req, res) => {
 
 exports.createStore = async (req, res) => {
     const { user } = req
+    const roles = user.data.roles
+    const user_id = user.data._id
+
     try {
         if(user){
             
@@ -100,71 +126,13 @@ exports.createStore = async (req, res) => {
     }
 }
 
-// exports.addProduct = async (req, res) => {
-//     const { user } = req
-//     const user_id = user.data._id
-//     const product = req.body.product
-//     const quantity = req.body.quantity
-//     const price_per_kg = req.body.price_per_kg
-//     const roles = user.data.roles
-//     console.log(roles)
-//     try {
-        // let store = await storeModel.findOne({
-        //     user: {
-        //         $in: user_id
-        //     }
-        // })
-//         if(!store){ 
-//             const store = storeService.createStore(user_id, roles);
-            
-//         }
-//         let data = store.product_items
-//         let item_found = false
-//         let at_index = 0;
-//         for(i in data){
-//             if(data[i].product == product){
-//                 item_found = true
-//                 at_index = i
-//                 break
-//             }
-//         }
-//         if(item_found){
-//             data[at_index].quantity += Number(quantity)
-//             data[at_index].price_per_kg = price_per_kg
-//         }else{
-//             data.push({
-//                 product: product,
-//                 quantity: quantity,
-//                 price_per_kg: price_per_kg
-//             })
-//         }
-        
-//         const updatedStore = await storeModel.findByIdAndUpdate(store._id, 
-//             {'$set': 
-//                 {
-//                     product_items: data
-//                 }
-//             },
-//             {new: true}
-            
-//         )
-//         res.json(updatedStore)
-//     } catch (error) {
-//         res.status(404).json({
-//             error: true,
-//             message: error.message
-//         })
-//     }
-
-// }
-
 exports.addItemToStore = async (req, res) => {
     const { user } = req
     let user_id = user.data._id;
     try {
         if(user){
             let item_type;
-            let item = req.body.product ? req.body.product : ( (req.body.machinery) ? req.body.machinery : req.body.ingridient)
+            let item = req.body.product ? req.body.product : ( (req.body.machinery) ? req.body.machinery : req.body.ingredient)
             let quantity = req.body.quantity
             let price = req.body.price
             let store;
@@ -177,7 +145,7 @@ exports.addItemToStore = async (req, res) => {
                 if(req.body.product) item_type = 'product';
                 else{
                     if(req.body.machinery) item_type = 'machinery';
-                    else item_type = 'ingridient'
+                    else item_type = 'ingredient'
                 }
                 store = await storeService.addItem(item_type, item, quantity, price, store);
                 res.json(store);            
@@ -203,7 +171,7 @@ exports.updateStore = async (req, res) => {
     try {
         if(user){
             let item_type;
-            let item = req.body.product ? req.body.product : ( (req.body.machinery) ? req.body.machinery : req.body.ingridient)
+            let item = req.body.product ? req.body.product : ( (req.body.machinery) ? req.body.machinery : req.body.ingredient)
             let quantity = req.body.quantity
             let price = req.body.price
             let store;
@@ -212,7 +180,7 @@ exports.updateStore = async (req, res) => {
                 if(req.body.product) item_type = 'product';
                 else{
                     if(req.body.machinery) item_type = 'machinery';
-                    else item_type = 'ingridient'
+                    else item_type = 'ingredient'
                 }
                 store = await storeService.updateStore(item_type, item, quantity, price, store);
                 res.json(store);            
@@ -238,7 +206,7 @@ exports.deleteItem = async (req, res) => {
     try {
         if(user){
             let item_type;
-            let item = req.body.product ? req.body.product : ( (req.body.machinery) ? req.body.machinery : req.body.ingridient)
+            let item = req.body.product ? req.body.product : ( (req.body.machinery) ? req.body.machinery : req.body.ingredient)
             let store;
             store = await storeModel.findOne({
                 user: {
@@ -250,7 +218,7 @@ exports.deleteItem = async (req, res) => {
                 if(req.body.product) item_type = 'product';
                 else{
                     if(req.body.machinery) item_type = 'machinery';
-                    else item_type = 'ingridient'
+                    else item_type = 'ingredient'
                 }
                 store = await storeService.removeItem(item_type, item, store);
                 res.json(store);            
@@ -274,5 +242,64 @@ exports.getByMachineryId = async (req, res) => {}
 exports.getByProductId = async (req, res) => {}
 exports.getByKeyword = async (req, res) => {}
 
-exports.clearStore = async (req, res) => {}
-exports.deleteStore = async (req, res) => {}
+exports.clearStore = async (req, res) => {
+    const { user } = req
+    const user_id = user.data._id
+    try {
+        if(user){
+            let store;
+            store = await storeModel.findOne({
+                user: {
+                    $in: user_id
+                }
+            })
+
+            if(store){
+                store = await storeService.clearStore(store);
+                res.json(store);            
+            }
+            else{
+                throw new Error("store not found")
+            }
+        }
+        else{
+            throw new Error('You have to login first')
+        }
+        
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error.message
+        })
+    }
+}
+exports.deleteStore = async (req, res) => {
+    const { user } = req
+    const user_id = user.data._id
+    try {
+        if(user){
+            let store;
+            store = await storeModel.findOneAndDelete({
+                user: {
+                    $in: user_id
+                }
+            })
+
+            if(store){
+                res.json(store);            
+            }
+            else{
+                throw new Error("store not found")
+            }
+        }
+        else{
+            throw new Error('You have to login first')
+        }
+        
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error.message
+        })
+    }
+}

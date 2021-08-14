@@ -25,6 +25,8 @@ exports.authFormRequest = schemaName => async (req,res,next) => {
                 repeat_password: Joi.ref('password'),
             
                 phone_no : Joi_Num.string().phoneNumber().required(),
+                latitude: Joi.number().min(-90).max(90).required(),
+                longitude: Joi.number().min(-180).max(180).required()
             }),
         forgetPassword: () => 
             Joi.object({

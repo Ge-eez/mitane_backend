@@ -79,5 +79,5 @@ userSchema.method({
 
 // plugins
 userSchema.plugin(mongoosePaginate);
-
+userSchema.index({ location : "2dsphere" });
 module.exports = mongoose.model('User', userSchema);

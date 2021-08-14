@@ -1,6 +1,6 @@
 const asyncHandler = require('../middlewares/async');
 const ErrorResponse = require('../utility/errorResponse');
-const Ingredients = require('../models/ingridient-model');
+const Ingredients = require('../models/ingredient-model');
 
 exports.getAll = async function (req,res,next){
     const {name} = req.query;
