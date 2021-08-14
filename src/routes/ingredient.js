@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const  {itemsRequest} = require('../middlewares/user-request/items');
 
 var IngredientsController = require('../controllers/ingredients-controller')
 /**
@@ -42,7 +43,7 @@ router.get('/:id', IngredientsController.getIngredientById)
  * @returns {object} 200 - Ingredient object
  * @returns {Error}  default - Unexpected error
  */
-router.post('/', IngredientsController.addIngredient)
+router.post('/', itemsRequest('addIngredient'), IngredientsController.addIngredient)
 
 /**
  * update an ingredient
@@ -54,7 +55,7 @@ router.post('/', IngredientsController.addIngredient)
  * @returns {object} 200 - Ingredient object
  * @returns {Error}  default - Unexpected error
  */
-router.put('/:id', IngredientsController.updateIngredient)
+router.put('/:id', itemsRequest('updateIngredient'), IngredientsController.updateIngredient)
 
 /**
  * delete an ingredient

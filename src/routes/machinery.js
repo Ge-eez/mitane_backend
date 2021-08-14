@@ -1,5 +1,6 @@
 var router = require("express-promise-router")();
 const machineryController = require('../controllers/machinery-controller');
+const  {itemsRequest} = require('../middlewares/user-request/items');
 
 /**
  * @typedef Machinery
@@ -40,7 +41,7 @@ router.get('/:id', machineryController.getByID);
  * @returns {object} 200 - new Machinery object created
  * @returns {Error}  default - Unexpected error
  */
-router.post('/', machineryController.createMachinery);
+router.post('/', itemsRequest('addMachinery'), machineryController.createMachinery);
 
 /**
  * Update Machinery
@@ -52,7 +53,7 @@ router.post('/', machineryController.createMachinery);
  * @returns {object} 200 - new Machinery object created
  * @returns {Error}  default - Unexpected error
  */
-router.put('/:id', machineryController.updateMachinery);
+router.put('/:id', itemsRequest('updateMachinery'), machineryController.updateMachinery);
 
 /**
  * DELETE Machinery

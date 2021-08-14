@@ -1,5 +1,6 @@
 var router = require("express-promise-router")();
 const storeController = require('../controllers/store-controller');
+const  {storeRequest} = require('../middlewares/user-request/store');
 
 /**
  * @typedef Store
@@ -69,7 +70,7 @@ router.post('/', storeController.createStore);
  * @returns {object} 200 - Store object with the added product item
  * @returns {Error}  default - Unexpected error
  */
-router.post('/add_product', storeController.addItemToStore);
+router.post('/add_product', storeRequest('addProduct'), storeController.addItemToStore);
 
 /**
  * Add new product
@@ -83,7 +84,7 @@ router.post('/add_product', storeController.addItemToStore);
  * @returns {object} 200 - Store object with the added machinery item
  * @returns {Error}  default - Unexpected error
  */
-router.post('/add_machinery', storeController.addItemToStore);
+router.post('/add_machinery', storeRequest('addMachinery'), storeController.addItemToStore);
 
 /**
  * Add new product
@@ -97,7 +98,7 @@ router.post('/add_machinery', storeController.addItemToStore);
  * @returns {object} 200 - Store object with the added ingredient item
  * @returns {Error}  default - Unexpected error
  */
-router.post('/add_ingredient', storeController.addItemToStore);
+router.post('/add_ingredient', storeRequest('addIngredient'), storeController.addItemToStore);
 
 /**
  * Update a store 
@@ -111,7 +112,7 @@ router.post('/add_ingredient', storeController.addItemToStore);
  * @returns {object} 200 - Store object
  * @returns {Error}  default - Unexpected error
  */
-router.put('/product/:id', storeController.updateStore);
+router.put('/product/:id', storeRequest('adjustProduct'), storeController.updateStore);
 
 /**
  * Update a store 
@@ -125,7 +126,7 @@ router.put('/product/:id', storeController.updateStore);
  * @returns {object} 200 - Store object
  * @returns {Error}  default - Unexpected error
  */
-router.put('/machinery/:id', storeController.updateStore);
+router.put('/machinery/:id', storeRequest('adjustMachinery'), storeController.updateStore);
 
 /**
  * Update a store 
@@ -139,7 +140,7 @@ router.put('/machinery/:id', storeController.updateStore);
  * @returns {object} 200 - Store object
  * @returns {Error}  default - Unexpected error
  */
-router.put('/ingredient/:id', storeController.updateStore);
+router.put('/ingredient/:id', storeRequest('adjustIngredient'), storeController.updateStore);
 
 /**
  * Delete product from store 
@@ -150,7 +151,7 @@ router.put('/ingredient/:id', storeController.updateStore);
  * @returns {object} 200 - Store object
  * @returns {Error}  default - Unexpected error
  */
-router.delete('/product', storeController.deleteItem);
+router.delete('/product', storeRequest('removeProduct'), storeController.deleteItem);
 
 /**
  * Delete machinery from store 
@@ -161,7 +162,7 @@ router.delete('/product', storeController.deleteItem);
  * @returns {object} 200 - Store object
  * @returns {Error}  default - Unexpected error
  */
- router.delete('/machinery', storeController.deleteItem);
+ router.delete('/machinery', storeRequest('removeMachinery'), storeController.deleteItem);
 
  /**
  * Delete ingredient from store 
@@ -172,7 +173,7 @@ router.delete('/product', storeController.deleteItem);
  * @returns {object} 200 - Store object
  * @returns {Error}  default - Unexpected error
  */
-router.delete('/ingredient', storeController.deleteItem);
+router.delete('/ingredient', storeRequest('removeIngredient'), storeController.deleteItem);
 
  /**
  * Clear Store
