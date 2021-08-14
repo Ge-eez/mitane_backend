@@ -12,11 +12,11 @@ const permissions = [
     'update user',
     'remove user',
 
-    'create ingridient',
-    'view any ingridient',
-    'view ingridient',
-    'update ingridient',
-    'remove ingridient',
+    'create ingredients',
+    'view any ingredients',
+    'view ingredients',
+    'update ingredients',
+    'remove ingredients',
 
     'create machinery',
     'view any machinery',
@@ -53,8 +53,8 @@ const roles = {
     admin: [...permissions],
     user: [
 
-        'view any ingridient',
-        'view ingridient',
+        'view any ingredients',
+        'view ingredients',
 
         'view any machinery',
         'view machinery',
@@ -74,8 +74,8 @@ const roles = {
 
     data_encoder: [
 
-        'view any ingridient',
-        'view ingridient',
+        'view any ingredients',
+        'view ingredients',
 
         'view any machinery',
         'view machinery',
@@ -97,8 +97,8 @@ const roles = {
     ],
 
     farmer : [
-        'view any ingridient',
-        'view ingridient',
+        'view any ingredients',
+        'view ingredients',
 
         'view any machinery',
         'view machinery',
@@ -120,8 +120,8 @@ const roles = {
     ],
 
     product_trader: [
-        'view any ingridient',
-        'view ingridient',
+        'view any ingredients',
+        'view ingredients',
 
         'view any machinery',
         'view machinery',
@@ -144,8 +144,8 @@ const roles = {
 
     tool_trader: [
 
-        'view any ingridient',
-        'view ingridient',
+        'view any ingredients',
+        'view ingredients',
 
         'view any machinery',
         'view machinery',
@@ -167,8 +167,8 @@ const roles = {
 
     accessory_trader: [
 
-        'view any ingridient',
-        'view ingridient',
+        'view any ingredients',
+        'view ingredients',
 
         'view any machinery',
         'view machinery',

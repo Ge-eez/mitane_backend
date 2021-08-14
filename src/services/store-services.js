@@ -30,7 +30,7 @@ exports.addItem = async (item_type, item, quantity, price, store) => {
         let data;
         if(item_type == "product") data = store.product_items
         else if(item_type == "machinery") data = store.machinery_items
-        else if(item_type == "ingridient") data = store.ingridient_items
+        else if(item_type == "ingredients") data = store.ingredients_items
         
         let item_found = false
         let at_index = 0;
@@ -43,7 +43,7 @@ exports.addItem = async (item_type, item, quantity, price, store) => {
         }
         if(item_found){
             data[at_index].quantity += Number(quantity)
-            if(item_type == "product" || item_type == "ingridient") {
+            if(item_type == "product" || item_type == "ingredients") {
                 data[at_index].price_per_kg = price;
             }
             else{
@@ -57,8 +57,8 @@ exports.addItem = async (item_type, item, quantity, price, store) => {
                 new_item.price_per_kg = price
             }
             else{
-                if(item_type == "ingridient") {
-                    new_item.ingridient = item
+                if(item_type == "ingredients") {
+                    new_item.ingredients = item
                     new_item.price_per_kg = price
                 }
                 else{
@@ -98,7 +98,7 @@ exports.addItem = async (item_type, item, quantity, price, store) => {
                 updatedStore = await storeModel.findByIdAndUpdate(store._id, 
                     {'$set': 
                         {
-                            ingridient_items: data
+                            ingredients_items: data
                         }
                     },
                     {new: true}
@@ -117,7 +117,7 @@ exports.removeItem = async (item_type, item, store) => {
         let data;
         if(item_type == "product") data = store.product_items
         else if(item_type == "machinery") data = store.machinery_items
-        else if(item_type == "ingridient") data = store.ingridient_items
+        else if(item_type == "ingredients") data = store.ingredients_items
         
         let item_found = false
         let at_index = 0;
@@ -163,7 +163,7 @@ exports.removeItem = async (item_type, item, store) => {
                 updatedStore = await storeModel.findByIdAndUpdate(store._id, 
                     {'$set': 
                         {
-                            ingridient_items: data
+                            ingredients_items: data
                         }
                     },
                     {new: true}
@@ -184,7 +184,7 @@ exports.clearStore = async (store) => {
         let updatedStore = await storeModel.findByIdAndUpdate(store._id, 
             {'$set': 
                 {
-                    ingridient_items: [],
+                    ingredients_items: [],
                     product_items: [],
                     machinery_items: []
 
@@ -208,7 +208,7 @@ exports.updateStore = async (item_type, item, quantity, price, store) => {
         let data;
         if(item_type == "product") data = store.product_items
         else if(item_type == "machinery") data = store.machinery_items
-        else if(item_type == "ingridient") data = store.ingridient_items
+        else if(item_type == "ingredients") data = store.ingredients_items
         
         let item_found = false
         let at_index = 0;
@@ -221,7 +221,7 @@ exports.updateStore = async (item_type, item, quantity, price, store) => {
         }
         if(item_found){
             data[at_index].quantity = Number(quantity)
-            if(item_type == "product" || item_type == "ingridient") {
+            if(item_type == "product" || item_type == "ingredients") {
                 data[at_index].price_per_kg = price;
             }
             else{
@@ -261,7 +261,7 @@ exports.updateStore = async (item_type, item, quantity, price, store) => {
                 updatedStore = await storeModel.findByIdAndUpdate(store._id, 
                     {'$set': 
                         {
-                            ingridient_items: data
+                            ingredients_items: data
                         }
                     },
                     {new: true}

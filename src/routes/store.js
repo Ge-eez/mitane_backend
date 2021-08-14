@@ -17,12 +17,12 @@ router.post('/delete_item', storeController.deleteItem);
 // Todo
 // router.get('/:machinery_id', storeController.getByMachineryId);
 // router.get('/:product_id', storeController.getByProductId);
-// router.get('/:ingridient_id', storeController.getByIngridientId);
+// router.get('/:ingredients_id', storeController.getByingredientsId);
 // router.get('/:keyword', storeController.getByKeyword);
 
 
 // Testing remains
-router.post('/add_ingridient', storeController.addItemToStore);
+router.post('/add_ingredients', storeController.addItemToStore);
 // router.delete('/clear_store', storeController.clearStore);
 // router.delete('/:id', storeController.deleteStore);
 

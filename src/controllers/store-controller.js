@@ -164,7 +164,7 @@ exports.addItemToStore = async (req, res) => {
     try {
         if(user){
             let item_type;
-            let item = req.body.product ? req.body.product : ( (req.body.machinery) ? req.body.machinery : req.body.ingridient)
+            let item = req.body.product ? req.body.product : ( (req.body.machinery) ? req.body.machinery : req.body.ingredients)
             let quantity = req.body.quantity
             let price = req.body.price
             let store;
@@ -177,7 +177,7 @@ exports.addItemToStore = async (req, res) => {
                 if(req.body.product) item_type = 'product';
                 else{
                     if(req.body.machinery) item_type = 'machinery';
-                    else item_type = 'ingridient'
+                    else item_type = 'ingredients'
                 }
                 store = await storeService.addItem(item_type, item, quantity, price, store);
                 res.json(store);            
@@ -203,7 +203,7 @@ exports.updateStore = async (req, res) => {
     try {
         if(user){
             let item_type;
-            let item = req.body.product ? req.body.product : ( (req.body.machinery) ? req.body.machinery : req.body.ingridient)
+            let item = req.body.product ? req.body.product : ( (req.body.machinery) ? req.body.machinery : req.body.ingredients)
             let quantity = req.body.quantity
             let price = req.body.price
             let store;
@@ -212,7 +212,7 @@ exports.updateStore = async (req, res) => {
                 if(req.body.product) item_type = 'product';
                 else{
                     if(req.body.machinery) item_type = 'machinery';
-                    else item_type = 'ingridient'
+                    else item_type = 'ingredients'
                 }
                 store = await storeService.updateStore(item_type, item, quantity, price, store);
                 res.json(store);            
@@ -238,7 +238,7 @@ exports.deleteItem = async (req, res) => {
     try {
         if(user){
             let item_type;
-            let item = req.body.product ? req.body.product : ( (req.body.machinery) ? req.body.machinery : req.body.ingridient)
+            let item = req.body.product ? req.body.product : ( (req.body.machinery) ? req.body.machinery : req.body.ingredients)
             let store;
             store = await storeModel.findOne({
                 user: {
@@ -250,7 +250,7 @@ exports.deleteItem = async (req, res) => {
                 if(req.body.product) item_type = 'product';
                 else{
                     if(req.body.machinery) item_type = 'machinery';
-                    else item_type = 'ingridient'
+                    else item_type = 'ingredients'
                 }
                 store = await storeService.removeItem(item_type, item, store);
                 res.json(store);            
