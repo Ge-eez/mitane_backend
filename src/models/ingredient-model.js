@@ -11,4 +11,4 @@ const ingredientsSchema = new mongoose.Schema({
 
 // plugins
 ingredientsSchema.plugin(mongoosePaginate);
-module.exports = mongoose.model('ingredientss', ingredientsSchema);
+module.exports = mongoose.model('Ingredients', ingredientsSchema);

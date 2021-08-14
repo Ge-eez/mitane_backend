@@ -194,49 +194,70 @@ const users = [
         name: 'admin',
         password: 'superuser',
         roles: ['admin'],
-        phone_no : +251900000000
+        phone_no : +251900000000,
+        location: {
+            coordinates: [38.291473, 8.988429]
+        }
 
     },
     {
         name: 'encoder',
         password: 'encoderuser',
         roles: ['data_encoder'],
-        phone_no : +251911111111
+        phone_no : +251911111111,
+        location: {
+            coordinates: [38.591473, 8.988429]
+        }
 
     },
     {
         name: 'farmer',
         password: 'farmeruser',
         roles: ['farmer'],
-        phone_no : +251922222222
+        phone_no : +251922222222,
+        location: {
+            coordinates: [38.491473, 8.988429]
+        }
 
     },
     {
         name: 'accessorytrader',
         password: 'accessorytraderuser',
         roles: ['accessory_trader'],
-        phone_no : +251933333333
+        phone_no : +251933333333,
+        location: {
+            coordinates: [38.701473, 8.988429]
+        }
 
     },
     {
         name: 'producttrader',
         password: 'producttraderuser',
         roles: ['product_trader'],
-        phone_no : +251944444444
+        phone_no : +251944444444,
+        location: {
+            coordinates: [38.691473, 8.988429]
+        }
 
     },
     {
         name: 'tooltrader',
         password: 'tooltraderuser',
         roles: ['tool_trader'],
-        phone_no : +251955555555
+        phone_no : +251955555555,
+        location: {
+            coordinates: [38.781473, 8.988429]
+        }
 
     },
     {
         name: 'user',
         password: 'justuser',
         roles: ['user'],
-        phone_no : +251966666666
+        phone_no : +251966666666,
+        location: {
+            coordinates: [38.791473, 8.988429]
+        }
 
     },
 
