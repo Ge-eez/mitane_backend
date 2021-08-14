@@ -10,9 +10,9 @@ const { routes } = require('./config/routes');
 
 var indexRouter = require('./routes/index');
 var authRouter = require('./routes/auth');
-var categoryRouter = require('./routes/agri_product_category');
-var productRouter = require('./routes/agri_products');
-var ingredientsRouter = require('./routes/ingredients'); 
+var categoryRouter = require('./routes/category');
+var productRouter = require('./routes/product');
+var ingredientsRouter = require('./routes/ingredient'); 
 var storeRouter = require('./routes/store');
 var userRouter = require('./routes/users');
 var machineryRouter = require('./routes/machinery');

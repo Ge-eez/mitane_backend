@@ -53,26 +53,139 @@ const roles = {
     admin: [...permissions],
     user: [
 
+        'view any ingridient',
+        'view ingridient',
+
+        'view any machinery',
+        'view machinery',
+
+        'view any product',
+        'view product',
+
+        'view any category',
+        'view category',
+
+        'view any store',
+        'view store',
+    
+        'view any price',
+        'view price',
     ],
 
     data_encoder: [
 
+        'view any ingridient',
+        'view ingridient',
+
+        'view any machinery',
+        'view machinery',
+
+        'view any product',
+        'view product',
+
+        'view any category',
+        'view category',
+
+        'view any store',
+        'view store',
+
+        'create price',
+        'view any price',
+        'view price',
+        'update price',
+        'remove price',
     ],
 
     farmer : [
+        'view any ingridient',
+        'view ingridient',
+
+        'view any machinery',
+        'view machinery',
+
+        'view any product',
+        'view product',
+
+        'view any category',
+        'view category',
+
+        'create store',
+        'view store',
+        'update store',
+        'remove store',
+
+        'view any price',
+        'view price',
 
     ],
 
     product_trader: [
+        'view any ingridient',
+        'view ingridient',
+
+        'view any machinery',
+        'view machinery',
+
+        'view any product',
+        'view product',
+
+        'view any category',
+        'view category',
+
+        'create store',
+        'view store',
+        'update store',
+        'remove store',
+
+        'view any price',
+        'view price',
 
     ],
 
     tool_trader: [
 
+        'view any ingridient',
+        'view ingridient',
+
+        'view any machinery',
+        'view machinery',
+
+        'view any product',
+        'view product',
+
+        'view any category',
+        'view category',
+
+        'create store',
+        'view store',
+        'update store',
+        'remove store',
+
+        'view any price',
+        'view price',
     ],
 
     accessory_trader: [
 
+        'view any ingridient',
+        'view ingridient',
+
+        'view any machinery',
+        'view machinery',
+
+        'view any product',
+        'view product',
+
+        'view any category',
+        'view category',
+
+        'create store',
+        'view store',
+        'update store',
+        'remove store',
+
+        'view any price',
+        'view price',
     ]
 }
 
