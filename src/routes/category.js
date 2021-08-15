@@ -6,12 +6,13 @@ const {
     deleteCategory
 } = require('../controllers/category-controller');
 const {permission} = require('../middlewares/permission');
-
+const {createCategoryRequest} = require('../middlewares/user-request/category');
 //Include other resource routes
 const productRouter = require('./product');
 
 const express = require('express');
 const router = express.Router();
+const validator = require('express-joi-validation').createValidator();
 
 //Re-route to other resource route
 router.use('/:categoryName/products',productRouter);
@@ -38,7 +39,7 @@ router.route('/').get(getCategory);
  * @returns {object} 200 - A category object
  * @returns {Error}  default - Unexpected error
  */
-router.route('/').post(permission(),createCategory);
+router.route('/').post(permission(),validator.body(createCategoryRequest),createCategory);
 
 /**
  * Get a category by Id

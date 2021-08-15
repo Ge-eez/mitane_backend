@@ -5,11 +5,11 @@ const {
     updateProduct,
     deleteProduct
 } = require('../controllers/products-controller');
-
+const {createProductRequest} = require('../middlewares/user-request/product');
 const {permission} = require('../middlewares/permission');
 const express = require('express');
 const router = express.Router({mergeParams: true});
-
+const validator = require('express-joi-validation').createValidator({});
 /**
  * @typedef Product
  * @property {string} name.required - Product name
@@ -34,10 +34,12 @@ router.route('/').get(getProducts);
  * @route Post /product
  * @group Product 
  * @security JWT
+ * @param {string} name.body.required - name of product
+ * @param {string} category.body.required - name of category 
  * @returns {object} 200 - Product Object
  * @returns {Error}  default - Unexpected error
  */
-router.route('/').post(permission(),createProduct);
+router.route('/').post(permission(),validator.body(createProductRequest),createProduct);
 
 /**
  * Get product by Id 
