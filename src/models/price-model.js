@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const mongoosePaginate = require('mongoose-paginate-v2');
 
 const PriceSchema = mongoose.Schema({
+    category:{type:mongoose.Schema.Types.ObjectId, ref:'Categories',required:true},
     product:{type:mongoose.Schema.Types.ObjectId, ref:'Products',required:true,unique:true},
     price_of_the_day:[{
         price:{type:Number, required:true},
