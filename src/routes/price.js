@@ -1,16 +1,20 @@
 const express = require('express');
 const router = express.Router();
-
+const validator = require('express-joi-validation').createValidator({})
 const {
+    getDailyPriceByCategory,
     getDailyPrice,
-    getPrice,
     createDailyPrice,
     deleteProductPrice,
     deleteDailyPrice,
     addDailyPrice,
 } = require('../controllers/price-controller');
-const {pricePermission} = require('../middlewares/permission');
-
+const {pricePermission, permission} = require('../middlewares/permission');
+const {
+    priceByCategoryRequest,
+    createDailyPriceRequest,
+    addDailyPriceRequest,
+    deleteDailyPriceRequest} = require('../middlewares/user-request/price');
 /**
  * @typedef Price
  * @property {string} product.required - Product id
@@ -18,26 +22,28 @@ const {pricePermission} = require('../middlewares/permission');
  */
 
 /**
+ * Get daily price by category
+ * @route Get /price
+ * @group Price
+ * @security JWT
+ * @param {string} category.query.required - products category
+ * @param {string} date.query.required - price date
+ * @returns {object} 200 - Price object
+ * @returns {Error}  default - Unexpected error
+ */
+router.route('/').get(validator.query(priceByCategoryRequest),getDailyPriceByCategory);
+
+
+ /**
  * Get daily price
  * @route Get /price/{date}
  * @group Price
  * @security JWT
- * @param {string} date.path.required - price date
+ * @param {string} date.path.required - date
  * @returns {object} 200 - Price object
  * @returns {Error}  default - Unexpected error
  */
-router.route('/:date').get(getDailyPrice);
-
-/**
- * Get price
- * @route Get /price
- * @group Price
- * @security JWT
- * @param {string} product.query product name
- * @returns {object} 200 - Price object
- * @returns {Error}  default - Unexpected error
- */
- router.route('/').get(getPrice);
+  router.route('/:date').get(getDailyPrice);
 
 /**
  * Create daily price
@@ -45,34 +51,35 @@ router.route('/:date').get(getDailyPrice);
  * @group Price
  * @security JWT
  * @param {string} product.body.required - product name 
+ * @param {string} category.body.required - category name 
  * @returns {object} 200 - A Price object
  * @returns {Error}  default - Unexpected error
  */
-router.route('/').post(pricePermission(),createDailyPrice);
+router.route('/').post(pricePermission(),validator.body(createDailyPriceRequest),createDailyPrice);
 
     
 /**
  * Insert daily price of a product
- * @route Put /product/:productName
+ * @route Put /price/{product}
  * @group Price
  * @security JWT
- * @param {string} productName.path.required - product name
+ * @param {string} product.path.required - product name
  * @param {number} price.body.required - daily price of product
  * @returns {object} 200 - An array of resource info
  * @returns {Error}  default - Unexpected error
  */
-router.route('/:productName').put(pricePermission(),addDailyPrice);
+router.route('/:product').put(pricePermission(),validator.body(addDailyPriceRequest),addDailyPrice);
 
 /**
  * Delete prices of a product
- * @route Delete /price/:productName
+ * @route Delete /price/{product}
  * @group Price
  * @security JWT
  * @param {string} productName.path.required - product name
  * @returns {object} 200 - An array of resource info
  * @returns {Error}  default - Unexpected error
  */
-router.route('/:productName').delete(pricePermission(),deleteProductPrice);
+router.route('/:product').delete(pricePermission(),deleteProductPrice);
 
 /**
  * Delete daily price of product by date
@@ -84,6 +91,6 @@ router.route('/:productName').delete(pricePermission(),deleteProductPrice);
  * @returns {object} 200 - An array of resource info
  * @returns {Error}  default - Unexpected error
  */
-router.route('/').put(deleteDailyPrice);
+router.route('/').put(pricePermission(),validator.body(deleteDailyPriceRequest),deleteDailyPrice);
 
 module.exports = router;
