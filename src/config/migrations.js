@@ -291,58 +291,76 @@ const machineries = [
 
 const categories = [
     {
-        name: 'fruits'
+        name: 'fruits',
+        type: 'product'
     },
     {
-        name: 'ceral'
+        name: 'ceral',
+        type: 'product'
     },
     {
-        name: 'ye qibat ehil'
+        name: 'ye qibat ehil',
+        type: 'product'
     },
     {
-        name: 'vegitable'
+        name: 'vegitable',
+        type: 'product'
     },
     {
-        name: 'qimema qimem'
+        name: 'qimema qimem',
+        type: 'product'
     },
     {
-        name: 'ye ageda sebiloch'
+        name: 'ye ageda sebiloch',
+        type: 'product'
     },
     {
-        name: 'aneqaqi tekiloch'
+        name: 'aneqaqi tekiloch',
+        type: 'product'
     },
     {
-        name: 'ye qum ensisa'
+        name: 'ye qum ensisa',
+        type: 'product'
     },
     {
-        name: 'doro'
+        name: 'doro',
+        type: 'product'
     },
     {
-        name: 'asa'
+        name: 'asa',
+        type: 'product'
     },
     {
-        name: 'diary products'
+        name: 'diary products',
+        type: 'product'
     },
     {
-        name: 'ye den wutet'
+        name: 'ye den wutet',
+        type: 'product'
     },
     {
-        name: 'flower'
+        name: 'flower',
+        type: 'product'
     },
     {
-        name: 'mar'
+        name: 'mar',
+        type: 'product'
     },
     {
-        name: 'feritlizer'
+        name: 'feritlizer',
+        type: 'ingredient'
     },
     {
-        name: 'mirt zer'
+        name: 'mirt zer',
+        type: 'ingredient'
     },    
     {
-        name: 'meno'
+        name: 'meno',
+        type: 'ingredient'
     },
     {
-        name: 'qefo'
+        name: 'qefo',
+        type: 'ingredient'
     }
 ]
 
