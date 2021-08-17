@@ -367,11 +367,11 @@ const categories = [
 const farming_ingredient  = [
     {
         name: "Yuriya",
-        category: ['ferilizer']
+        category: ['feritlizer']
     },
     {
         name: "Dap",
-        category: ['ferilizer']
+        category: ['feritlizer']
     },
     {
         name: "Nitrogen",
@@ -379,15 +379,15 @@ const farming_ingredient  = [
     },
     {
         name: "Phosphic",
-        category: ['ferilizer']
+        category: ['feritlizer']
     },
     {
         name: "Potassium",
-        category: 'ferilizer'
+        category: ['feritlizer']
     },
     {
         name: "Natural",
-        category: ['ferilizer']
+        category: ['feritlizer']
     },
     {
         name: "ye atkilt",
