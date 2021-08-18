@@ -1,4 +1,7 @@
 const storeModel = require('../models/store-model');
+const machineryModel = require('../models/machinery-model');
+const productModel = require('../models/product-model');
+const ingredientModel = require('../models/ingredient-model');
 const storeService = require('../services/store-services');
 
 exports.getAll = async (req, res, next) => {
@@ -238,9 +241,96 @@ exports.deleteItem = async (req, res) => {
         })
     }
 }
-exports.getByMachineryId = async (req, res) => {}
-exports.getByProductId = async (req, res) => {}
-exports.getByKeyword = async (req, res) => {}
+exports.getByMachineryId = async (req, res) => {
+    const { user } = req;
+    try {
+        if(user){
+            let item_id = req.body.machinery;
+            let item;
+            item = await machineryModel.findById(item_id);
+
+            if(item){
+                const stores = await storeModel.find({
+                    machinery_items: {$elemMatch: 
+                        {machinery: item_id}
+                    }});
+                res.json(stores);            
+            }
+            else{
+                throw new Error("machinery not found")
+            }
+        }
+        else{
+            throw new Error('You have to login first')
+        }
+        
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error.message
+        })
+    }
+}
+exports.getByProductId = async (req, res) => {
+    const { user } = req;
+    try {
+        if(user){
+            let item_id = req.body.product;
+            let item;
+            item = await productModel.findById(item_id);
+
+            if(item){
+                const stores = await storeModel.find({
+                    product_items: {$elemMatch: 
+                        {product: item_id}
+                    }});
+                res.json(stores);            
+            }
+            else{
+                throw new Error("product not found")
+            }
+        }
+        else{
+            throw new Error('You have to login first')
+        }
+        
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error.message
+        })
+    }
+}
+exports.getByingredientsId = async (req, res) => {
+    const { user } = req;
+    try {
+        if(user){
+            let item_id = req.body.ingredient;
+            let item;
+            item = await ingredientModel.findById(item_id);
+
+            if(item){
+                const stores = await storeModel.find({
+                    ingredient_items: {$elemMatch: 
+                        {ingredients: item_id}
+                    }});
+                res.json(stores);            
+            }
+            else{
+                throw new Error("ingredient not found")
+            }
+        }
+        else{
+            throw new Error('You have to login first')
+        }
+        
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error.message
+        })
+    }
+}
 
 exports.clearStore = async (req, res) => {
     const { user } = req
