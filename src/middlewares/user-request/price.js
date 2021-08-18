@@ -1,26 +1,22 @@
 const Joi = require('joi');
-const Joi_Num = Joi.extend(require('joi-phone-number'));
 
-exports.storeRequest = schemaName => async (req,res,next) => {
-    let validationObjects = {
-        addPrice: () => 
-            Joi.object({
-                product: Joi.string().required(),
-                price: Joi.number().required(),
-            }),
-        
-        }
-    try {
-       const {error } =  validationObjects[schemaName]().validate(req.body)
-       if(!error) {
-           return next();
-       }
-       throw new Error(error)
-    } catch (error) {
-        res.status(400).json({
-            error: true,
-            message: error.message
-        })
-    }
+exports.priceByCategoryRequest = Joi.object({
+    category: Joi.string().required(),
+    date: Joi.string().required()
+});
 
-}
+exports.createDailyPriceRequest = Joi.object({
+    product: Joi.string().required(),
+    category: Joi.string().required()
+});
+
+exports.addDailyPriceRequest = Joi.object({
+    price: Joi.string().required()
+});
+
+
+exports.deleteDailyPriceRequest = Joi.object({
+    product: Joi.string().required(),
+    date: Joi.string().required()
+});
+

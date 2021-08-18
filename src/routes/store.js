@@ -197,8 +197,8 @@ router.delete('/:id', storeController.deleteStore);
 router.get('/user/:id', storeController.getByUserId);
 
 // Todo
-// router.get('/:machinery_id', storeController.getByMachineryId);
-// router.get('/:product_id', storeController.getByProductId);
+// router.get('/machinery_id', storeController.getByMachineryId);
+// router.get('/product_id', storeController.getByProductId);
 // router.get('/:ingredients_id', storeController.getByingredientsId);
 // router.get('/:keyword', storeController.getByKeyword);
 
