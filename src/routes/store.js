@@ -10,6 +10,11 @@ const  {storeRequest} = require('../middlewares/user-request/store');
  * @property {array} ingredient_items.required - {ingredient_id, price, quatity}
  */
 
+
+ router.post('/machinery_id', storeController.getByMachineryId);
+ router.post('/product_id', storeController.getByProductId);
+ router.post('/ingredients_id', storeController.getByingredientsId);
+
 /**
  * Get a store 
  * 
@@ -197,10 +202,6 @@ router.delete('/:id', storeController.deleteStore);
 router.get('/user/:id', storeController.getByUserId);
 
 // Todo
-// router.get('/machinery_id', storeController.getByMachineryId);
-// router.get('/product_id', storeController.getByProductId);
-// router.get('/:ingredients_id', storeController.getByingredientsId);
-// router.get('/:keyword', storeController.getByKeyword);
 
 
 // Testing remains
