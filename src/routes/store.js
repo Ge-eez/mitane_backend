@@ -14,7 +14,7 @@ const  {storeRequest} = require('../middlewares/user-request/store');
 /**
  * Get stores with the machinery
  * 
- * @route GET /store/machinery_id
+ * @route Post /store/machinery_id
  * @group Store 
  * @security JWT
  * @param {number} latitude.body.required - latitude of the user
@@ -27,7 +27,7 @@ const  {storeRequest} = require('../middlewares/user-request/store');
  /**
  * Get stores with the product
  * 
- * @route GET /store/product_id
+ * @route Post /store/product_id
  * @group Store 
  * @security JWT
  * @param {number} latitude.body.required - latitude of the user
@@ -40,7 +40,7 @@ const  {storeRequest} = require('../middlewares/user-request/store');
  /**
  * Get stores with the ingredient
  * 
- * @route GET /store/ingredients_id
+ * @route Post /store/ingredients_id
  * @group Store 
  * @security JWT
  * @param {number} latitude.body.required - latitude of the user
