@@ -3,6 +3,24 @@ const Joi_Num = Joi.extend(require('joi-phone-number'));
 
 exports.storeRequest = schemaName => async (req,res,next) => {
     let validationObjects = {
+        getProduct: () => 
+            Joi.object({
+                product: Joi.string().required(),
+                latitude: Joi.number().min(-90).max(90).required(),
+                longitude: Joi.number().min(-180).max(180).required()
+            }),
+        getMachinery: () => 
+            Joi.object({
+                machinery: Joi.string().required(),
+                latitude: Joi.number().min(-90).max(90).required(),
+                longitude: Joi.number().min(-180).max(180).required()
+            }),
+        getIngredient: () => 
+                Joi.object({
+                    ingredient: Joi.string().required(),
+                    latitude: Joi.number().min(-90).max(90).required(),
+                    longitude: Joi.number().min(-180).max(180).required()
+                }),
         addProduct: () => 
             Joi.object({
                 product: Joi.string().required(),
@@ -51,6 +69,11 @@ exports.storeRequest = schemaName => async (req,res,next) => {
             Joi.object({
                 ingredient: Joi.string().required(),
             }),
+        createStore : () =>
+            Joi.object({
+                latitude: Joi.number().min(-90).max(90).required(),
+                longitude: Joi.number().min(-180).max(180).required()
+            })
     }
     try {
        const {error } =  validationObjects[schemaName]().validate(req.body)

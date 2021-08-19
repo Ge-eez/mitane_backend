@@ -1,6 +1,6 @@
 const storeModel = require('../models/store-model');
 
-exports.createStore = async (user_id, roles) => {
+exports.createStore = async (user_id, roles, coordinates) => {
     try {
         if(
             (roles).includes('farmer') || 
@@ -9,7 +9,11 @@ exports.createStore = async (user_id, roles) => {
             (roles).includes('tool_trader')
         )
         {
-            const store = await storeModel.create({user: user_id});
+            const store = await storeModel.create({user: user_id,        
+                location : {
+                    coordinates: coordinates
+                }
+            });
             return store
             
         }

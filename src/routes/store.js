@@ -8,12 +8,47 @@ const  {storeRequest} = require('../middlewares/user-request/store');
  * @property {array} product_items.required - {product_id, price, quatity}
  * @property {array} machinery_items.required - {machinery_id, price, quatity}
  * @property {array} ingredient_items.required - {ingredient_id, price, quatity}
+ * @property {array} location.required - latitude, longitude
  */
 
+/**
+ * Get stores with the machinery
+ * 
+ * @route GET /store/machinery_id
+ * @group Store 
+ * @security JWT
+ * @param {number} latitude.body.required - latitude of the user
+ * @param {number} longitude.body.required - longitude of the user
+ * @returns {object} 200 - Store objects nearby
+ * @returns {Error}  default - Unexpected error
+ */
+ router.post('/machinery_id', storeRequest('getMachinery'), storeController.getByMachineryId);
 
- router.post('/machinery_id', storeController.getByMachineryId);
- router.post('/product_id', storeController.getByProductId);
- router.post('/ingredients_id', storeController.getByingredientsId);
+ /**
+ * Get stores with the product
+ * 
+ * @route GET /store/product_id
+ * @group Store 
+ * @security JWT
+ * @param {number} latitude.body.required - latitude of the user
+ * @param {number} longitude.body.required - longitude of the user
+ * @returns {object} 200 - Store objects nearby
+ * @returns {Error}  default - Unexpected error
+ */
+ router.post('/product_id', storeRequest('getProduct'), storeController.getByProductId);
+
+ /**
+ * Get stores with the ingredient
+ * 
+ * @route GET /store/ingredients_id
+ * @group Store 
+ * @security JWT
+ * @param {number} latitude.body.required - latitude of the user
+ * @param {number} longitude.body.required - longitude of the user
+ * @returns {object} 200 - Store objects nearby
+ * @returns {Error}  default - Unexpected error
+ */
+ router.post('/ingredients_id', storeRequest('getIngredient'), storeController.getByingredientsId);
 
 /**
  * Get a store 
@@ -58,10 +93,12 @@ router.get('/:id', storeController.getByID);
  * @route POST /store
  * @group Store 
  * @security JWT
+ * @param {number} latitude.body.required - latitude of the user
+ * @param {number} longitude.body.required - longitude of the user
  * @returns {object} 200 - Store object
  * @returns {Error}  default - Unexpected error
  */
-router.post('/', storeController.createStore);
+router.post('/', storeRequest('createStore'), storeController.createStore);
 
 /**
  * Add new product

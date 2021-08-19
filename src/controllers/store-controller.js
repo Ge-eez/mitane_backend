@@ -92,8 +92,7 @@ exports.getSelfStore = async (req, res) => {
         })
         if(!store )
         { 
-            const store = storeService.createStore(user_id, roles);
-            res.json(store)
+            throw new Error("User doesn't have a store")
         }
         
         res.json(store)
@@ -110,11 +109,12 @@ exports.createStore = async (req, res) => {
     const { user } = req
     const roles = user.data.roles
     const user_id = user.data._id
+    const coordinates = [req.body.longitude, req.body.latitude]
 
     try {
         if(user){
             
-            const store = await storeService.createStore(user_id, roles);
+            const store = await storeService.createStore(user_id, roles, coordinates);
             res.json(store)
         }
         else{
@@ -303,6 +303,9 @@ exports.getByProductId = async (req, res) => {
 }
 exports.getByingredientsId = async (req, res) => {
     const { user } = req;
+    const latitude = 50;
+    const longitude = 60;
+
     try {
         if(user){
             let item_id = req.body.ingredient;
@@ -313,7 +316,18 @@ exports.getByingredientsId = async (req, res) => {
                 const stores = await storeModel.find({
                     ingredient_items: {$elemMatch: 
                         {ingredients: item_id}
-                    }});
+                    },
+                    location : {
+                        $near: {
+                          $geometry: {
+                            type: "Point",
+                            coordinates : [longitude, latitude]
+                          },
+                        }
+                      }
+                }).populate({path: "user", select: 
+                    "location name phone_no",
+                     populate: {path: 'roles', select: "name-_id"} });
                 res.json(stores);            
             }
             else{

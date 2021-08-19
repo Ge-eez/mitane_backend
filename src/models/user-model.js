@@ -14,17 +14,6 @@ const userSchema = new mongoose.Schema({
 
     roles: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Roles' }],
     permissions: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Permissions' }],
-
-    location: {
-      type: {
-        type: String, 
-        enum: "Point", default: "Point",
-      },
-      coordinates: {
-        type: [Number],
-        required: true
-      }, 
-    },
     
   },{timestamps: {createdAt: 'created_at', modifiedAt: 'modified_at'}
 });
@@ -79,5 +68,4 @@ userSchema.method({
 
 // plugins
 userSchema.plugin(mongoosePaginate);
-userSchema.index({ location : "2dsphere" });
 module.exports = mongoose.model('User', userSchema);
