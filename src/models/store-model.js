@@ -20,9 +20,20 @@ const StoreSchema = new mongoose.Schema({
         quantity: { type: Number,},
         price_per_kg: { type: Number, },
     }],
+
+    location: {
+        type: {
+          type: String, 
+          enum: "Point", default: "Point",
+        },
+        coordinates: {
+          type: [Number],
+          required: true
+        }, 
+      },
 },{timestamps: {createdAt: 'created_at', modifiedAt: 'modified_at'}
 });
 
 StoreSchema.plugin(mongoosePaginate);
-
+StoreSchema.index({ location : "2dsphere" });
 module.exports = mongoose.model('Stores', StoreSchema);

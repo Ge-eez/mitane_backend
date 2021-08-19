@@ -11,7 +11,6 @@
  * @property {string} name.required - User's full name
  * @property {string} password.required - A strong password length of 3-30 consisting lowercase, uppercase, and numbers
  * @property {number} phone_no.required - User's phone number
- * @property {array} location.required - latitude, longitude
  */
 
 var router = require("express-promise-router")();
