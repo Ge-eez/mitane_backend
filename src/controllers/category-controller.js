@@ -52,7 +52,7 @@ exports.getCategoryById = asyncHandler(async (req,res,next)=>{
 //@access   private
 exports.createCategory = asyncHandler(async (req,res,next)=>{
     const {name} = req.body;
-    const category = await Categories.create(name);
+    const category = await Categories.create({name});
     res.status(200).json({
         success:true,
         data:category
