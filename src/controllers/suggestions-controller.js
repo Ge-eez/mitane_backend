@@ -3,7 +3,7 @@ const ErrorResponse = require('../utility/errorResponse');
 const Products = require('../models/product-model');
 const Price = require('../models/price-model');
 exports.getSuggestionsBasedOnPrice = asyncHandler(async(req,res,next) =>
-{
+{   
     let price = {price_of_the_day:{price}}
     let suggestions = await Price.aggregate([
         { $lookup:
@@ -31,9 +31,10 @@ exports.getSuggestionsBasedOnPrice = asyncHandler(async(req,res,next) =>
 
 
 }
-
-
-
-
 )
+
+
+exports.getSuggestionsBasedOnWeather
+
+
 
