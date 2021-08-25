@@ -1,369 +1,374 @@
-const permissions = [
-    
-    'create role',
-    'view any role',
-    'view role',
-    'update role',
-    'remove role',
+const permissions = [     
 
-    'create user',
-    'view any user',
-    'view user',
-    'update user',
-    'remove user',
+    'create role', 
+    'view any role', 
+    'view role',  
+    'update role', 
+    'remove role', 
+ 
+    'create user', 
+    'view any user', 
+    'view user', 
+    'update user', 
+    'remove user', 
+ 
+    'create ingredients', 
+    'view any ingredients', 
+    'view ingredients', 
+    'update ingredients', 
+    'remove ingredients', 
+ 
+    'create machinery', 
+    'view any machinery', 
+    'view machinery', 
+    'update machinery', 
+    'remove machinery', 
+ 
+    'create product', 
+    'view any product', 
+    'view product', 
+    'update product', 
+    'remove product', 
+ 
+    'create category', 
+    'view any category', 
+    'view category', 
+    'update category', 
+    'remove category', 
+ 
+    'create store', 
+    'view any store', 
+    'view store', 
+    'update store', 
+    'remove store', 
+ 
+    'create price', 
+    'view any price', 
+    'view price', 
+    'update price', 
+    'remove price', 
 
-    'create ingredients',
-    'view any ingredients',
-    'view ingredients',
-    'update ingredients',
-    'remove ingredients',
+] 
 
-    'create machinery',
-    'view any machinery',
-    'view machinery',
-    'update machinery',
-    'remove machinery',
+const roles = { 
 
-    'create product',
-    'view any product',
-    'view product',
-    'update product',
-    'remove product',
+    admin: [...permissions], 
 
-    'create category',
-    'view any category',
-    'view category',
-    'update category',
-    'remove category',
+    user: [ 
+ 
+        'view any ingredients', 
+        'view ingredients', 
+ 
+        'view any machinery', 
+        'view machinery', 
+ 
+        'view any product', 
+        'view product', 
+ 
+        'view any category', 
+        'view category', 
+ 
+        'view any store', 
+        'view store', 
+     
+        'view any price', 
+        'view price',  
+    ], 
+ 
+    data_encoder: [ 
+ 
+        'view any ingredients', 
+        'view ingredients', 
+ 
+        'view any machinery', 
+        'view machinery', 
+ 
+        'view any product', 
+        'view product', 
+ 
+        'view any category', 
+        'view category', 
+ 
+        'view any store', 
+        'view store', 
+ 
+        'create price', 
+        'view any price', 
+        'view price', 
+        'update price', 
+        'remove price', 
+    ],  
+ 
+    farmer : [ 
 
-    'create store',
-    'view any store',
-    'view store',
-    'update store',
-    'remove store',
+        'view any ingredients', 
+        'view ingredients', 
+ 
+        'view any machinery', 
+        'view machinery', 
+ 
+        'view any product', 
+        'view product', 
+ 
+        'view any category', 
+        'view category', 
+ 
+        'create store', 
+        'view store', 
+        'update store', 
+        'remove store', 
+ 
+        'view any price', 
+        'view price',  
+    ], 
+ 
+    product_trader: [ 
 
-    'create price',
-    'view any price',
-    'view price',
-    'update price',
-    'remove price',
-]
+        'view any ingredients', 
+        'view ingredients', 
+ 
+        'view any machinery', 
+        'view machinery', 
+ 
+        'view any product', 
+        'view product', 
+ 
+        'view any category', 
+        'view category', 
+ 
+        'create store', 
+        'view store', 
+        'update store', 
+        'remove store', 
+ 
+        'view any price', 
+        'view price', 
+    ], 
 
-const roles = {
-    admin: [...permissions],
-    user: [
+    tool_trader: [ 
+ 
+        'view any ingredients', 
+        'view ingredients', 
+ 
+        'view any machinery', 
+        'view machinery', 
+ 
+        'view any product', 
+        'view product', 
+ 
+        'view any category', 
+        'view category', 
+ 
+        'create store', 
+        'view store', 
+        'update store', 
+        'remove store', 
+ 
+        'view any price', 
+        'view price', 
+    ], 
+ 
+    accessory_trader: [ 
+ 
+        'view any ingredients', 
+        'view ingredients', 
+ 
+        'view any machinery', 
+        'view machinery',  
+ 
+        'view any product', 
+        'view product', 
+ 
+        'view any category', 
+        'view category', 
+ 
+        'create store', 
+        'view store', 
+        'update store', 
+        'remove store', 
+ 
+        'view any price', 
+        'view price', 
+    ] 
 
-        'view any ingredients',
-        'view ingredients',
-
-        'view any machinery',
-        'view machinery',
-
-        'view any product',
-        'view product',
-
-        'view any category',
-        'view category',
-
-        'view any store',
-        'view store',
-    
-        'view any price',
-        'view price',
-    ],
-
-    data_encoder: [
-
-        'view any ingredients',
-        'view ingredients',
-
-        'view any machinery',
-        'view machinery',
-
-        'view any product',
-        'view product',
-
-        'view any category',
-        'view category',
-
-        'view any store',
-        'view store',
-
-        'create price',
-        'view any price',
-        'view price',
-        'update price',
-        'remove price',
-    ],
-
-    farmer : [
-        'view any ingredients',
-        'view ingredients',
-
-        'view any machinery',
-        'view machinery',
-
-        'view any product',
-        'view product',
-
-        'view any category',
-        'view category',
-
-        'create store',
-        'view store',
-        'update store',
-        'remove store',
-
-        'view any price',
-        'view price',
-
-    ],
-
-    product_trader: [
-        'view any ingredients',
-        'view ingredients',
-
-        'view any machinery',
-        'view machinery',
-
-        'view any product',
-        'view product',
-
-        'view any category',
-        'view category',
-
-        'create store',
-        'view store',
-        'update store',
-        'remove store',
-
-        'view any price',
-        'view price',
-
-    ],
-
-    tool_trader: [
-
-        'view any ingredients',
-        'view ingredients',
-
-        'view any machinery',
-        'view machinery',
-
-        'view any product',
-        'view product',
-
-        'view any category',
-        'view category',
-
-        'create store',
-        'view store',
-        'update store',
-        'remove store',
-
-        'view any price',
-        'view price',
-    ],
-
-    accessory_trader: [
-
-        'view any ingredients',
-        'view ingredients',
-
-        'view any machinery',
-        'view machinery',
-
-        'view any product',
-        'view product',
-
-        'view any category',
-        'view category',
-
-        'create store',
-        'view store',
-        'update store',
-        'remove store',
-
-        'view any price',
-        'view price',
-    ]
-}
-
-const users = [
-    {
-        name: 'admin',
-        password: 'superuser',
-        roles: ['admin'],
-        phone_no : +251900000000,
-        location: {
-            coordinates: [38.291473, 8.988429]
-        }
-
-    },
-    {
-        name: 'encoder',
-        password: 'encoderuser',
-        roles: ['data_encoder'],
-        phone_no : +251911111111,
-        location: {
-            coordinates: [38.591473, 8.988429]
-        }
-
-    },
-    {
-        name: 'farmer',
-        password: 'farmeruser',
-        roles: ['farmer'],
-        phone_no : +251922222222,
-        location: {
-            coordinates: [38.491473, 8.988429]
-        }
-
-    },
-    {
-        name: 'accessorytrader',
-        password: 'accessorytraderuser',
-        roles: ['accessory_trader'],
-        phone_no : +251933333333,
-        location: {
-            coordinates: [38.701473, 8.988429]
-        }
-
-    },
-    {
-        name: 'producttrader',
-        password: 'producttraderuser',
-        roles: ['product_trader'],
-        phone_no : +251944444444,
-        location: {
-            coordinates: [38.691473, 8.988429]
-        }
-
-    },
-    {
-        name: 'tooltrader',
-        password: 'tooltraderuser',
-        roles: ['tool_trader'],
-        phone_no : +251955555555,
-        location: {
-            coordinates: [38.781473, 8.988429]
-        }
-
-    },
-    {
-        name: 'user',
-        password: 'justuser',
-        roles: ['user'],
-        phone_no : +251966666666,
-        location: {
-            coordinates: [38.791473, 8.988429]
-        }
-
-    },
-
-]
-const machineries = [
-    {
-        name: "tractor"
-    },
-    {
-        name: 'mewqiya'
+} 
+ 
+const users = [ 
+    { 
+        name: 'admin', 
+        password: 'superuser', 
+        roles: ['admin'], 
+        phone_no : +251900000000, 
+        location: { 
+            coordinates: [38.291473, 8.988429] 
+        } 
+ 
     }, 
-    {
-        name: "mekesikesha"
-    },
-    {
-        name: 'maresha'
-    },
-    {
-        name: "megolgoya"
-    },
-    {
-        name: 'mezriya'
+    { 
+        name: 'encoder', 
+        password: 'encoderuser', 
+        roles: ['data_encoder'], 
+        phone_no : +251911111111, 
+        location: { 
+            coordinates: [38.591473, 8.988429] 
+        } 
+ 
     }, 
-    {
-        name: "chemical mercha"
-    },
-    {
-        name: 'mebuatecha'
-    }
-]
+    { 
+        name: 'farmer', 
+        password: 'farmeruser', 
+        roles: ['farmer'], 
+        phone_no : +251922222222, 
+        location: { 
+            coordinates: [38.491473, 8.988429] 
+        }  
+ 
+    }, 
+    { 
+        name: 'accessorytrader', 
+        password: 'accessorytraderuser', 
+        roles: ['accessory_trader'], 
+        phone_no : +251933333333, 
+        location: { 
+            coordinates: [38.701473, 8.988429] 
+        } 
+ 
+    }, 
+    { 
+        name: 'producttrader', 
+        password: 'producttraderuser', 
+        roles: ['product_trader'], 
+        phone_no : +251944444444, 
+        location: { 
+            coordinates: [38.691473, 8.988429] 
+        } 
+ 
+    }, 
+    {  
+        name: 'tooltrader', 
+        password: 'tooltraderuser', 
+        roles: ['tool_trader'], 
+        phone_no : +251955555555, 
+        location: { 
+            coordinates: [38.781473, 8.988429] 
+        } 
+ 
+    }, 
+    { 
+        name: 'user', 
+        password: 'justuser', 
+        roles: ['user'], 
+        phone_no : +251966666666, 
+        location: { 
+            coordinates: [38.791473, 8.988429] 
+        } 
+ 
+    }, 
+ 
+] 
 
-const categories = [
-    {
-        name: 'fruits',
-        type: 'product'
-    },
-    {
-        name: 'ceral',
-        type: 'product'
-    },
-    {
-        name: 'ye qibat ehil',
-        type: 'product'
-    },
-    {
-        name: 'vegitable',
-        type: 'product'
-    },
-    {
-        name: 'qimema qimem',
-        type: 'product'
-    },
-    {
-        name: 'ye ageda sebiloch',
-        type: 'product'
-    },
-    {
-        name: 'aneqaqi tekiloch',
-        type: 'product'
-    },
-    {
-        name: 'ye qum ensisa',
-        type: 'product'
-    },
-    {
-        name: 'doro',
-        type: 'product'
-    },
-    {
-        name: 'asa',
-        type: 'product'
-    },
-    {
-        name: 'diary products',
-        type: 'product'
-    },
-    {
-        name: 'ye den wutet',
-        type: 'product'
-    },
-    {
-        name: 'flower',
-        type: 'product'
-    },
-    {
-        name: 'mar',
-        type: 'product'
-    },
-    {
-        name: 'feritlizer',
-        type: 'ingredient'
-    },
-    {
-        name: 'mirt zer',
-        type: 'ingredient'
-    },    
-    {
-        name: 'meno',
-        type: 'ingredient'
-    },
-    {
-        name: 'qefo',
-        type: 'ingredient'
-    }
-]
-
+const machineries = [ 
+    { 
+        name: "tractor" 
+    }, 
+    { 
+        name: 'mewqiya' 
+    },  
+    { 
+        name: "mekesikesha" 
+    }, 
+    { 
+        name: 'maresha' 
+    }, 
+    { 
+        name: "megolgoya" 
+    },  
+    { 
+        name: 'mezriya' 
+    },  
+    { 
+        name: "chemical mercha" 
+    }, 
+    { 
+        name: 'mebuatecha' 
+    } 
+] 
+ 
+const categories = [ 
+    { 
+        name: 'fruits', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'ceral', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'ye qibat ehil', 
+        type: 'product'   
+    }, 
+    { 
+        name: 'vegitable', 
+        type: 'product' 
+    }, 
+    {  
+        name: 'qimema qimem', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'ye ageda sebiloch', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'aneqaqi tekiloch', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'ye qum ensisa',  
+        type: 'product' 
+    }, 
+    { 
+        name: 'doro', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'asa', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'diary products', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'ye den wutet', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'flower', 
+        type: 'product'  
+    }, 
+    { 
+        name: 'mar', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'feritlizer', 
+        type: 'ingredient' 
+    }, 
+    { 
+        name: 'mirt zer', 
+        type: 'ingredient' 
+    },      
+    { 
+        name: 'meno', 
+        type: 'ingredient' 
+    }, 
+    { 
+        name: 'qefo', 
+        type: 'ingredient' 
+    } 
+] 
+ 
 const farming_ingredient  = [  
     {  
         name: "Yuriya",  
