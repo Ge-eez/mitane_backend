@@ -364,194 +364,194 @@ const categories = [
     }
 ]
 
-const farming_ingredient  = [
-    {
-        name: "Yuriya",
-        category: ['feritlizer']
-    },
-    {
-        name: "Dap",
-        category: ['feritlizer']
-    },
-    {
-        name: "Nitrogen",
-        category: ['ferilizer']
-    },
-    {
-        name: "Phosphic",
-        category: ['feritlizer']
-    },
-    {
-        name: "Potassium",
-        category: ['feritlizer']
-    },
-    {
-        name: "Natural",
-        category: ['feritlizer']
-    },
-    {
-        name: "ye atkilt",
-        category: ['mirt zer']
-    },
-    {
-        name: "ye beqolo",
-        category: ['mirt zer']
-    },
-    {
-        name: "ye qimema qimem",
-        category: ['mirt zer']
-    },
-    {
-        name: 'ye ensisat meno',
-        category: ['meno']
-    },
-    {
-        name: 'zemenawi qefo',
-        category: ['qefo']
-    }
-]
-
-const products = [
-    {
-        name: "Orange",
-        category: 'fruits'
-    },
-    {
-        name: "Banana",
-        category: 'fruits'
-    },
-    {
-        name: "Avocado",
-        category: 'fruits'
-    },
-    {
-        name: "Papaya",
-        category: 'fruits'
-    },
-    {
-        name: "Mango",
-        category: 'fruits'
-    },
-    {
-        name: "Lemon",
-        category: 'fruits'
-    },
-    {
-        name: "Watermelon",
-        category: 'fruits'
-    },
-    {
-        name: "Apple",
-        category: 'fruits'
-    },
-    {
-        name: "Jack fruit",
-        category: 'fruits'
-    },
-    {
-        name: "Wine",
-        category: 'fruits'
-    },
-    {
-        name: "Cock",
-        category: 'fruits'
-    },
-    {
-        name: "Zotin",
-        category: 'fruits'
-    },
-    {
-        name: "Prim",
-        category: 'fruits'
-    },
-    {
-        name: "Strawberry",
-        category: 'fruits'
-    },
-    {
-        name: "Gishta",
-        category: 'fruits'
-    },
-    {
-        name: "Roman",
-        category: 'fruits'
-    },
-    {
-        name: "Tiringo",
-        category: 'fruits'
-    },
-    {
-        name: "Baqela",
-        category: 'ceral'
-    },
-    {
-        name: "Ater",
-        category: 'ceral'
-    },
-    {
-        name: "Akuri ater",
-        category: 'ceral'
-    },
-    {
-        name: "Shimbira",
-        category: 'ceral'
-    },
-    {
-        name: "Misir",
-        category: 'ceral'
-    },
-    {
-        name: "Guaya",
-        category: 'ceral'
-    },
-    {
-        name: "Pinto bean",
-        category: 'ceral'
-    },
-    {
-        name: "Pijon bean",
-        category: 'ceral'
-    },
-    {
-        name: "Boloqe",
-        category: 'ceral'
-    },
-    {
-        name: "Gibto",
-        category: 'ceral'
-    },
-    {
-        name: "Masho",
-        category: 'ceral'
-    },
-    {
-        name: "Selit",
-        category: 'ye qibat ehil'
-    },
-    {
-        name: "Nug",
-        category: 'ye qibat ehil'
-    },
-    {
-        name: "Telba",
-        category: 'ye qibat ehil'
-    },
-    {
-        name: "Lewz",
-        category: 'ye qibat ehil'
-    },
-    {
-        name: "Suf",
-        category: 'ye qibat ehil'
-    },
-    {
-        name: "Gomenzer",
-        category: 'ye qibat ehil'
-    },
-    {
-        name: "Ye duba fre",
-        category: 'ye qibat ehil'
-    },
+const farming_ingredient  = [  
+    {  
+        name: "Yuriya",  
+        category: ['feritlizer']  
+    },  
+    {  
+        name: "Dap",  
+        category: ['feritlizer']  
+    },  
+    {  
+        name: "Nitrogen",  
+        category: ['ferilizer']  
+    },  
+    {  
+        name: "Phosphic",  
+        category: ['feritlizer']  
+    },  
+    { 
+        name: "Potassium", 
+        category: ['feritlizer'] 
+    }, 
+    { 
+        name: "Natural", 
+        category: ['feritlizer'] 
+    }, 
+    { 
+        name: "ye atkilt", 
+        category: ['mirt zer'] 
+    }, 
+    { 
+        name: "ye beqolo", 
+        category: ['mirt zer'] 
+    }, 
+    { 
+        name: "ye qimema qimem", 
+        category: ['mirt zer']  
+    },  
+    {  
+        name: 'ye ensisat meno',  
+        category: ['meno']  
+    },  
+    {  
+        name: 'zemenawi qefo',  
+        category: ['qefo']  
+    } 
+] 
+ 
+const products = [ 
+    { 
+        name: "Orange",  
+        category: 'fruits' 
+    }, 
+    { 
+        name: "Banana", 
+        category: 'fruits' 
+    },  
+    {  
+        name: "Avocado",  
+        category: 'fruits'  
+    },  
+    {  
+        name: "Papaya",  
+        category: 'fruits'  
+    },  
+    {  
+        name: "Mango",  
+        category: 'fruits'  
+    }, 
+    { 
+        name: "Lemon",  
+        category: 'fruits'  
+    },  
+    {  
+        name: "Watermelon",  
+        category: 'fruits'  
+    },  
+    { 
+        name: "Apple", 
+        category: 'fruits' 
+    }, 
+    { 
+        name: "Jack fruit", 
+        category: 'fruits' 
+    },  
+    {  
+        name: "Wine",  
+        category: 'fruits'  
+    },  
+    {      
+        name: "Cock",  
+        category: 'fruits'  
+    },  
+    {  
+        name: "Zotin", 
+        category: 'fruits' 
+    }, 
+    { 
+        name: "Prim", 
+        category: 'fruits' 
+    }, 
+    { 
+        name: "Strawberry", 
+        category: 'fruits' 
+    }, 
+    { 
+        name: "Gishta", 
+        category: 'fruits' 
+    }, 
+    { 
+        name: "Roman", 
+        category: 'fruits' 
+    }, 
+    { 
+        name: "Tiringo", 
+        category: 'fruits' 
+    }, 
+    { 
+        name: "Baqela", 
+        category: 'ceral' 
+    }, 
+    { 
+        name: "Ater", 
+        category: 'ceral' 
+    },  
+    {  
+        name: "Akuri ater",  
+        category: 'ceral'  
+    },  
+    {  
+        name: "Shimbira",  
+        category: 'ceral'  
+    },  
+    {  
+        name: "Misir",  
+        category: 'ceral'  
+    },  
+    {  
+        name: "Guaya",  
+        category: 'ceral'    
+    },  
+    {  
+        name: "Pinto bean",  
+        category: 'ceral'  
+    },  
+    {  
+        name: "Pijon bean",  
+        category: 'ceral'  
+    },  
+    {  
+        name: "Boloqe",  
+        category: 'ceral'  
+    },  
+    {  
+        name: "Gibto",  
+        category: 'ceral'  
+    },  
+    {  
+        name: "Masho",  
+        category: 'ceral'  
+    },  
+    {  
+        name: "Selit",  
+        category: 'ye qibat ehil'  
+    },  
+    {  
+        name: "Nug",  
+        category: 'ye qibat ehil'  
+    }, 
+    {  
+        name: "Telba", 
+        category: 'ye qibat ehil' 
+    }, 
+    { 
+        name: "Lewz",  
+        category: 'ye qibat ehil' 
+    },  
+    { 
+        name: "Suf", 
+        category: 'ye qibat ehil' 
+    }, 
+    { 
+        name: "Gomenzer", 
+        category: 'ye qibat ehil' 
+    }, 
+    { 
+        name: "Ye duba fre", 
+        category: 'ye qibat ehil' 
+    }, 
     { 
         name: "Ye gulo fre", 
         category: 'ye qibat ehil' 
