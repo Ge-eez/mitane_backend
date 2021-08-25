@@ -552,118 +552,118 @@ const products = [
         name: "Ye duba fre",
         category: 'ye qibat ehil'
     },
-    {
-        name: "Ye gulo fre",
-        category: 'ye qibat ehil'
-    },
-    {
-        name: "Potato",
-        category: 'vegitable'
-    },
-    {
-        name: "Tomato",
-        category: 'vegitable'
-    },
-    {
-        name: "Onion",
-        category: 'vegitable'
-    },
-    {
-        name: "Garlic",
-        category: 'vegitable'
-    },
-    {
-        name: "Cabbage",
-        category: 'vegitable'
-    },
-    {
-        name: "Carrot",
-        category: 'vegitable'
-    },
-    {
-        name: "Qey sir",
-        category: 'vegitable'
-    },
-    {
-        name: "Mushroom",
-        category: 'vegitable'
-    },
-    {
-        name: "Qosta",
-        category: 'vegitable'
-    },
-    {
-        name: "Salad",
-        category: 'vegitable'
-    },
-    {
-        name: "Pepper",
-        category: 'vegitable'
-    },
-    {
-        name: "Berbere",
-        category: 'qimema qimem'
-    },
-    {
-        name: "Zinjibil",
-        category: 'qimema qimem'
-    },
-    {
-        name: "Erid",
-        category: 'qimema qimem'
-    },
-    {
-        name: "Tikur azmud",
-        category: 'qimema qimem'
-    },
-    {
-        name: "Korerima",
-        category: 'qimema qimem'
-    },
-    {
-        name: "Abish",
-        category: 'qimema qimem'
-    },
-    {
-        name: "Dimbilal",
-        category: 'qimema qimem'
-    },
-    {
-        name: "Beqolo",
-        category: 'ye ageda sebiloch'
-    },
-    {
-        name: "Teff",
-        category: 'ye ageda sebiloch'
-    },
-    {
-        name: "Gebs",
-        category: 'ye ageda sebiloch'
-    },
-    {
-        name: "Aja",
-        category: 'ye ageda sebiloch'
-    },
-    {
-        name: "Sinde",
-        category: 'ye ageda sebiloch'
-    },
-    {
-        name: "Dagusa",
-        category: 'ye ageda sebiloch'
-    },
-    {
-        name: "Rice",
-        category: 'ye ageda sebiloch'
-    },
-    {
-        name: "Cotton",
-        category: 'ye ageda sebiloch'
-    },
-    {
-        name: "Qacha",
-        category: 'ye ageda sebiloch'
+    { 
+        name: "Ye gulo fre", 
+        category: 'ye qibat ehil' 
     }, 
+    { 
+        name: "Potato", 
+        category: 'vegitable' 
+    }, 
+    { 
+        name: "Tomato", 
+        category: 'vegitable' 
+    }, 
+    { 
+        name: "Onion", 
+        category: 'vegitable' 
+    }, 
+    { 
+        name: "Garlic", 
+        category: 'vegitable' 
+    }, 
+    { 
+        name: "Cabbage", 
+        category: 'vegitable' 
+    }, 
+    { 
+        name: "Carrot", 
+        category: 'vegitable' 
+    }, 
+    { 
+        name: "Qey sir", 
+        category: 'vegitable' 
+    }, 
+    { 
+        name: "Mushroom", 
+        category: 'vegitable' 
+    }, 
+    { 
+        name: "Qosta", 
+        category: 'vegitable' 
+    }, 
+    { 
+        name: "Salad", 
+        category: 'vegitable' 
+    }, 
+    { 
+        name: "Pepper", 
+        category: 'vegitable' 
+    }, 
+    { 
+        name: "Berbere", 
+        category: 'qimema qimem' 
+    }, 
+    { 
+        name: "Zinjibil", 
+        category: 'qimema qimem' 
+    }, 
+    { 
+        name: "Erid", 
+        category: 'qimema qimem' 
+    }, 
+    { 
+        name: "Tikur azmud", 
+        category: 'qimema qimem'  
+    }, 
+    { 
+        name: "Korerima", 
+        category: 'qimema qimem' 
+    }, 
+    { 
+        name: "Abish", 
+        category: 'qimema qimem' 
+    }, 
+    { 
+        name: "Dimbilal", 
+        category: 'qimema qimem' 
+    }, 
+    { 
+        name: "Beqolo", 
+        category: 'ye ageda sebiloch' 
+    }, 
+    { 
+        name: "Teff", 
+        category: 'ye ageda sebiloch' 
+    }, 
+    { 
+        name: "Gebs", 
+        category: 'ye ageda sebiloch' 
+    }, 
+    { 
+        name: "Aja", 
+        category: 'ye ageda sebiloch' 
+    }, 
+    { 
+        name: "Sinde", 
+        category: 'ye ageda sebiloch' 
+    }, 
+    { 
+        name: "Dagusa", 
+        category: 'ye ageda sebiloch' 
+    }, 
+    { 
+        name: "Rice", 
+        category: 'ye ageda sebiloch' 
+    }, 
+    { 
+        name: "Cotton", 
+        category: 'ye ageda sebiloch' 
+    }, 
+    { 
+        name: "Qacha", 
+        category: 'ye ageda sebiloch' 
+    },  
     { 
         name: "Coffee", 
         category: 'aneqaqi tekiloch' 
