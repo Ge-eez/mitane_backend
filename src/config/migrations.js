@@ -1,52 +1,54 @@
-const permissions = [    
-    'create role',
-    'view any role',
-    'view role',
-    'update role',
-    'remove role',
+const permissions = [     
 
-    'create user',
-    'view any user',
-    'view user',
-    'update user',
-    'remove user',
+    'create role', 
+    'view any role', 
+    'view role',  
+    'update role', 
+    'remove role', 
+ 
+    'create user', 
+    'view any user', 
+    'view user', 
+    'update user', 
+    'remove user', 
+ 
+    'create ingredients', 
+    'view any ingredients', 
+    'view ingredients', 
+    'update ingredients', 
+    'remove ingredients', 
+ 
+    'create machinery', 
+    'view any machinery', 
+    'view machinery', 
+    'update machinery', 
+    'remove machinery', 
+ 
+    'create product', 
+    'view any product', 
+    'view product', 
+    'update product', 
+    'remove product', 
+ 
+    'create category', 
+    'view any category', 
+    'view category', 
+    'update category', 
+    'remove category', 
+ 
+    'create store', 
+    'view any store', 
+    'view store', 
+    'update store', 
+    'remove store', 
+ 
+    'create price', 
+    'view any price', 
+    'view price', 
+    'update price', 
+    'remove price', 
 
-    'create ingredients',
-    'view any ingredients',
-    'view ingredients',
-    'update ingredients',
-    'remove ingredients',
-
-    'create machinery',
-    'view any machinery',
-    'view machinery',
-    'update machinery',
-    'remove machinery',
-
-    'create product',
-    'view any product',
-    'view product',
-    'update product',
-    'remove product',
-
-    'create category',
-    'view any category',
-    'view category',
-    'update category',
-    'remove category',
-
-    'create store',
-    'view any store',
-    'view store',
-    'update store',
-    'remove store',
-
-    'create price',
-    'view any price',
-    'view price',
-    'update price',
-    'remove price',
-]
+] 
 
 const roles = { 
 

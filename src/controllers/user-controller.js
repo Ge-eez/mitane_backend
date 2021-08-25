@@ -1,6 +1,5 @@
 const userModel = require('../models/user-model'); 
 const errorResponse = require('../utility/errorResponse'); 
-  
  
 /* 
 @Description: Get all users 
@@ -18,6 +17,7 @@ exports.getUsers = async (req, res, next) => {
         }); 
     } 
 } 
+
  
 /* 
 @Description: Get a user by ID 
@@ -38,6 +38,7 @@ exports.getUserById = async (req, res, next) => {
         }); 
     } 
 } 
+
  
 /* 
 @Description: Filter users by name or phone_no 
@@ -58,6 +59,7 @@ exports.filterUsers = async (req, res, next) => {
         }); 
     } 
 } 
+
  
 /* 
 @Description: Get users by role 
@@ -96,6 +98,7 @@ exports.createUser = async (req, res) => {
     }      
 } 
 
+
 /*
 @Description: Update a user using a specific Id
 @Route: users/update/:id
@@ -118,6 +121,7 @@ exports.updateUser = async (req, res, next) => {
         }); 
     }     
 } 
+
 
 /*
 @Description: Delete a user using a specific Id
