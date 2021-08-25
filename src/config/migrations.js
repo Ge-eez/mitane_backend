@@ -1,5 +1,4 @@
-const permissions = [
-    
+const permissions = [    
     'create role',
     'view any role',
     'view role',
@@ -49,52 +48,54 @@ const permissions = [
     'remove price',
 ]
 
-const roles = {
-    admin: [...permissions],
-    user: [
+const roles = { 
 
-        'view any ingredients',
-        'view ingredients',
+    admin: [...permissions], 
 
-        'view any machinery',
-        'view machinery',
-
-        'view any product',
-        'view product',
-
-        'view any category',
-        'view category',
-
-        'view any store',
-        'view store',
-    
-        'view any price',
-        'view price',
-    ],
-
-    data_encoder: [
-
-        'view any ingredients',
-        'view ingredients',
-
-        'view any machinery',
-        'view machinery',
-
-        'view any product',
-        'view product',
-
-        'view any category',
-        'view category',
-
-        'view any store',
-        'view store',
-
-        'create price',
-        'view any price',
-        'view price',
-        'update price',
-        'remove price',
+    user: [ 
+ 
+        'view any ingredients', 
+        'view ingredients', 
+ 
+        'view any machinery', 
+        'view machinery', 
+ 
+        'view any product', 
+        'view product', 
+ 
+        'view any category', 
+        'view category', 
+ 
+        'view any store', 
+        'view store', 
+     
+        'view any price', 
+        'view price',  
     ], 
+ 
+    data_encoder: [ 
+ 
+        'view any ingredients', 
+        'view ingredients', 
+ 
+        'view any machinery', 
+        'view machinery', 
+ 
+        'view any product', 
+        'view product', 
+ 
+        'view any category', 
+        'view category', 
+ 
+        'view any store', 
+        'view store', 
+ 
+        'create price', 
+        'view any price', 
+        'view price', 
+        'update price', 
+        'remove price', 
+    ],  
  
     farmer : [ 
 
@@ -116,8 +117,7 @@ const roles = {
         'remove store', 
  
         'view any price', 
-        'view price', 
- 
+        'view price',  
     ], 
  
     product_trader: [ 
