@@ -1,22 +1,21 @@
- 
-const mongoose = require('mongoose'); 
-const mongoosePaginate = require('mongoose-paginate-v2'); 
-const bcrypt = require('bcrypt'); 
- 
-const userSchema = new mongoose.Schema({ 
-    name: { type: String, required: true }, 
-    password: { type: String, required: true, minlength: 8, maxlength: 128}, 
-    password_changed_at: { type: Date }, 
-    phone_no : {type: Number, required: true}, 
-     
-    active: { type: Boolean, default: true }, 
-    push_token: { type: String, default: '' }, 
- 
-    roles: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Roles' }], 
-    permissions: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Permissions' }], 
-     
-  },{timestamps: {createdAt: 'created_at', modifiedAt: 'modified_at'} 
-})
+const mongoose = require('mongoose');  
+const mongoosePaginate = require('mongoose-paginate-v2');  
+const bcrypt = require('bcrypt');  
+  
+const userSchema = new mongoose.Schema({  
+    name: { type: String, required: true },  
+    password: { type: String, required: true, minlength: 8, maxlength: 128},  
+    password_changed_at: { type: Date },  
+    phone_no : {type: Number, required: true},  
+      
+    active: { type: Boolean, default: true },  
+    push_token: { type: String, default: '' },  
+  
+    roles: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Roles' }],  
+    permissions: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Permissions' }],  
+    
+  },{timestamps: {createdAt: 'created_at', modifiedAt: 'modified_at'}  
+}) 
 
 // methods 
  
