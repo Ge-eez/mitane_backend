@@ -108,6 +108,5 @@ router.delete('/delete/:id', userController.deleteUser);
 // to be worked on; returns with empty roles 
 router.get('/role/:role', userController.getUserByRole); 
  
-module.exports = router; 
- 
+module.exports = router;  
  
