@@ -94,53 +94,54 @@ const roles = {
         'view price',
         'update price',
         'remove price',
-    ],
+    ], 
+ 
+    farmer : [ 
 
-    farmer : [
-        'view any ingredients',
-        'view ingredients',
+        'view any ingredients', 
+        'view ingredients', 
+ 
+        'view any machinery', 
+        'view machinery', 
+ 
+        'view any product', 
+        'view product', 
+ 
+        'view any category', 
+        'view category', 
+ 
+        'create store', 
+        'view store', 
+        'update store', 
+        'remove store', 
+ 
+        'view any price', 
+        'view price', 
+ 
+    ], 
+ 
+    product_trader: [ 
 
-        'view any machinery',
-        'view machinery',
-
-        'view any product',
-        'view product',
-
-        'view any category',
-        'view category',
-
-        'create store',
-        'view store',
-        'update store',
-        'remove store',
-
-        'view any price',
-        'view price',
-
-    ],
-
-    product_trader: [
-        'view any ingredients',
-        'view ingredients',
-
-        'view any machinery',
-        'view machinery',
-
-        'view any product',
-        'view product',
-
-        'view any category',
-        'view category',
-
-        'create store',
-        'view store',
-        'update store',
-        'remove store',
-
-        'view any price',
-        'view price',
-
-    ],
+        'view any ingredients', 
+        'view ingredients', 
+ 
+        'view any machinery', 
+        'view machinery', 
+ 
+        'view any product', 
+        'view product', 
+ 
+        'view any category', 
+        'view category', 
+ 
+        'create store', 
+        'view store', 
+        'update store', 
+        'remove store', 
+ 
+        'view any price', 
+        'view price', 
+    ], 
 
     tool_trader: [ 
  
