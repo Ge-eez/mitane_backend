@@ -289,81 +289,81 @@ const machineries = [
     }
 ]
 
-const categories = [
-    {
-        name: 'fruits',
-        type: 'product'
-    },
-    {
-        name: 'ceral',
-        type: 'product'
-    },
-    {
-        name: 'ye qibat ehil',
-        type: 'product'
-    },
-    {
-        name: 'vegitable',
-        type: 'product'
-    },
-    {
-        name: 'qimema qimem',
-        type: 'product'
-    },
-    {
-        name: 'ye ageda sebiloch',
-        type: 'product'
-    },
-    {
-        name: 'aneqaqi tekiloch',
-        type: 'product'
-    },
-    {
-        name: 'ye qum ensisa',
-        type: 'product'
-    },
-    {
-        name: 'doro',
-        type: 'product'
-    },
-    {
-        name: 'asa',
-        type: 'product'
-    },
-    {
-        name: 'diary products',
-        type: 'product'
-    },
-    {
-        name: 'ye den wutet',
-        type: 'product'
-    },
-    {
-        name: 'flower',
-        type: 'product'
-    },
-    {
-        name: 'mar',
-        type: 'product'
-    },
-    {
-        name: 'feritlizer',
-        type: 'ingredient'
-    },
-    {
-        name: 'mirt zer',
-        type: 'ingredient'
-    },    
-    {
-        name: 'meno',
-        type: 'ingredient'
-    },
-    {
-        name: 'qefo',
-        type: 'ingredient'
-    }
-]
-
+const categories = [ 
+    { 
+        name: 'fruits', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'ceral', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'ye qibat ehil', 
+        type: 'product'   
+    }, 
+    { 
+        name: 'vegitable', 
+        type: 'product' 
+    }, 
+    {  
+        name: 'qimema qimem', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'ye ageda sebiloch', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'aneqaqi tekiloch', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'ye qum ensisa',  
+        type: 'product' 
+    }, 
+    { 
+        name: 'doro', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'asa', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'diary products', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'ye den wutet', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'flower', 
+        type: 'product'  
+    }, 
+    { 
+        name: 'mar', 
+        type: 'product' 
+    }, 
+    { 
+        name: 'feritlizer', 
+        type: 'ingredient' 
+    }, 
+    { 
+        name: 'mirt zer', 
+        type: 'ingredient' 
+    },      
+    { 
+        name: 'meno', 
+        type: 'ingredient' 
+    }, 
+    { 
+        name: 'qefo', 
+        type: 'ingredient' 
+    } 
+] 
+ 
 const farming_ingredient  = [  
     {  
         name: "Yuriya",  
