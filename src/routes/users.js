@@ -1,6 +1,5 @@
 // var express = require('express'); 
-// var router = express.Router(); 
- 
+// var router = express.Router();  
 // /* GET users listing. */ 
 // router.get('/', function(req, res, next) { 
 //   res.send('respond with a resource'); 
@@ -11,11 +10,11 @@
  * @property {string} name.required - User's full name 
  * @property {string} password.required - A strong password length of 3-30 consisting lowercase, uppercase, and numbers 
  * @property {number} phone_no.required - User's phone number 
- */ 
- 
-var router = require("express-promise-router")(); 
+ */   
+var router = require("express-promise-router")();  
 const userController = require('../controllers/user-controller'); 
- 
+
+  
 /** 
  * Returns ALL Users 
  *   
@@ -29,6 +28,7 @@ const userController = require('../controllers/user-controller');
  * @returns {Error}  default - Unexpected error 
  */ 
 router.get('/', userController.getUsers); 
+
  
 /** 
  * Get a user by id  
@@ -41,6 +41,7 @@ router.get('/', userController.getUsers);
  * @returns {Error}  default - Unexpected error 
  */ 
 router.get('/:id', userController.getUserById); 
+
  
 /** 
  * Returns filetered Users by name 
@@ -53,6 +54,7 @@ router.get('/:id', userController.getUserById);
  * @returns {Error}  default - Unexpected error 
  */ 
 router.get('/filter/:name', userController.filterUsers); 
+
  
 /** 
  * Returns filetered Users by phone no 
@@ -65,6 +67,7 @@ router.get('/filter/:name', userController.filterUsers);
  * @returns {Error}  default - Unexpected error 
  */ 
 router.get('/filter/:phone_no', userController.filterUsers); 
+
  
 /** 
  * Create a new user  
@@ -78,6 +81,7 @@ router.get('/filter/:phone_no', userController.filterUsers);
  * @returns {Error}  default - Unexpected error 
  */ 
 router.post('/', userController.createUser); 
+
   
 /** 
  * Update an existing user by id  
@@ -91,6 +95,7 @@ router.post('/', userController.createUser);
  * @returns {Error}  default - Unexpected error 
  */ 
 router.put('/update/:id', userController.updateUser); 
+
  
 /** 
  * Remove a user  with id 
@@ -107,6 +112,7 @@ router.delete('/delete/:id', userController.deleteUser);
  
 // to be worked on; returns with empty roles 
 router.get('/role/:role', userController.getUserByRole); 
+
  
 module.exports = router;  
  
