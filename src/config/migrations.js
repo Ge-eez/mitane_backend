@@ -663,140 +663,141 @@ const products = [
     {
         name: "Qacha",
         category: 'ye ageda sebiloch'
-    },
-    {
-        name: "Coffee",
-        category: 'aneqaqi tekiloch'
-    },
-    {
-        name: "Tea",
-        category: 'aneqaqi tekiloch'
-    },
-    {
-        name: "Chat",
-        category: 'aneqaqi tekiloch'
-    },
-    {
-        name: "Tobacco",
-        category: 'aneqaqi tekiloch'
-    },
-    {
-        name: "Goat",
-        category: 'ye qum ensisa'
-    },
-    {
-        name: "Sheep",
-        category: 'ye qum ensisa'
-    },
-    {
-        name: "Ox",
-        category: 'ye qum ensisa'
-    },
-    {
-        name: "Cow",
-        category: 'ye qum ensisa'
-    },
-    {
-        name: "Camel",
-        category: 'ye qum ensisa'
-    },
-    {
-        name: "Pig",
-        category: 'ye qum ensisa'
-    },
-    {
-        name: "Horse",
-        category: 'ye qum ensisa'
-    },
-    {
-        name: "Donkey",
-        category: 'ye qum ensisa'
-    },
-    {
-        name: "Mule",
-        category: 'ye qum ensisa'
-    },
-    {
-        name: "Set doro",
-        category: 'doro'
-    },
-    {
-        name: "Awra doro",
-        category: 'doro'
-    },
-    {
-        name: "Asa",
-        category: 'asa'
-    },
-    {
-        name: "Milk",
-        category: 'diary products'
-    },
-    {
-        name: "Butter",
-        category: 'diary products'
-    },
-    {
-        name: "Yoghurt",
-        category: 'diary products'
-    },
-    {
-        name: "Aguat",
-        category: 'diary products'
-    },
-    {
-        name: "Cheese",
-        category: 'diary products'
-    },
-    {
-        name: "Quami",
-        category: 'ye den wutet'
-    },
-    {
-        name: "Weraj",
-        category: 'ye den wutet'
-    },
-    {
-        name: "Mager",
-        category: 'ye den wutet'
-    },
-    {
-        name: "Qerkeha",
-        category: 'ye den wutet'
-    },
-    {
-        name: "Rose",
-        category: 'flower'
-    },
-    {
-        name: "Hareg",
-        category: 'flower'
-    },
-    {
-        name: "Amrilix",
-        category: 'flower'
-    },
-    {
-        name: "Tulips",
-        category: 'flower'
-    },
-    {
-        name: "Kosame",
-        category: 'flower'
-    },
-    {
-        name: "Welela",
-        category: 'mar'
-    },
-    {
-        name: "Sefef",
-        category: 'mar'
-    },
-    {
-        name: "Sem",
-        category: 'mar'
-    },
-    
-]
-
-module.exports = { permissions, roles, users, machineries, categories, farming_ingredient, products }
+    }, 
+    { 
+        name: "Coffee", 
+        category: 'aneqaqi tekiloch' 
+    }, 
+    { 
+        name: "Tea", 
+        category: 'aneqaqi tekiloch' 
+    }, 
+    { 
+        name: "Chat", 
+        category: 'aneqaqi tekiloch' 
+    }, 
+    { 
+        name: "Tobacco", 
+        category: 'aneqaqi tekiloch' 
+    }, 
+    { 
+        name: "Goat", 
+        category: 'ye qum ensisa' 
+    }, 
+    { 
+        name: "Sheep", 
+        category: 'ye qum ensisa' 
+    }, 
+    { 
+        name: "Ox", 
+        category: 'ye qum ensisa' 
+    }, 
+    { 
+        name: "Cow", 
+        category: 'ye qum ensisa' 
+    }, 
+    { 
+        name: "Camel", 
+        category: 'ye qum ensisa' 
+    }, 
+    { 
+        name: "Pig", 
+        category: 'ye qum ensisa' 
+    }, 
+    { 
+        name: "Horse", 
+        category: 'ye qum ensisa' 
+    }, 
+    { 
+        name: "Donkey", 
+        category: 'ye qum ensisa' 
+    }, 
+    { 
+        name: "Mule", 
+        category: 'ye qum ensisa' 
+    }, 
+    { 
+        name: "Set doro", 
+        category: 'doro' 
+    }, 
+    { 
+        name: "Awra doro", 
+        category: 'doro' 
+    }, 
+    { 
+        name: "Asa", 
+        category: 'asa' 
+    }, 
+    { 
+        name: "Milk", 
+        category: 'diary products' 
+    }, 
+    { 
+        name: "Butter", 
+        category: 'diary products' 
+    }, 
+    { 
+        name: "Yoghurt", 
+        category: 'diary products' 
+    }, 
+    { 
+        name: "Aguat", 
+        category: 'diary products' 
+    }, 
+    {  
+        name: "Cheese", 
+        category: 'diary products' 
+    }, 
+    { 
+        name: "Quami", 
+        category: 'ye den wutet' 
+    }, 
+    { 
+        name: "Weraj", 
+        category: 'ye den wutet' 
+    }, 
+    { 
+        name: "Mager", 
+        category: 'ye den wutet' 
+    }, 
+    { 
+        name: "Qerkeha", 
+        category: 'ye den wutet' 
+    }, 
+    { 
+        name: "Rose", 
+        category: 'flower' 
+    }, 
+    { 
+        name: "Hareg", 
+        category: 'flower' 
+    }, 
+    { 
+        name: "Amrilix", 
+        category: 'flower' 
+    }, 
+    { 
+        name: "Tulips", 
+        category: 'flower' 
+    }, 
+    { 
+        name: "Kosame", 
+        category: 'flower' 
+    }, 
+    { 
+        name: "Welela", 
+        category: 'mar' 
+    }, 
+    { 
+        name: "Sefef", 
+        category: 'mar' 
+    }, 
+    { 
+        name: "Sem", 
+        category: 'mar' 
+    }, 
+     
+] 
+ 
+module.exports = { permissions, roles, users, machineries, categories, farming_ingredient, products } 
+ 
