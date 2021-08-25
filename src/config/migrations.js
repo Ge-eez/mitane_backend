@@ -165,30 +165,31 @@ const roles = {
         'view price',
     ],
 
-    accessory_trader: [
-
-        'view any ingredients',
-        'view ingredients',
-
-        'view any machinery',
-        'view machinery',
-
-        'view any product',
-        'view product',
-
-        'view any category',
-        'view category',
-
-        'create store',
-        'view store',
-        'update store',
-        'remove store',
-
-        'view any price',
-        'view price',
-    ]
-}
-
+    accessory_trader: [ 
+ 
+        'view any ingredients', 
+        'view ingredients', 
+ 
+        'view any machinery', 
+        'view machinery',  
+ 
+        'view any product', 
+        'view product', 
+ 
+        'view any category', 
+        'view category', 
+ 
+        'create store', 
+        'view store', 
+        'update store', 
+        'remove store', 
+ 
+        'view any price', 
+        'view price', 
+    ] 
+    
+} 
+ 
 const users = [ 
     { 
         name: 'admin', 
