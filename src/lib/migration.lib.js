@@ -11,6 +11,7 @@ const categoryModel = require('../models/category-model')
 const ingredientsModel = require('../models/ingredient-model')
 const productModel = require('../models/product-model')
 const userModel = require('../models/user-model')
+const priceModel = require('../models/price-model')
 
 module.exports = {
     
@@ -151,6 +152,7 @@ module.exports = {
                   
                   await productModel.create({
                         name: product.name,
+                        weather: product.weather? product.weather: ['summer'],
                         category: data.map(val => val._id)
                     })
                     logger.info(`completed ${product.name} product migrated...`);
@@ -186,5 +188,34 @@ module.exports = {
         logger.info(`completed users migrations...`);
     },
 
+    migratePrices: async () => {
+        logger.info(`Checking price migrations...`);
+        const products = await productModel.find({});
+        const max = 500;
+        const min = 300;
+        if(products){
+            await products.forEach(async product => {
+                let priceDocumentCount = await priceModel.countDocuments({
+                    product: product._id
+                })
+                
+                if(priceDocumentCount === 0) {
+                    await priceModel.create({
+                        category: product.category,
+                        product: product._id,
+                        price_of_the_day: [{
+                            price: Math.random() * (max - min) + min,
+                            day: Date.now()
+                        }]
+
+                    })
+            
+                    logger.info(`completed ${product.name} price migrated...`);
+                }
+            })
+        }
+        
+        logger.info(`completed price migrations...`);
+    }
 
 }

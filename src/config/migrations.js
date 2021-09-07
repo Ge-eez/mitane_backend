@@ -419,191 +419,255 @@ const farming_ingredient  = [
 const products = [ 
     { 
         name: "Orange",  
-        category: 'fruits' 
+          
+        category: 'fruits',
+        weather: ['winter']
     }, 
     { 
         name: "Banana", 
-        category: 'fruits' 
+          
+        category: 'fruits',
+        weather: ['winter']
     },  
     {  
         name: "Avocado",  
-        category: 'fruits'  
+          
+        category: 'fruits',
+        weather: ['winter']  
     },  
     {  
         name: "Papaya",  
-        category: 'fruits'  
+          
+        category: 'fruits',
+        weather: ['winter']  
     },  
     {  
         name: "Mango",  
-        category: 'fruits'  
+          
+        category: 'fruits',
+        weather: ['winter']  
     }, 
     { 
         name: "Lemon",  
-        category: 'fruits'  
+          
+        category: 'fruits',
+        weather: ['winter']   
     },  
     {  
         name: "Watermelon",  
-        category: 'fruits'  
+          
+        category: 'fruits',
+        weather: ['winter']   
     },  
     { 
         name: "Apple", 
-        category: 'fruits' 
+          
+        category: 'fruits',
+        weather: ['winter']  
     }, 
     { 
         name: "Jack fruit", 
-        category: 'fruits' 
+          
+        category: 'fruits',
+        weather: ['winter']  
     },  
     {  
         name: "Wine",  
-        category: 'fruits'  
+          
+        category: 'fruits',
+        weather: ['winter']   
     },  
     {      
         name: "Cock",  
-        category: 'fruits'  
+          
+        category: 'fruits',
+        weather: ['winter']   
     },  
     {  
         name: "Zotin", 
-        category: 'fruits' 
+          
+        category: 'fruits',
+        weather: ['winter']  
     }, 
     { 
         name: "Prim", 
-        category: 'fruits' 
+          
+        category: 'fruits',
+        weather: ['winter']  
     }, 
     { 
         name: "Strawberry", 
-        category: 'fruits' 
+          
+        category: 'fruits',
+        weather: ['winter']  
     }, 
     { 
         name: "Gishta", 
-        category: 'fruits' 
+          
+        category: 'fruits',
+        weather: ['winter']  
     }, 
     { 
         name: "Roman", 
-        category: 'fruits' 
+          
+        category: 'fruits',
+        weather: ['winter']  
     }, 
     { 
         name: "Tiringo", 
-        category: 'fruits' 
+          
+        category: 'fruits',
+        weather: ['winter']  
     }, 
     { 
         name: "Baqela", 
-        category: 'ceral' 
+        category: 'ceral',
+        weather: ['summer']  
     }, 
     { 
         name: "Ater", 
-        category: 'ceral' 
+        category: 'ceral',
+        weather: ['summer'] 
     },  
     {  
         name: "Akuri ater",  
-        category: 'ceral'  
+        category: 'ceral',
+        weather: ['summer']  
     },  
     {  
         name: "Shimbira",  
-        category: 'ceral'  
+        category: 'ceral',
+        weather: ['summer']  
     },  
     {  
         name: "Misir",  
-        category: 'ceral'  
+        category: 'ceral',
+        weather: ['summer']  
     },  
     {  
         name: "Guaya",  
-        category: 'ceral'    
+        category: 'ceral',
+        weather: ['summer']    
     },  
     {  
         name: "Pinto bean",  
-        category: 'ceral'  
+        category: 'ceral',
+        weather: ['summer']  
     },  
     {  
         name: "Pijon bean",  
-        category: 'ceral'  
+        category: 'ceral',
+        weather: ['summer']  
     },  
     {  
         name: "Boloqe",  
-        category: 'ceral'  
+        category: 'ceral',
+        weather: ['summer']  
     },  
     {  
         name: "Gibto",  
-        category: 'ceral'  
+        category: 'ceral',
+        weather: ['summer']  
     },  
     {  
         name: "Masho",  
-        category: 'ceral'  
+        category: 'ceral',
+        weather: ['summer']  
     },  
     {  
         name: "Selit",  
-        category: 'ye qibat ehil'  
+        category: 'ye qibat ehil', 
+        weather: ['authumn']
     },  
     {  
         name: "Nug",  
-        category: 'ye qibat ehil'  
+        category: 'ye qibat ehil',  
+        weather: ['authumn']  
     }, 
     {  
         name: "Telba", 
-        category: 'ye qibat ehil' 
+        category: 'ye qibat ehil',  
+        weather: ['authumn'] 
     }, 
     { 
         name: "Lewz",  
-        category: 'ye qibat ehil' 
+        category: 'ye qibat ehil',  
+        weather: ['authumn'] 
     },  
     { 
         name: "Suf", 
-        category: 'ye qibat ehil' 
+        category: 'ye qibat ehil',  
+        weather: ['authumn'] 
     }, 
     { 
         name: "Gomenzer", 
-        category: 'ye qibat ehil' 
+        category: 'ye qibat ehil',  
+        weather: ['authumn'] 
     }, 
     { 
         name: "Ye duba fre", 
-        category: 'ye qibat ehil' 
+        category: 'ye qibat ehil',  
+        weather: ['authumn'] 
     }, 
     { 
         name: "Ye gulo fre", 
-        category: 'ye qibat ehil' 
+        category: 'ye qibat ehil',  
+        weather: ['authumn'] 
     }, 
     { 
         name: "Potato", 
-        category: 'vegitable' 
+        category: 'vegitable', 
+        weather: ['spring']
     }, 
     { 
         name: "Tomato", 
-        category: 'vegitable' 
+        category: 'vegitable', 
+        weather: ['spring'] 
     }, 
     { 
         name: "Onion", 
-        category: 'vegitable' 
+        category: 'vegitable', 
+        weather: ['spring'] 
     }, 
     { 
         name: "Garlic", 
-        category: 'vegitable' 
+        category: 'vegitable', 
+        weather: ['spring'] 
     }, 
     { 
         name: "Cabbage", 
-        category: 'vegitable' 
+        category: 'vegitable', 
+        weather: ['spring'] 
     }, 
     { 
         name: "Carrot", 
-        category: 'vegitable' 
+        category: 'vegitable', 
+        weather: ['spring'] 
     }, 
     { 
         name: "Qey sir", 
-        category: 'vegitable' 
+        category: 'vegitable', 
+        weather: ['spring'] 
     }, 
     { 
         name: "Mushroom", 
-        category: 'vegitable' 
+        category: 'vegitable', 
+        weather: ['spring'] 
     }, 
     { 
         name: "Qosta", 
-        category: 'vegitable' 
+        category: 'vegitable', 
+        weather: ['spring'] 
     }, 
     { 
         name: "Salad", 
-        category: 'vegitable' 
+        category: 'vegitable', 
+        weather: ['spring'] 
     }, 
     { 
         name: "Pepper", 
-        category: 'vegitable' 
+        category: 'vegitable', 
+        weather: ['spring'] 
     }, 
     { 
         name: "Berbere", 
