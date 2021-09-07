@@ -15,23 +15,23 @@ exports.getSuggestionsBasedOnPrice = asyncHandler(async(req,res,next) =>
            },
          },
 
-//          {
-//              $unwind: "$suggestedProducts"
-//          },
-//          {
-//             $sort:  {price :-1}
-//          },
-//          {$limit:10}
-//         ])
+         {
+             $unwind: "$suggestedProducts"
+         },
+         {
+            $sort:  {price :-1}
+         },
+         {$limit:10}
+        ])
 
-//     res.status(200).json({
-//         status:true,
-//         data: suggestions
-//     });
+    res.status(200).json({
+        status:true,
+        data: suggestions
+    });
 
 
-// }
-// )
+}
+)
 
 
 // exports.getSuggestionsBasedOnWeather
