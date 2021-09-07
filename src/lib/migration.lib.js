@@ -200,13 +200,15 @@ module.exports = {
                 })
                 
                 if(priceDocumentCount === 0) {
+                    const randomPrice =  Math.random() * (max - min) + min;
                     await priceModel.create({
                         category: product.category,
                         product: product._id,
                         price_of_the_day: [{
-                            price: Math.random() * (max - min) + min,
+                            price: randomPrice,
                             day: Date.now()
-                        }]
+                        }],
+                        last_price: randomPrice
 
                     })
             

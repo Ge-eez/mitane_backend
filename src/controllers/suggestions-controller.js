@@ -1,28 +1,10 @@
 const asyncHandler = require('../middlewares/async');
-const ErrorResponse = require('../utility/errorResponse');
-const Products = require('../models/product-model');
 const Price = require('../models/price-model');
 const productModel = require('../models/product-model');
 exports.getSuggestionsBasedOnPrice = asyncHandler(async(req,res,next) =>{   
     try{
-        let suggestions = await Price.aggregate([
-            { $lookup:
-            {
-                from: 'Products',
-                localField: 'product',
-                foreignField: 'name',
-                as: 'suggestedProducts'
-            },
-            },
-
-            {
-                $unwind: "$suggestedProducts"
-            },
-            {
-                $sort:  {price :-1}
-            },
-            {$limit:10}
-            ])
+       const suggestions = await Price.find({}).sort({last_price: -1}).populate({path:'product',select:'name'})
+                                          .populate({path:'category',select:'name'}).limit(10);
 
         res.status(200).json({
             status:true,
@@ -68,7 +50,7 @@ exports.getSuggestionsBasedOnWeather = asyncHandler(async(req,res,next) =>{
             weather: { $in: 
                 weather
             }
-        })
+        }).populate({path: 'category'})
 
         res.status(200).json({
             status:true,
