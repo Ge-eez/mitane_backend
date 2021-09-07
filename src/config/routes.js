@@ -11,5 +11,7 @@ exports.routes = {
         '/products', 
         '/ingredients', 
         '/users', 
+        '/suggestion/price',
+        '/suggestion/weather'
     ] 
 } 

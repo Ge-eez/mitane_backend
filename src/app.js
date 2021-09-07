@@ -17,6 +17,7 @@ var storeRouter = require('./routes/store');
 var userRouter = require('./routes/users');
 var machineryRouter = require('./routes/machinery');
 var price = require('./routes/price');
+var suggestion = require('./routes/suggestion');
 
 var errorHandler = require('./middlewares/error');
 
@@ -82,6 +83,7 @@ app.use('/store', storeRouter);
 app.use('/machinery', machineryRouter);
 app.use('/ingredients',ingredientsRouter);
 app.use('/price',price);
+app.use('/suggestion',suggestion);
 app.use(errorHandler);
 
 module.exports = app;

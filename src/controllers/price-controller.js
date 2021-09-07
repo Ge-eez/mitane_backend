@@ -81,7 +81,7 @@ exports.addDailyPrice = asyncHanler(async (req,res,next)=>{
     if(!objId){
         next(new ErrorResponse('Product not found',400));
     }
-    const dailyPrice = await Price.findOneAndUpdate({product:objId},{$push:{price_of_the_day:[{price}]}},{
+    const dailyPrice = await Price.findOneAndUpdate({product:objId},{$push:{price_of_the_day:[{price}], last_price: price}},{
         new:true,
         runValidators:true
     }).populate({path:'product',select:'name'})
