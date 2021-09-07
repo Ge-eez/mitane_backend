@@ -34,7 +34,8 @@ exports.getSuggestionsBasedOnPrice = asyncHandler(async(req,res,next) =>
 )
 
 
-// exports.getSuggestionsBasedOnWeather
+exports.getSuggestionsBasedOnWeather = asyncHandler(async(req,res,next) =>
+{   }
 
 
 
