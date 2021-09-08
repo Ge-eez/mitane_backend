@@ -25,6 +25,19 @@ const  {storeRequest} = require('../middlewares/user-request/store');
  router.post('/machinery_id', storeRequest('getMachinery'), storeController.getByMachineryId);
 
  /**
+ * Get stores with  machineries
+ * 
+ * @route Post /store/machinery
+ * @group Store 
+ * @security JWT
+ * @param {number} latitude.body.required - latitude of the user
+ * @param {number} longitude.body.required - longitude of the user
+ * @returns {object} 200 - Store objects nearby
+ * @returns {Error}  default - Unexpected error
+ */
+  router.post('/machinery',  storeController.getMachineries);
+
+ /**
  * Get stores with the product
  * 
  * @route Post /store/product_id
@@ -37,6 +50,32 @@ const  {storeRequest} = require('../middlewares/user-request/store');
  */
  router.post('/product_id', storeRequest('getProduct'), storeController.getByProductId);
 
+  /**
+ * Get stores with products
+ * 
+ * @route Post /store/product
+ * @group Store 
+ * @security JWT
+ * @param {number} latitude.body.required - latitude of the user
+ * @param {number} longitude.body.required - longitude of the user
+ * @returns {object} 200 - Store objects nearby
+ * @returns {Error}  default - Unexpected error
+ */
+   router.post('/product', storeController.getProducts);
+
+
+  /**
+ * Get stores with ingredients
+ * 
+ * @route Post /store/ingredient
+ * @group Store 
+ * @security JWT
+ * @param {number} latitude.body.required - latitude of the user
+ * @param {number} longitude.body.required - longitude of the user
+ * @returns {object} 200 - Store objects nearby
+ * @returns {Error}  default - Unexpected error
+ */
+   router.post('/ingredient', storeController.getIngredients);
  /**
  * Get stores with the ingredient
  * 
