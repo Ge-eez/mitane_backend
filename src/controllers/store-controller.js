@@ -253,12 +253,56 @@ exports.getByMachineryId = async (req, res) => {
                 const stores = await storeModel.find({
                     machinery_items: {$elemMatch: 
                         {machinery: item_id}
-                    }});
-                res.json(stores);            
+                    },
+                    location : {
+                        $near: {
+                          $geometry: {
+                            type: "Point",
+                            coordinates : [longitude, latitude]
+                          },
+                        }
+                      }
+                }).populate({path: "user", select: 
+                    "location name phone_no",
+                     populate: {path: 'roles', select: "name-_id"} });
+                res.json(stores);           
             }
             else{
                 throw new Error("machinery not found")
             }
+        }
+        else{
+            throw new Error('You have to login first')
+        }
+        
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error.message
+        })
+    }
+}
+exports.getMachineries = async (req, res) => {
+    const { user } = req;
+    const latitude = req.body.latitude || 50;
+    const longitude = req.body.longitude || 60;
+    try {
+        if(user){
+            
+            const stores = await storeModel.find({
+                $expr:{$gt:[{$size:"$machinery_items"},0]},
+                location : {
+                    $near: {
+                      $geometry: {
+                        type: "Point",
+                        coordinates : [longitude, latitude]
+                      },
+                    }
+                  }
+            }).populate({path: "user", select: 
+                "location name phone_no",
+                 populate: {path: 'roles', select: "name-_id"} });
+            res.json(stores);   
         }
         else{
             throw new Error('You have to login first')
@@ -283,8 +327,19 @@ exports.getByProductId = async (req, res) => {
                 const stores = await storeModel.find({
                     product_items: {$elemMatch: 
                         {product: item_id}
-                    }});
-                res.json(stores);            
+                    },
+                    location : {
+                        $near: {
+                          $geometry: {
+                            type: "Point",
+                            coordinates : [longitude, latitude]
+                          },
+                        }
+                      }
+                }).populate({path: "user", select: 
+                    "location name phone_no",
+                     populate: {path: 'roles', select: "name-_id"} });
+                res.json(stores);         
             }
             else{
                 throw new Error("product not found")
@@ -301,10 +356,43 @@ exports.getByProductId = async (req, res) => {
         })
     }
 }
+exports.getProducts = async (req, res) => {
+    const { user } = req;
+    const latitude = req.body.latitude || 50;
+    const longitude = req.body.longitude || 60;
+    try {
+        if(user){
+            
+            const stores = await storeModel.find({
+                $expr:{$gt:[{$size:"$product_items"},0]},
+                location : {
+                    $near: {
+                      $geometry: {
+                        type: "Point",
+                        coordinates : [longitude, latitude]
+                      },
+                    }
+                  }
+            }).populate({path: "user", select: 
+                "location name phone_no",
+                 populate: {path: 'roles', select: "name-_id"} });
+            res.json(stores);      
+        }
+        else{
+            throw new Error('You have to login first')
+        }
+        
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error.message
+        })
+    }
+}
 exports.getByingredientsId = async (req, res) => {
     const { user } = req;
-    const latitude = 50;
-    const longitude = 60;
+    const latitude = req.body.latitude || 50;
+    const longitude = req.body.longitude || 60;
 
     try {
         if(user){
@@ -333,6 +421,39 @@ exports.getByingredientsId = async (req, res) => {
             else{
                 throw new Error("ingredient not found")
             }
+        }
+        else{
+            throw new Error('You have to login first')
+        }
+        
+    } catch (error) {
+        res.status(404).json({
+            error: true,
+            message: error.message
+        })
+    }
+}
+exports.getIngredients = async (req, res) => {
+    const { user } = req;
+    const latitude = req.body.latitude || 50;
+    const longitude = req.body.longitude || 60;
+    try {
+        if(user){
+            
+            const stores = await storeModel.find({
+                $expr:{$gt:[{$size:"$ingredient_items"},0]},
+                location : {
+                    $near: {
+                      $geometry: {
+                        type: "Point",
+                        coordinates : [longitude, latitude]
+                      },
+                    }
+                  }
+            }).populate({path: "user", select: 
+                "location name phone_no",
+                 populate: {path: 'roles', select: "name-_id"} });
+            res.json(stores);    
         }
         else{
             throw new Error('You have to login first')
