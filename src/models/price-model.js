@@ -7,7 +7,8 @@ const PriceSchema = mongoose.Schema({
     price_of_the_day:[{
         price:{type:Number, required:true},
         day:{type:Date, default:Date.now}
-    }]
+    }],
+    last_price: {type:Number, required:true}
 },{timestamps: {createdAt: 'created_at', modifiedAt: 'modified_at'}});
 
 PriceSchema.plugin(mongoosePaginate);

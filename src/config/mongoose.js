@@ -44,6 +44,7 @@ exports.connect = () => {
       await migration.migrateUsers()
       await migration.migrateingredientss()
       await migration.migrateProducts()
+      await migration.migratePrices()
     });
   return mongoose.connection;
 };

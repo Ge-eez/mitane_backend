@@ -1,15 +1,17 @@
 exports.routes = {
-    public: [
-        '/',
-        '/auth/login',
-        '/auth/u/signup',
-        '/auth/f/signup',
-        '/auth/tt/signup',
-        '/auth/at/signup',
-        '/auth/pt/signup',
-        '/category',
-        '/products',
-        '/ingredients',
-        '/users',
-    ]
-}
+    public: [ 
+        '/', 
+        '/auth/login', 
+        '/auth/u/signup', 
+        '/auth/f/signup', 
+        '/auth/tt/signup', 
+        '/auth/at/signup', 
+        '/auth/pt/signup', 
+        '/category', 
+        '/products', 
+        '/ingredients', 
+        '/users', 
+        '/suggestion/price',
+        '/suggestion/weather'
+    ] 
+} 
