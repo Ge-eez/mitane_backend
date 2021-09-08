@@ -5,7 +5,7 @@ require('dotenv-safe').config({
   allowEmptyValues: true, // allow null env, this is just for deployment 
   // path: path.join(__dirname, '../.env'),
   path: __dirname+'.env',
-  sample: path.join(__dirname, '../.env.example'),
+  sample: path.join(__dirname, '../config.env'),
 });
 
 module.exports = {
