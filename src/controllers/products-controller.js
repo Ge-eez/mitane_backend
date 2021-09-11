@@ -69,7 +69,7 @@ exports.createProduct = asyncHandler(async (req,res,next)=>{
     let product = null;
     const objId = await getCategoryObjectId(category);
     if(objId){
-        product = await Products.create({name,category:objId}).populate({path:'category',select:'name'});
+        product = await Products.create({name,category:objId})
         res.status(200).json({
             success:true,
             data: product

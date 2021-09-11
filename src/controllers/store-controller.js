@@ -101,7 +101,7 @@ exports.getSelfStore = async (req, res) => {
             }
         }).populate([
             {path: 'user', select: "name"},
-            {path:'product_items.product'},
+            {path:'product_items.product',select:'name'},
             {path:'machinery_items.machinery'},
             {path:'ingredient_items.ingredients'},
           ])
@@ -129,12 +129,7 @@ exports.createStore = async (req, res) => {
     try {
         if(user){
             
-            const store = await storeService.createStore(user_id, roles, coordinates).populate([
-                {path: 'user', select: "name"},
-                {path:'product_items.product'},
-                {path:'machinery_items.machinery'},
-                {path:'ingredient_items.ingredients'},
-              ]);
+            const store = await storeService.createStore(user_id, roles, coordinates);
             res.json(store)
         }
         else{
