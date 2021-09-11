@@ -13,7 +13,12 @@ exports.createStore = async (user_id, roles, coordinates) => {
                 location : {
                     coordinates: coordinates
                 }
-            });
+            }).populate([
+                {path: 'user', select: "name"},
+                {path:'product_items.product'},
+                {path:'machinery_items.machinery'},
+                {path:'ingredient_items.ingredients'},
+              ]);
             return store
             
         }
@@ -296,7 +301,12 @@ exports.getStoresNearby = async function (param){
             }
           }
         }
-      )
+      ).populate([
+        {path: 'user', select: "name"},
+        {path:'product_items.product'},
+        {path:'machinery_items.machinery'},
+        {path:'ingredient_items.ingredients'},
+      ])
       return theNearest 
 
     }

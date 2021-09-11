@@ -46,7 +46,12 @@ exports.getAll = async (req, res, next) => {
 exports.getByID = async (req, res) => {
 
     try {
-        const store = await storeModel.findById(req.params.id)
+        const store = await storeModel.findById(req.params.id).populate([
+            {path: 'user', select: "name"},
+            {path:'product_items.product'},
+            {path:'machinery_items.machinery'},
+            {path:'ingredient_items.ingredients'},
+          ])
         res.json(store)
     } catch (error) {
         res.status(404).json({
@@ -64,7 +69,12 @@ exports.getByUserId = async (req, res) => {
             user: {
                 $in: user_id
             }
-        })
+        }).populate([
+            {path: 'user', select: "name"},
+            {path:'product_items.product'},
+            {path:'machinery_items.machinery'},
+            {path:'ingredient_items.ingredients'},
+          ])
         if(!store )
         { 
             throw new Error('User not found')
@@ -89,7 +99,12 @@ exports.getSelfStore = async (req, res) => {
             user: {
                 $in: user_id
             }
-        })
+        }).populate([
+            {path: 'user', select: "name"},
+            {path:'product_items.product'},
+            {path:'machinery_items.machinery'},
+            {path:'ingredient_items.ingredients'},
+          ])
         if(!store )
         { 
             throw new Error("User doesn't have a store")
@@ -114,7 +129,12 @@ exports.createStore = async (req, res) => {
     try {
         if(user){
             
-            const store = await storeService.createStore(user_id, roles, coordinates);
+            const store = await storeService.createStore(user_id, roles, coordinates).populate([
+                {path: 'user', select: "name"},
+                {path:'product_items.product'},
+                {path:'machinery_items.machinery'},
+                {path:'ingredient_items.ingredients'},
+              ]);
             res.json(store)
         }
         else{
@@ -508,7 +528,12 @@ exports.deleteStore = async (req, res) => {
                 user: {
                     $in: user_id
                 }
-            })
+            }).populate([
+                {path: 'user', select: "name"},
+                {path:'product_items.product'},
+                {path:'machinery_items.machinery'},
+                {path:'ingredient_items.ingredients'},
+              ])
 
             if(store){
                 res.json(store);            
