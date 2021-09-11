@@ -282,9 +282,14 @@ exports.getByMachineryId = async (req, res) => {
                           },
                         }
                       }
-                }).populate({path: "user", select: 
+                }).populate([
+                    {path: "user", select: 
                     "location name phone_no",
-                     populate: {path: 'roles', select: "name-_id"} });
+                     populate: {path: 'roles', select: "name-_id"} },
+                    {path:'product_items.product'},
+                    {path:'machinery_items.machinery'},
+                    {path:'ingredient_items.ingredients'},
+                  ]);
                 res.json(stores);           
             }
             else{
@@ -319,9 +324,14 @@ exports.getMachineries = async (req, res) => {
                       },
                     }
                   }
-            }).populate({path: "user", select: 
+            }).populate([
+                {path: "user", select: 
                 "location name phone_no",
-                 populate: {path: 'roles', select: "name-_id"} });
+                 populate: {path: 'roles', select: "name-_id"} },
+                {path:'product_items.product'},
+                {path:'machinery_items.machinery'},
+                {path:'ingredient_items.ingredients'},
+              ]);
             res.json(stores);   
         }
         else{
@@ -356,9 +366,14 @@ exports.getByProductId = async (req, res) => {
                           },
                         }
                       }
-                }).populate({path: "user", select: 
+                }).populate([
+                    {path: "user", select: 
                     "location name phone_no",
-                     populate: {path: 'roles', select: "name-_id"} });
+                     populate: {path: 'roles', select: "name-_id"} },
+                    {path:'product_items.product'},
+                    {path:'machinery_items.machinery'},
+                    {path:'ingredient_items.ingredients'},
+                  ]);
                 res.json(stores);         
             }
             else{
@@ -393,9 +408,15 @@ exports.getProducts = async (req, res) => {
                       },
                     }
                   }
-            }).populate({path: "user", select: 
+            }).populate([
+                {path: "user", select: 
                 "location name phone_no",
-                 populate: {path: 'roles', select: "name-_id"} });
+                 populate: {path: 'roles', select: "name-_id"} },
+                {path:'product_items.product'},
+                {path:'machinery_items.machinery'},
+                {path:'ingredient_items.ingredients'},
+              ]);
+                
             res.json(stores);      
         }
         else{
@@ -433,9 +454,14 @@ exports.getByingredientsId = async (req, res) => {
                           },
                         }
                       }
-                }).populate({path: "user", select: 
+                }).populate([
+                    {path: "user", select: 
                     "location name phone_no",
-                     populate: {path: 'roles', select: "name-_id"} });
+                     populate: {path: 'roles', select: "name-_id"} },
+                    {path:'product_items.product'},
+                    {path:'machinery_items.machinery'},
+                    {path:'ingredient_items.ingredients'},
+                  ]);
                 res.json(stores);            
             }
             else{
@@ -470,9 +496,14 @@ exports.getIngredients = async (req, res) => {
                       },
                     }
                   }
-            }).populate({path: "user", select: 
+            }).populate([
+                {path: "user", select: 
                 "location name phone_no",
-                 populate: {path: 'roles', select: "name-_id"} });
+                 populate: {path: 'roles', select: "name-_id"} },
+                {path:'product_items.product'},
+                {path:'machinery_items.machinery'},
+                {path:'ingredient_items.ingredients'},
+              ]);
             res.json(stores);    
         }
         else{
