@@ -16,7 +16,8 @@ exports.getDailyPrice = asyncHanler(async (req,res,next)=>{
                 '$gte' : new Date(date), 
                 '$lt' : nextDay(date)
             }}}},{'price_of_the_day.$':1}).populate({path:'product',select:'name'})
-                                          .populate({path:'category',select:'name'});;
+                                          .populate({path:'category',select:'name'});
+    
 
     res.status(200).json({
         status:true,
